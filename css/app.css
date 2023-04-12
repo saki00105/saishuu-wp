@@ -38,10 +38,17 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Roboto", "M PLUS 1", sans-serif;
-  display: flex;
   color: #707070;
 }
 
 ul, li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.l-header {
+  display: flex;
 }/*# sourceMappingURL=app.css.map */
