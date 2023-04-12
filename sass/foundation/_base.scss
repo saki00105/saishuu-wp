@@ -1,0 +1,13 @@
+@use "variable" as var;
+
+body{
+
+    font-family: 'Roboto','M PLUS 1', sans-serif;
+    display: flex;
+    color: var.$text-color;
+
+}
+
+ul,li{
+    list-style: none;
+}
