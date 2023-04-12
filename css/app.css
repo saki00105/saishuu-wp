@@ -37,7 +37,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  font-family: "Roboto", sans-serif "M PLUS 1", sans-serif;
+  font-family: "Roboto", "M PLUS 1", sans-serif;
   display: flex;
   color: #707070;
 }
