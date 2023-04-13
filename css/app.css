@@ -51,4 +51,9 @@ a {
 
 .l-header {
   display: flex;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 20%;
+  grid-template-rows: 10%;
+  background-color: #FFF7EF;
 }/*# sourceMappingURL=app.css.map */
