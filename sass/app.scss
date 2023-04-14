@@ -30,6 +30,7 @@
 // @import "object/component/_dialog";
 // @import "object/component/_grid";
 // @import "object/component/_media";
+@import "object/component/c-flex";
 
 // // -----------------------------------------------------------------
 // // Project
@@ -46,7 +47,8 @@
 
 // @import "object/utility/_align";
 // @import "object/utility/_clearfix";
-// @import "object/utility/_margin";
+@import "object/utility/u-margin";
 // @import "object/utility/_position";
 // @import "object/utility/_size";
-// @import "object/utility/_text";
+@import "object/utility/u-text";
+@import "object/utility/u-color";

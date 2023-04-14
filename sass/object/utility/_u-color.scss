@@ -1,0 +1,13 @@
+@use "../../foundation/variable" as var;
+
+body,input,a{
+    color: var.$text-color;
+}
+
+.l-header{
+    background-color: var.$header-color;
+}
+
+.l-sideber{
+    background-color: $sideber-color;
+}
