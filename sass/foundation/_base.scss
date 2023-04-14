@@ -1,8 +1,6 @@
-@use "variable" as var;
-
-body{
+body,input{
     font-family: 'Roboto','M PLUS 1', sans-serif;
-    color: var.$text-color;
+    
 }
 
 ul,li{
@@ -12,3 +10,5 @@ ul,li{
 a{
     text-decoration: none;
 }
+
+

@@ -1,9 +1,8 @@
 @use "../foundation/variable" as var;
 
 .l-header{
-    display: flex;
+    justify-content: space-between;
     grid-row:1/2;
     grid-column:1/2;
-    background-color: var.$header-color;
 }
 
