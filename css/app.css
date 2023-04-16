@@ -42,6 +42,7 @@ body, input {
 
 ul, li {
   list-style: none;
+  padding-left: 0px;
 }
 
 a {
@@ -72,6 +73,8 @@ a {
 .l-container {
   display: grid;
   width: 100%;
+  grid-template-rows: auto 1fr 5%;
+  grid-template-columns: 1fr 20%;
 }
 
 .c-button {
@@ -127,6 +130,31 @@ a {
   margin-right: 1.1rem;
 }
 
+.menu {
+  margin-top: 9rem;
+}
+
+.l-sideber__menu {
+  margin-top: 3.2rem;
+}
+
+.menu-item + .menu-item {
+  margin-top: 2rem;
+}
+
+.l-sideber__title {
+  margin-top: 4.2rem;
+}
+
+.l-sideber {
+  padding-left: 4.6rem;
+  padding-top: 8.4rem;
+}
+
+.l-sideber__menu {
+  padding-left: 2rem;
+}
+
 html {
   font-size: 10px;
 }
@@ -136,13 +164,29 @@ html {
   line-height: 2.4rem;
 }
 
+.font-weight {
+  font-weight: 700;
+}
+
 .l-header__title {
   font-size: 6.4rem;
 }
 
 .l-header__form {
   font-size: 1.6rem;
-  font-weight: 700;
+}
+
+.l-sideber p {
+  font-size: 3.4rem;
+}
+
+.l-sideber__title {
+  font-size: 2.4rem;
+}
+
+.l-sideber__menu {
+  font-size: 2rem;
+  font-family: "M PLUS 1", sans-serif;
 }
 
 body, input, a {
