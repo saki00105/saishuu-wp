@@ -1,12 +1,14 @@
+@use "../foundation/variable" as var;
 
 .l-header{
     justify-content: space-between;
     grid-row:1/2;
     grid-column:1/2;
+    background-color: var.$header-color;
     &__title{
-        margin: 6.9rem 6.5rem 7.3rem;
-        font-size: 6.4rem;
-
+        margin: 2.3% 3.3% 2.4%;
+        // font-size: 6.4rem;
+        font-size: clamp(4rem, 2.153rem + 2.212vw, 6.4rem);
     }
 }
 

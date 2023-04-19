@@ -1,3 +1,6 @@
+@use "./variable" as var;
+
+
 .body{
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -5,6 +8,10 @@
 
 body,input{
     font-family: 'Roboto','M PLUS 1', sans-serif;
+}
+
+body,input,a{
+    color: var.$text-color;
 }
 
 html {

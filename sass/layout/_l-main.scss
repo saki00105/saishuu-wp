@@ -1,4 +1,23 @@
 .l-main{
     grid-row:2/3;
     grid-column:1/2;
+
+    &__visual{
+        height: 53rem;
+        width: 100%;
+        background: url(../../img/mainvisual-pc@2x.jpg) no-repeat center center;
+        background-size: auto 53rem;
+        background-size: cover;
+        // background-position-y: -13rem;
+        position: relative;   
+    }
+
+    &__title{
+        position: absolute;
+        font-size: 4rem;
+        // top: ;
+        // left: ;
+        
+    }
+
 }

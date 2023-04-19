@@ -1,10 +1,17 @@
 .p-sideber{
-    margin-top: 9rem;
-    padding-left: 4.6rem;
-    padding-top: 8.4rem;
+    // margin-top: 9rem;
+    // padding-left: 12%;
+    // padding-top: 2.9%;
+    margin: 9rem 11rem 0 4.6rem;
 
     &__title{
         font-size: 3.4rem;
+    }
+
+    &__sub{
+        margin-top: 9rem;
+        font-size: 2.4rem;
+    
     }
 
     &__menu{
@@ -14,11 +21,7 @@
         padding-left: 2rem;
     }
 
-    &__sub{
-        margin-top: 4.2rem;
-        font-size: 2.4rem;
-    
-    }
+   
 }
 
 .p-sideber__item +  .p-sideber__item{
