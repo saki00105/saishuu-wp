@@ -1,6 +1,6 @@
 .l-container{
     display: grid;
     width:100%;
-    grid-template-rows: auto 1fr 5% ;
+    grid-template-rows: auto 1fr auto ;
     grid-template-columns: 1fr auto; 
 }

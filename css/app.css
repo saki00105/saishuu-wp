@@ -84,7 +84,7 @@ a {
 }
 .l-main__visual {
   height: 53rem;
-  width: 100%;
+  width: auto;
   background: url(../../img/mainvisual-pc@2x.jpg) no-repeat center center;
   background-size: auto 53rem;
   background-size: cover;
@@ -93,6 +93,8 @@ a {
 .l-main__title {
   position: absolute;
   font-size: 4rem;
+  top: 23.4rem;
+  left: 8.6rem;
 }
 
 .l-sideber {
@@ -104,7 +106,7 @@ a {
 .l-container {
   display: grid;
   width: 100%;
-  grid-template-rows: auto 1fr 5%;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr auto;
 }
 
@@ -170,6 +172,10 @@ a {
 
 .p-sideber__item + .p-sideber__item {
   margin-top: 2rem;
+}
+
+.p-card {
+  background: url(../../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg) no-repeat center center;
 }
 
 .u_fw-700 {
