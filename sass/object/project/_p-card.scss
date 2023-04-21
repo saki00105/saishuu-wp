@@ -1,6 +1,14 @@
-.p-card{
-    background: url(../../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg)no-repeat center center;
-    
+@use "../../foundation/variable" as var;
 
 
+.p-card__main{
+    width: 61rem;
+    height: 120rem;
+
+
+}
+
+.p-card__main-text{
+    background-color:var.$white;
+    opacity: 0.8;
 }
