@@ -1,0 +1,14 @@
+@use "../../foundation/variable" as var;
+
+
+.p-card__main{
+    width: 61rem;
+    height: 120rem;
+
+
+}
+
+.p-card__main-text{
+    background-color:var.$white;
+    opacity: 0.8;
+}
