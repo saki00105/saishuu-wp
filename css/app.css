@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -197,7 +198,7 @@ img {
 }
 
 .p-main__title {
-  margin: 7% 3%;
+  margin: 5% 3%;
   padding-bottom: 95%;
   font-size: clamp(4.4rem, 1.658rem + 3.288vw, 8rem);
   position: relative;
@@ -242,6 +243,40 @@ img {
   margin-top: 2%;
 }
 
+.p-main__map {
+  background-image: url(../../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #646464;
+  background-blend-mode: soft-light;
+}
+
+.p-main__map-title {
+  font-size: clamp(3rem, 2.539rem + 0.552vw, 3.6rem);
+  position: relative;
+}
+.p-main__map-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  border: 0.2rem solid #FFFFFF;
+  z-index: 10;
+  top: 200%;
+}
+
+.p-main__map-entry {
+  width: 60%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5% 7%;
+}
+
+.p-main__map-body {
+  margin-top: 15%;
+  line-height: 3.3rem;
+}
+
 .u_fw-700 {
   font-weight: 700;
 }
@@ -266,7 +301,6 @@ img {
   color: #FFFFFF;
 }
 
-.u-oc_white {
-  background-color: #FFFFFF;
-  opacity: 0.8;
+.u-bg_white {
+  background: rgba(255, 255, 255, 0.8);
 }/*# sourceMappingURL=app.css.map */
