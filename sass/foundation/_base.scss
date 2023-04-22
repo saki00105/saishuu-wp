@@ -10,9 +10,13 @@ body,input{
     font-family: 'Roboto','M PLUS 1', sans-serif;
 }
 
-body,input,a{
-    color: var.$text-color;
+body, input,a{
+    color: var.$sidber-text;
 }
+main{
+    color:var.$text-color;
+}
+
 
 html {
     font-size: 10px;

@@ -1,0 +1,13 @@
+@mixin main-cade($img){
+    height: 120rem;
+    width: 40%;
+    background:($img);
+
+}
+
+@mixin bg-img($path, $size: cover, $pos: center center, $repeat: no-repeat) {
+    background-image: ($path);
+    background-size: $size;
+    background-position: $pos;
+    background-repeat: $repeat;
+  }

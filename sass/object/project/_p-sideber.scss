@@ -1,22 +1,19 @@
 .p-sideber{
-    // margin-top: 9rem;
-    // padding-left: 12%;
-    // padding-top: 2.9%;
     margin: 9rem 0 0 14%;
 
-    &__title{
-        font-size: 3.4rem;
-    }
+    // &__title{
+    //     // font-size: 3.4rem;
+    //     font-size: clamp(1.7rem, 0.394rem + 1.565vw, 3.4rem);
+    // }
 
     &__sub{
         margin-top: 9rem;
-        font-size: 2.4rem;
-    
     }
 
     &__menu{
-        font-size: 2rem;
-        font-family: 'M PLUS 1', sans-serif;
+        // font-size: 2rem;
+        font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
+        // font-family: 'M PLUS 1', sans-serif;
         margin-top: 3.2rem;
         padding-left: 2rem;
     }

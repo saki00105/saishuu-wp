@@ -1,3 +1,11 @@
 .c-flex{
     display: flex;
+    justify-content:space-between;
+
  }
+
+ .c-colum{
+    display:flex;
+    flex-flow: column;
+    justify-content:space-between;
+  }

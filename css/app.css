@@ -49,6 +49,10 @@ body, input, a {
   color: #707070;
 }
 
+main {
+  color: #3C2A10;
+}
+
 html {
   font-size: 10px;
 }
@@ -85,16 +89,21 @@ a {
 .l-main__visual {
   height: 53rem;
   width: auto;
-  background: url(../../img/mainvisual-pc@2x.jpg) no-repeat center center;
-  background-size: auto 53rem;
-  background-size: cover;
   position: relative;
+  background-image: url(../../img/mainvisual-pc@2x.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .l-main__title {
   position: absolute;
   font-size: 4rem;
   top: 23.4rem;
   left: 8.6rem;
+}
+
+.l-section {
+  margin: 5% 5%;
 }
 
 .l-sideber {
@@ -107,7 +116,7 @@ a {
   display: grid;
   width: 100%;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr 20%;
+  grid-template-columns: 1fr 15%;
 }
 
 .c-button {
@@ -118,6 +127,13 @@ a {
 
 .c-flex {
   display: flex;
+  justify-content: space-between;
+}
+
+.c-colum {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }
 
 .p-header {
@@ -157,16 +173,11 @@ a {
 .p-sideber {
   margin: 9rem 0 0 14%;
 }
-.p-sideber__title {
-  font-size: 3.4rem;
-}
 .p-sideber__sub {
   margin-top: 9rem;
-  font-size: 2.4rem;
 }
 .p-sideber__menu {
-  font-size: 2rem;
-  font-family: "M PLUS 1", sans-serif;
+  font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
   margin-top: 3.2rem;
   padding-left: 2rem;
 }
@@ -176,16 +187,12 @@ a {
 }
 
 .p-card__main {
-  width: 61rem;
+  width: 48%;
   height: 120rem;
 }
 
-.p-card__main-text {
-  background-color: #FFFFFF;
-  opacity: 0.8;
-}
-
 .p-main__title {
+  margin: 3% 3%;
   font-size: clamp(4.4rem, 1.658rem + 3.288vw, 8rem);
   position: relative;
 }
@@ -196,22 +203,64 @@ a {
   width: 6rem;
   border: 0.2rem solid #FFFFFF;
   z-index: 10;
+  top: 13.5rem;
 }
 
-.p-main__TakeOut {
-  background: url(../../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg) no-repeat center center;
+.p-main--TakeOut {
+  background-image: url(../../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg);
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.p-main__EatIn {
-  background: url(../../../img/473d814b175bd517b56eb309f2958725.jpg) no-repeat center center;
+.p-main--EatIn {
+  background-image: url(../../../img/473d814b175bd517b56eb309f2958725.jpg);
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.p-main__body {
+  margin: 3% 3%;
+}
+
+.p-main__sub {
+  padding: 1.5% 3%;
+}
+
+.p-main__sub + .p-main__sub {
+  margin-top: 3%;
+}
+
+.p-main__sub-text {
+  margin-top: 2%;
 }
 
 .u_fw-700 {
   font-weight: 700;
 }
 
+.u_fs-34 {
+  font-size: clamp(1.7rem, 0.394rem + 1.565vw, 3.4rem);
+}
+
+.u_fs-24 {
+  font-size: clamp(1.2rem, 0.278rem + 1.105vw, 2.4rem);
+}
+
+.u_fs-16 {
+  font-size: clamp(0.8rem, 0.186rem + 0.737vw, 1.6rem);
+}
+
+.u_ff-M {
+  font-family: "M PLUS 1", sans-serif;
+}
+
 .u_white {
   color: #FFFFFF;
+}
+
+.u-oc_white {
+  background-color: #FFFFFF;
+  opacity: 0.8;
 }/*# sourceMappingURL=app.css.map */
