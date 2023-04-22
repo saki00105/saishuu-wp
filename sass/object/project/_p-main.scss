@@ -8,7 +8,10 @@
    
     &::after{
         @include after;
+        width: 10%;
         top: 20%;
+        border: 0.2rem solid var.$white;
+
     }
 }
 
@@ -50,7 +53,10 @@
    
     &::after{
         @include after;
-        top: 200%;
+        width: 10%;
+        top: 170%;
+        border: 0.2rem solid var.$white;
+
     }
 }
 

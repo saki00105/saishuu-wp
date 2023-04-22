@@ -1,0 +1,40 @@
+@use "../../foundation/variable" as var;
+
+
+.p-footer{
+    text-align: center;
+    margin: 2% 0 1% 0;
+
+    
+
+
+    p{
+        margin-top: 1.5%;
+        font-size: 1.4rem;
+    }
+}
+
+.p-footer__link{
+    font-size: 2rem;
+    ul{
+        justify-content: center;
+        position: relative;
+
+        &::after{
+            @include after;
+            width: 2rem;
+            transform: rotate(90deg);
+            border: 0.1rem solid var.$white;
+            top: 45%;
+            left: 50%;
+        }
+
+    }
+}
+.p-footer__link--shop + .p-footer__link--history{
+    margin-left: 3%;
+}
+
+.p-footer__layer{
+    background-image: url(../../../img/レイヤー\ 1.jpg);
+}

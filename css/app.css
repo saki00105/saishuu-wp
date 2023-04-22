@@ -76,6 +76,11 @@ img {
 .l-footer {
   grid-row: 3/4;
   grid-column: 1/4;
+  background-image: url("../../img/レイヤー 1.jpg");
+  background-color: #9D8670;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .l-header {
@@ -111,6 +116,7 @@ img {
 
 .l-section {
   margin: 5% 5%;
+  justify-content: space-between;
 }
 
 .l-sideber {
@@ -134,7 +140,6 @@ img {
 
 .c-flex {
   display: flex;
-  justify-content: space-between;
 }
 
 .c-colum {
@@ -207,10 +212,10 @@ img {
   content: "";
   display: block;
   position: absolute;
-  width: 10%;
-  border: 0.2rem solid #FFFFFF;
   z-index: 10;
+  width: 10%;
   top: 20%;
+  border: 0.2rem solid #FFFFFF;
 }
 
 .p-main--TakeOut {
@@ -260,10 +265,10 @@ img {
   content: "";
   display: block;
   position: absolute;
-  width: 10%;
-  border: 0.2rem solid #FFFFFF;
   z-index: 10;
-  top: 200%;
+  width: 10%;
+  top: 170%;
+  border: 0.2rem solid #FFFFFF;
 }
 
 .p-main__map-entry {
@@ -275,6 +280,46 @@ img {
 .p-main__map-body {
   margin-top: 15%;
   line-height: 3.3rem;
+}
+
+.p-footer {
+  text-align: center;
+  margin: 2% 0 1% 0;
+}
+.p-footer p {
+  margin-top: 1.5%;
+  font-size: 1.4rem;
+}
+
+.p-footer__link {
+  font-size: 2rem;
+}
+.p-footer__link ul {
+  justify-content: center;
+  position: relative;
+}
+.p-footer__link ul::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 2rem;
+  transform: rotate(90deg);
+  border: 0.1rem solid #FFFFFF;
+  top: 45%;
+  left: 50%;
+}
+
+.p-footer__link--shop + .p-footer__link--history {
+  margin-left: 3%;
+}
+
+.p-footer__layer {
+  background-image: url(../../../img/レイヤー\ 1.jpg);
+}
+
+.u_m-0 {
+  margin: 0 auto;
 }
 
 .u_fw-700 {
