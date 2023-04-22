@@ -1,6 +1,7 @@
 @mixin main-cade($img){
-    height: 120rem;
+    // height: 120rem;
     width: 40%;
+  
     background:($img);
 
 }
@@ -10,4 +11,8 @@
     background-size: $size;
     background-position: $pos;
     background-repeat: $repeat;
+    // padding-top: 60%;
+    // padding-bottom: 60%;
   }
+
+  

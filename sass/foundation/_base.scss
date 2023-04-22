@@ -32,4 +32,7 @@ a{
     text-decoration: none;
 }
 
-
+img{
+    object-fit: cover;
+    z-index: -10;
+}
