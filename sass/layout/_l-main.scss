@@ -1,24 +1,29 @@
 .l-main{
     grid-row:2/3;
     grid-column:1/2;
-    // height: 88%;
 
     &__visual{
         height: 53rem;
         width: auto;
-        background: url(../../img/mainvisual-pc@2x.jpg) no-repeat center center;
-        background-size: auto 53rem;
-        background-size: cover;
-        // background-position-y: -13rem;
         position: relative;  
+
+        @include bg-img(url(../../img/mainvisual-pc@2x.jpg));
+
     }
 
     &__title{
         position: absolute;
-        font-size: 4rem;
+        // font-size: 4rem;
+        font-size: clamp(3.6rem, 3.293rem + 0.368vw, 4rem);
         top:23.4rem ;
         left:8.6rem ;
         
     }
 
+}
+
+.l-section{
+    margin: 5% 5%;
+    // height: 100%;
+    justify-content:space-between;
 }

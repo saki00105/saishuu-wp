@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -49,6 +50,10 @@ body, input, a {
   color: #707070;
 }
 
+main {
+  color: #3C2A10;
+}
+
 html {
   font-size: 10px;
 }
@@ -62,9 +67,20 @@ a {
   text-decoration: none;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -10;
+}
+
 .l-footer {
   grid-row: 3/4;
   grid-column: 1/4;
+  background-image: url("../../img/レイヤー 1.jpg");
+  background-color: #9D8670;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .l-header {
@@ -85,16 +101,22 @@ a {
 .l-main__visual {
   height: 53rem;
   width: auto;
-  background: url(../../img/mainvisual-pc@2x.jpg) no-repeat center center;
-  background-size: auto 53rem;
-  background-size: cover;
   position: relative;
+  background-image: url(../../img/mainvisual-pc@2x.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .l-main__title {
   position: absolute;
-  font-size: 4rem;
+  font-size: clamp(3.6rem, 3.293rem + 0.368vw, 4rem);
   top: 23.4rem;
   left: 8.6rem;
+}
+
+.l-section {
+  margin: 5% 5%;
+  justify-content: space-between;
 }
 
 .l-sideber {
@@ -107,7 +129,7 @@ a {
   display: grid;
   width: 100%;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr 20%;
+  grid-template-columns: 1fr 15%;
 }
 
 .c-button {
@@ -118,6 +140,12 @@ a {
 
 .c-flex {
   display: flex;
+}
+
+.c-colum {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }
 
 .p-header {
@@ -157,16 +185,11 @@ a {
 .p-sideber {
   margin: 9rem 0 0 14%;
 }
-.p-sideber__title {
-  font-size: 3.4rem;
-}
 .p-sideber__sub {
   margin-top: 9rem;
-  font-size: 2.4rem;
 }
 .p-sideber__menu {
-  font-size: 2rem;
-  font-family: "M PLUS 1", sans-serif;
+  font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
   margin-top: 3.2rem;
   padding-left: 2rem;
 }
@@ -176,16 +199,12 @@ a {
 }
 
 .p-card__main {
-  width: 61rem;
-  height: 120rem;
-}
-
-.p-card__main-text {
-  background-color: #FFFFFF;
-  opacity: 0.8;
+  width: 48%;
 }
 
 .p-main__title {
+  margin: 5% 3%;
+  padding-bottom: 95%;
   font-size: clamp(4.4rem, 1.658rem + 3.288vw, 8rem);
   position: relative;
 }
@@ -193,25 +212,140 @@ a {
   content: "";
   display: block;
   position: absolute;
-  width: 6rem;
-  border: 0.2rem solid #FFFFFF;
   z-index: 10;
+  width: 10%;
+  top: 20%;
+  border: 0.2rem solid #FFFFFF;
 }
 
-.p-main__TakeOut {
-  background: url(../../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg) no-repeat center center;
+.p-main--TakeOut {
+  background-image: url(../../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg);
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.p-main__EatIn {
-  background: url(../../../img/473d814b175bd517b56eb309f2958725.jpg) no-repeat center center;
+.p-main--EatIn {
+  background-image: url(../../../img/473d814b175bd517b56eb309f2958725.jpg);
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.p-main__body {
+  margin: 3% 3%;
+}
+
+.p-main__sub {
+  padding: 1.5% 3%;
+}
+
+.p-main__sub + .p-main__sub {
+  margin-top: 3%;
+}
+
+.p-main__sub-text {
+  margin-top: 2%;
+}
+
+.p-main__map {
+  background-image: url(../../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #646464;
+  background-blend-mode: soft-light;
+}
+
+.p-main__map-title {
+  font-size: clamp(3rem, 2.539rem + 0.552vw, 3.6rem);
+  position: relative;
+}
+.p-main__map-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 10%;
+  top: 170%;
+  border: 0.2rem solid #FFFFFF;
+}
+
+.p-main__map-entry {
+  width: 60%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5% 7%;
+}
+
+.p-main__map-body {
+  margin-top: 15%;
+  line-height: 3.3rem;
+}
+
+.p-footer {
+  text-align: center;
+  margin: 2% 0 1% 0;
+}
+.p-footer p {
+  margin-top: 1.5%;
+  font-size: 1.4rem;
+}
+
+.p-footer__link {
+  font-size: 2rem;
+}
+.p-footer__link ul {
+  justify-content: center;
+  position: relative;
+}
+.p-footer__link ul::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 2rem;
+  transform: rotate(90deg);
+  border: 0.1rem solid #FFFFFF;
+  top: 45%;
+  left: 50%;
+}
+
+.p-footer__link--shop + .p-footer__link--history {
+  margin-left: 3%;
+}
+
+.p-footer__layer {
+  background-image: url(../../../img/レイヤー\ 1.jpg);
+}
+
+.u_m-0 {
+  margin: 0 auto;
 }
 
 .u_fw-700 {
   font-weight: 700;
 }
 
+.u_fs-34 {
+  font-size: clamp(1.7rem, 0.394rem + 1.565vw, 3.4rem);
+}
+
+.u_fs-24 {
+  font-size: clamp(1.2rem, 0.278rem + 1.105vw, 2.4rem);
+}
+
+.u_fs-16 {
+  font-size: clamp(0.8rem, 0.186rem + 0.737vw, 1.6rem);
+}
+
+.u_ff-M {
+  font-family: "M PLUS 1", sans-serif;
+}
+
 .u_white {
   color: #FFFFFF;
+}
+
+.u-bg_white {
+  background: rgba(255, 255, 255, 0.8);
 }/*# sourceMappingURL=app.css.map */

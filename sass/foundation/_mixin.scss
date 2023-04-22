@@ -1,0 +1,29 @@
+@use "./variable" as var;
+
+
+@mixin main-cade($img){
+    // height: 120rem;
+    width: 40%;
+  
+    background:($img);
+
+}
+
+@mixin bg-img($path, $size: cover, $pos: center center, $repeat: no-repeat) {
+    background-image: ($path);
+    background-size: $size;
+    background-position: $pos;
+    background-repeat: $repeat;
+    // padding-top: 60%;
+    // padding-bottom: 60%;
+}
+
+@mixin after{
+    content: "";
+    display: block;
+    position: absolute;
+    
+    z-index: 10;
+   
+}
+  
