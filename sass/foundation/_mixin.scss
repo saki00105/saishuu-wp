@@ -2,28 +2,55 @@
 
 
 @mixin main-cade($img){
-    // height: 120rem;
     width: 40%;
-  
     background:($img);
-
 }
 
+//backgroundの設定
 @mixin bg-img($path, $size: cover, $pos: center center, $repeat: no-repeat) {
     background-image: ($path);
     background-size: $size;
     background-position: $pos;
     background-repeat: $repeat;
-    // padding-top: 60%;
-    // padding-bottom: 60%;
 }
 
+//疑似要素
 @mixin after{
     content: "";
     display: block;
     position: absolute;
-    
     z-index: 10;
    
 }
-  
+
+
+
+// ブレイクポイント
+$pc-1: 1280px;
+$pc-2:1024px;
+$tab: 768px;
+$sp: 767px;
+
+@mixin pc-1 {
+  @media screen and (min-width: ($pc-1)) {
+    @content;
+  }
+}
+
+@mixin pc-2 {
+    @media screen and (min-width: ($pc-2)) {
+      @content;
+    }
+}
+
+@mixin tab {
+  @media screen and (min-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}

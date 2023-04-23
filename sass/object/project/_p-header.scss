@@ -1,38 +1,62 @@
 @use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
 
 .p-header{
-    font-size: 1.6rem;
-    margin: 4% 1.6%;
-    position: relative;
-    height: 2.4rem;
-    width: 35%;
-    &::before{
-        content: "";
-        width: 100%;
-        height: 100%; 
-        background: url(/img/mushimegane.png) no-repeat center center / auto 100%;
-        display: inline-block;
-        position: absolute;
-        top: 1.2rem;
-        right: 45%;
-        z-index: 10;
-    }
+    @include m.pc-2{
+        font-size: 1.6rem;
+        margin: 4% 1.6%;
+        position: relative;
+        height: 2.4rem;
+        width: 35%;
 
-    &--search{
-        margin-right: 1.1rem;
-        border: 0.1rem solid var.$sidber-text;
-        border-radius: 1rem;
-        vertical-align: middle;
-        height: 4.6rem;
-        width: 70%;
-    }
-    &--submit{
-        border: 0.1rem solid var.$sidber-text;
-        border-radius: 1rem;
-        vertical-align: middle;
-        height: 4.6rem;
-        width: 25%;
+        &::before{
+            @include after;
+            width: 100%;
+            height: 100%; 
+            background: url(/img/mushimegane.png) no-repeat center center / auto 100%;
+            display: inline-block;
+            top: 1.2rem;
+            right: 43%;
+        }
 
+        &--search{
+            margin-right: 1.1rem;
+            border: 0.1rem solid var.$sidber-text;
+            border-radius: 1rem;
+            vertical-align: middle;
+            height: 4.6rem;
+            width: 70%;
+        }
+        &--submit{
+            border: 0.1rem solid var.$sidber-text;
+            border-radius: 1rem;
+            vertical-align: middle;
+            height: 4.6rem;
+            width: 25%;
+
+        
+        }
+
+
+        @include m.pc-1{
+            // font-size: 1.6rem;
+            // margin: 4% 1.6%;
+            // position: relative;
+            // height: 2.4rem;
+            // width: 35%;
+            &::before{
+                // @include after;
+                // width: 100%;
+                // height: 100%; 
+                // background: url(/img/mushimegane.png) no-repeat center center / auto 100%;
+                // display: inline-block;
+                // top: 1.2rem;
+                right: 45%;
+            }
+
+            
+        }
     }
 }
 
