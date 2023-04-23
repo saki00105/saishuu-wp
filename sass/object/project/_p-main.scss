@@ -9,12 +9,12 @@
     @include m.tab{
         font-size: clamp(4.1rem, 3.2rem + 1.172vw, 4.4rem);
         margin: 2% 4%;
-        padding-bottom: 95%;
+        padding-bottom: 70%;
 
         &::after{
             @include after;
             width: 10%;
-            top: 18%;
+            top: 25%;
             border: 0.2rem solid var.$white;
         }
         
@@ -64,7 +64,7 @@
 
     @include m.tab{
 
-        padding: 1.5% 3%;
+        padding: 3% 6%;
     }
 
 
@@ -94,21 +94,22 @@
     }
 
     @include m.pc{
-        font-size: clamp(0.8rem, -0.114rem + 0.893vw, 1.6rem);
+        // font-size: clamp(0.8rem, -0.114rem + 0.893vw, 1.6rem);
+        font-size: 2.4rem;
     }
 
 }
 .p-main__sub-text{
 
     @include m.tab{
-        margin-top: 2%;
+        margin-top: 5%;
         font-size: 1.4rem;
     }
 
 
     @include m.pc{
         margin-top: 2%;
-        font-size: clamp(0.8rem, -0.114rem + 0.893vw, 1.6rem);
+        font-size: clamp(1.4rem, 1.171rem + 0.223vw, 1.6rem)
 
     }
 }
@@ -122,30 +123,59 @@
 }
 
 .p-map__title{
+    position: relative;
+    &::after{
+        @include after;
+        width: 10%;
+        border: 0.2rem solid var.$white;
+
+    }
+
+    @include m.tab{
+        font-size: 3rem;
+        &::after{
+            top: 135%;
+        }   
+    }
+
+
     @include m.pc{
         font-size: clamp(3rem, 2.539rem + 0.552vw, 3.6rem);
-        position: relative;
+        // position: relative;
     
         &::after{
-            @include after;
             width: 10%;
             top: 170%;
-            border: 0.2rem solid var.$white;
 
         }
     }
 }
 
 .p-map__entry{
+
+    background:rgba(0,0,0,0.4);
+
+    @include m.tab{
+        padding: 7% 5%;
+    }
+
+
     @include m.pc{
         width: 60%;
-        background:rgba(0,0,0,0.4);
         padding: 5% 7%;
     }
 }
 .p-map__body{
+    line-height: 3.3rem;
+
+
+    @include m.tab{
+        font-size: 1.4rem;
+        margin-top: 5%;
+    }
+
+
     @include m.pc{
         margin-top: 15%;
-        line-height: 3.3rem
     }
 }
