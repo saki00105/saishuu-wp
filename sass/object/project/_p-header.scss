@@ -1,38 +1,63 @@
 @use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
 
 .p-header{
-    font-size: 1.6rem;
-    margin: 4% 1.6%;
     position: relative;
     height: 2.4rem;
-    width: 35%;
+    font-size: 1.6rem;
+
     &::before{
-        content: "";
-        width: 100%;
-        height: 100%; 
+        @include after;
+        width: 2.4rem;
+        height: 2.4rem; 
         background: url(/img/mushimegane.png) no-repeat center center / auto 100%;
         display: inline-block;
-        position: absolute;
         top: 1.2rem;
-        right: 45%;
-        z-index: 10;
     }
 
-    &--search{
+    &__search{
         margin-right: 1.1rem;
         border: 0.1rem solid var.$sidber-text;
         border-radius: 1rem;
         vertical-align: middle;
         height: 4.6rem;
-        width: 70%;
     }
-    &--submit{
+
+    &__submit{
         border: 0.1rem solid var.$sidber-text;
         border-radius: 1rem;
         vertical-align: middle;
         height: 4.6rem;
-        width: 25%;
+    }
 
+
+    @include m.tab{
+        margin-top: 5%;
+    
+        &::before{
+            left: 18.5%;
+        }
+        &__search{  
+            width: 47%;
+        }
+        &__submit{
+            width: 17%;
+        }
+    }
+
+    @include m.pc{
+        margin: 4% 1.6%;
+        width: 35%;
+        &::before{
+            left: 1.5rem;
+        }
+        &__search{
+            width: 70%;
+        }
+        &__submit{
+            width: 25%;
+        }
     }
 }
 
