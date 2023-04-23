@@ -73,15 +73,17 @@ img {
   z-index: -10;
 }
 
+.l-footer {
+  background-image: url("../../img/レイヤー 1.jpg");
+  background-color: #9D8670;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
 @media screen and (min-width: 1024px) {
   .l-footer {
     grid-row: 3/4;
     grid-column: 1/4;
-    background-image: url("../../img/レイヤー 1.jpg");
-    background-color: #9D8670;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
   }
 }
 
@@ -452,42 +454,60 @@ img {
   }
 }
 
+.p-footer {
+  text-align: center;
+}
+.p-footer p {
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-footer {
+    padding: 4% 0 2%;
+  }
+  .p-footer p {
+    margin-top: 5%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .p-footer {
-    text-align: center;
     margin: 2% 0 1% 0;
   }
   .p-footer p {
-    margin-top: 1.5%;
-    font-size: 1.4rem;
+    margin-top: 2%;
   }
 }
 
+.p-footer__link {
+  font-size: 1.8rem;
+}
+.p-footer__link ul {
+  justify-content: center;
+  position: relative;
+}
+.p-footer__link ul::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 2rem;
+  transform: rotate(90deg);
+  border: 0.1rem solid #FFFFFF;
+  top: 45%;
+  left: 50%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-footer__link {
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .p-footer__link {
     font-size: 2rem;
   }
-  .p-footer__link ul {
-    justify-content: center;
-    position: relative;
-  }
-  .p-footer__link ul::after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 10;
-    width: 2rem;
-    transform: rotate(90deg);
-    border: 0.1rem solid #FFFFFF;
-    top: 45%;
-    left: 50%;
-  }
 }
 
-@media screen and (min-width: 1024px) {
-  .p-footer__link--shop + .p-footer__link--history {
-    margin-left: 3%;
-  }
+.p-footer__link--shop + .p-footer__link--history {
+  margin-left: 3%;
 }
 
 .p-footer__layer {
