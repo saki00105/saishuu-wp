@@ -85,19 +85,50 @@ img {
   }
 }
 
+.l-header {
+  background-color: #FFF7EF;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .l-header {
+    padding: 5% 0;
+    text-align: center;
+  }
+  .l-header__title {
+    font-size: 4rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .l-header {
+    display: flex;
     justify-content: space-between;
     grid-row: 1/2;
     grid-column: 1/2;
-    background-color: #FFF7EF;
   }
   .l-header__title {
     margin: 2.3% 3.3% 2.4%;
-    font-size: clamp(4rem, 2.153rem + 2.212vw, 6.4rem);
+    font-size: clamp(4rem, 1.257rem + 2.679vw, 6.4rem);
   }
 }
 
+.l-main__visual {
+  height: 28rem;
+  width: auto;
+  position: relative;
+  background-image: url(../../img/mainvisual-pc@2x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+}
+.l-main__title {
+  position: absolute;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .l-main__title {
+    top: 12rem;
+    left: 8.6rem;
+    font-size: 3.6rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .l-main {
     grid-row: 2/3;
@@ -105,21 +136,20 @@ img {
   }
   .l-main__visual {
     height: 53rem;
-    width: auto;
-    position: relative;
-    background-image: url(../../img/mainvisual-pc@2x.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
   }
   .l-main__title {
-    position: absolute;
-    font-size: clamp(3.6rem, 3.293rem + 0.368vw, 4rem);
+    font-size: clamp(3.6rem, 3.143rem + 0.446vw, 4rem);
     top: 23.4rem;
     left: 8.6rem;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .l-section {
+    margin: 4% 4%;
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 1024px) {
   .l-section {
     margin: 5% 5%;
@@ -160,45 +190,62 @@ img {
   justify-content: space-between;
 }
 
+.p-header {
+  position: relative;
+  height: 2.4rem;
+  font-size: 1.6rem;
+}
+.p-header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(/img/mushimegane.png) no-repeat center center/auto 100%;
+  display: inline-block;
+  top: 1.2rem;
+}
+.p-header__search {
+  margin-right: 1.1rem;
+  border: 0.1rem solid #707070;
+  border-radius: 1rem;
+  vertical-align: middle;
+  height: 4.6rem;
+}
+.p-header__submit {
+  border: 0.1rem solid #707070;
+  border-radius: 1rem;
+  vertical-align: middle;
+  height: 4.6rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-header {
+    margin-top: 3%;
+  }
+  .p-header::before {
+    left: 19.5%;
+  }
+  .p-header__search {
+    width: 47%;
+  }
+  .p-header__submit {
+    width: 15%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .p-header {
-    font-size: 1.6rem;
     margin: 4% 1.6%;
-    position: relative;
-    height: 2.4rem;
     width: 35%;
   }
   .p-header::before {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    background: url(/img/mushimegane.png) no-repeat center center/auto 100%;
-    display: inline-block;
-    top: 1.2rem;
-    right: 43%;
+    left: 1.5rem;
   }
-  .p-header--search {
-    margin-right: 1.1rem;
-    border: 0.1rem solid #707070;
-    border-radius: 1rem;
-    vertical-align: middle;
-    height: 4.6rem;
+  .p-header__search {
     width: 70%;
   }
-  .p-header--submit {
-    border: 0.1rem solid #707070;
-    border-radius: 1rem;
-    vertical-align: middle;
-    height: 4.6rem;
+  .p-header__submit {
     width: 25%;
-  }
-}
-@media screen and (min-width: 1024px) and (min-width: 1280px) {
-  .p-header::before {
-    right: 45%;
   }
 }
 
@@ -222,18 +269,41 @@ img {
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-card__main {
+    width: 48%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .p-card__main {
     width: 48%;
   }
 }
 
+.p-main__title {
+  position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-main__title {
+    font-size: clamp(4.1rem, 3.2rem + 1.172vw, 4.4rem);
+    margin: 2% 4%;
+    padding-bottom: 95%;
+  }
+  .p-main__title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 10%;
+    top: 18%;
+    border: 0.2rem solid #FFFFFF;
+  }
+}
 @media screen and (min-width: 1024px) {
   .p-main__title {
     margin: 5% 3%;
     padding-bottom: 95%;
-    font-size: clamp(4.4rem, 1.658rem + 3.288vw, 8rem);
-    position: relative;
+    font-size: clamp(4.4rem, 0.286rem + 4.018vw, 8rem);
   }
   .p-main__title::after {
     content: "";
@@ -249,56 +319,86 @@ img {
 .p-main--TakeOut {
   background-image: url(../../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg);
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
 }
 
 .p-main--EatIn {
   background-image: url(../../../img/473d814b175bd517b56eb309f2958725.jpg);
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-main__body {
+    margin: 3% 3%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .p-main__body {
     margin: 3% 3%;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-main__sub {
+    padding: 1.5% 3%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .p-main__sub {
     padding: 1.5% 3%;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-main__sub + .p-main__sub {
+    margin-top: 3%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .p-main__sub + .p-main__sub {
     margin-top: 3%;
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-main__sub-title {
+    font-size: clamp(2.2rem, 1.6rem + 0.781vw, 2.4rem);
+  }
+}
 @media screen and (min-width: 1024px) {
-  .p-main__sub-text {
-    margin-top: 2%;
+  .p-main__sub-title {
+    font-size: clamp(0.8rem, -0.114rem + 0.893vw, 1.6rem);
   }
 }
 
-.p-main__map {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-main__sub-text {
+    margin-top: 2%;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-main__sub-text {
+    margin-top: 2%;
+    font-size: clamp(0.8rem, -0.114rem + 0.893vw, 1.6rem);
+  }
+}
+
+.p-map {
   background-image: url(../../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
   background-color: #646464;
   background-blend-mode: soft-light;
 }
 
 @media screen and (min-width: 1024px) {
-  .p-main__map-title {
+  .p-map__title {
     font-size: clamp(3rem, 2.539rem + 0.552vw, 3.6rem);
     position: relative;
   }
-  .p-main__map-title::after {
+  .p-map__title::after {
     content: "";
     display: block;
     position: absolute;
@@ -310,7 +410,7 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  .p-main__map-entry {
+  .p-map__entry {
     width: 60%;
     background: rgba(0, 0, 0, 0.4);
     padding: 5% 7%;
@@ -318,7 +418,7 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  .p-main__map-body {
+  .p-map__body {
     margin-top: 15%;
     line-height: 3.3rem;
   }

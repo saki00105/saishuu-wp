@@ -17,7 +17,7 @@
         padding-left: 2rem;
     }
     
-    @include m.pc-2{
+    @include m.pc{
         font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
 
     }

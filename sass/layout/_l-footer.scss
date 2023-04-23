@@ -2,7 +2,7 @@
 @use "../foundation/mixin" as m;
 
 .l-footer{
-    @include m.pc-2{
+    @include m.pc{
         grid-row:3/4;
         grid-column:1/4;
 

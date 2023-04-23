@@ -3,15 +3,16 @@
 
 
 .l-container{
-
-
-    
-
+   
 
 
 
 
-    @include m.pc-2{
+
+
+
+
+    @include m.pc{
         display: grid;
         width:100%;
         grid-template-rows: auto 1fr auto ;

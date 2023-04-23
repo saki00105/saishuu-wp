@@ -7,10 +7,10 @@
 }
 
 //backgroundの設定
-@mixin bg-img($path, $size: cover, $pos: center center, $repeat: no-repeat) {
+@mixin bg-img($path, $size: cover, $repeat: no-repeat) {
     background-image: ($path);
     background-size: $size;
-    background-position: $pos;
+    // background-position: $pos;
     background-repeat: $repeat;
 }
 
@@ -26,28 +26,29 @@
 
 
 // ブレイクポイント
-$pc-1: 1280px;
-$pc-2:1024px;
+// $pc-1: 1280px;
+$pc:1024px;
 $tab: 768px;
 $sp: 767px;
 
-@mixin pc-1 {
-  @media screen and (min-width: ($pc-1)) {
-    @content;
-  }
-}
+// @mixin pc-1 {
+//   @media screen and (min-width: ($pc-1)) {
+//     @content;
+//   }
+// }
 
-@mixin pc-2 {
-    @media screen and (min-width: ($pc-2)) {
+@mixin pc {
+    @media screen and (min-width: ($pc)) {
       @content;
     }
 }
 
 @mixin tab {
-  @media screen and (min-width: ($tab)) {
+  @media screen and (min-width: ($tab) ) and (max-width:($pc)) {
     @content;
   }
 }
+
 
 @mixin sp {
   @media screen and (max-width: ($sp)) {

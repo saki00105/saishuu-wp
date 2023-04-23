@@ -3,7 +3,12 @@
 
 
 .p-card__main{
-    @include m.pc-2{
+
+    @include m.tab{
+        width: 48%;
+    }
+
+    @include m.pc{
         width: 48%;
     }
 }

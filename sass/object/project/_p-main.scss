@@ -3,11 +3,31 @@
 
 
 .p-main__title{
-    @include m.pc-2{
+    position: relative;
+
+
+    @include m.tab{
+        font-size: clamp(4.1rem, 3.2rem + 1.172vw, 4.4rem);
+        margin: 2% 4%;
+        padding-bottom: 95%;
+
+        &::after{
+            @include after;
+            width: 10%;
+            top: 18%;
+            border: 0.2rem solid var.$white;
+        }
+        
+        
+    }
+
+
+
+    @include m.pc{
         margin:5% 3%;
         padding-bottom: 95%;
-        font-size:clamp(4.4rem, 1.658rem + 3.288vw, 8rem) ;
-        position: relative;
+        font-size:clamp(4.4rem, 0.286rem + 4.018vw, 8rem);
+        // position: relative;
     
         &::after{
             @include after;
@@ -29,38 +49,80 @@
 }
 
 .p-main__body{
-    @include m.pc-2{
+
+    @include m.tab{
+        margin: 3% 3%;
+    }
+
+
+    @include m.pc{
         margin: 3% 3%;
     }
 }
 
 .p-main__sub{
-    @include m.pc-2{
+
+    @include m.tab{
+
+        padding: 1.5% 3%;
+    }
+
+
+    @include m.pc{
         padding: 1.5% 3%;
     }
 }
 
 .p-main__sub + .p-main__sub{
-    @include m.pc-2{
+
+    @include m.tab{
+        margin-top: 3%;
+    }
+
+
+    @include m.pc{
         margin-top: 3%;
     }
 
 }
 
+
+.p-main__sub-title{
+
+    @include m.tab{
+        font-size: clamp(2.2rem, 1.6rem + 0.781vw, 2.4rem);
+    }
+
+    @include m.pc{
+        font-size: clamp(0.8rem, -0.114rem + 0.893vw, 1.6rem);
+    }
+
+}
 .p-main__sub-text{
-    @include m.pc-2{
+
+    @include m.tab{
         margin-top: 2%;
+        font-size: 1.4rem;
+    }
+
+
+    @include m.pc{
+        margin-top: 2%;
+        font-size: clamp(0.8rem, -0.114rem + 0.893vw, 1.6rem);
+
     }
 }
 
-.p-main__map{
+
+//地図
+.p-map{
     @include bg-img(url(../../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg));
     background-color: #646464;
     background-blend-mode:soft-light;
 }
 
-.p-main__map-title{
-    @include m.pc-2{
+.p-map__title{
+    @include m.pc{
         font-size: clamp(3rem, 2.539rem + 0.552vw, 3.6rem);
         position: relative;
     
@@ -74,15 +136,15 @@
     }
 }
 
-.p-main__map-entry{
-    @include m.pc-2{
+.p-map__entry{
+    @include m.pc{
         width: 60%;
         background:rgba(0,0,0,0.4);
         padding: 5% 7%;
     }
 }
-.p-main__map-body{
-    @include m.pc-2{
+.p-map__body{
+    @include m.pc{
         margin-top: 15%;
         line-height: 3.3rem
     }

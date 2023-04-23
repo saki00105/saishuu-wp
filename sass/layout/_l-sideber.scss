@@ -2,7 +2,7 @@
 @use "../foundation/mixin" as m;
 
 .l-sideber{
-    @include m.pc-2{
+    @include m.pc{
         grid-row:1/3;
         grid-column:2/3; 
         background-color: $sideber-color;

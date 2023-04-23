@@ -5,7 +5,7 @@
 .p-footer{
 
 
-    @include m.pc-2{
+    @include m.pc{
         text-align: center;
         margin: 2% 0 1% 0;
         p{
@@ -16,7 +16,7 @@
 }
 
 .p-footer__link{
-    @include m.pc-2{
+    @include m.pc{
         font-size: 2rem;
         ul{
             justify-content: center;
@@ -35,7 +35,7 @@
     }
 }
 .p-footer__link--shop + .p-footer__link--history{
-    @include m.pc-2{
+    @include m.pc{
         margin-left: 3%;
     }
 }
