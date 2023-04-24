@@ -3,17 +3,23 @@
 
 .l-header{
     background-color: var.$header-color;
+    text-align: center;
+    padding: 10% 0 5%;
+    
+    &__title{
+        font-size: 4rem;
+    }
+
 
     @include m.tab{
         // height: 12%;
         // flex-flow: column;
         padding: 5% 0 7%;
-        text-align: center;
 
 
-        &__title{
-            font-size: 4rem;
-        }
+        // &__title{
+        //     font-size: 4rem;
+        // }
     }
 
     @include m.pc{

@@ -89,14 +89,15 @@ img {
 
 .l-header {
   background-color: #FFF7EF;
+  text-align: center;
+  padding: 10% 0 5%;
+}
+.l-header__title {
+  font-size: 4rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .l-header {
     padding: 5% 0 7%;
-    text-align: center;
-  }
-  .l-header__title {
-    font-size: 4rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -116,19 +117,26 @@ img {
   height: 28rem;
   width: auto;
   position: relative;
-  background-image: url(../../img/mainvisual-pc@2x.jpg);
+  background-image: url(../../img/mainvisual-sp@2x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 50%;
+  background-position: center;
 }
 .l-main__title {
   position: absolute;
+  top: 12.2rem;
+  left: 2.5rem;
+  font-size: 3.6rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .l-main__visual {
+    background-image: url(../../img/mainvisual-pc@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
   .l-main__title {
-    top: 12rem;
     left: 8.6rem;
-    font-size: 3.6rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -146,6 +154,11 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .l-section {
+    flex-flow: column;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .l-section {
     margin: 4% 4%;
@@ -196,6 +209,7 @@ img {
   position: relative;
   height: 2.4rem;
   font-size: 1.6rem;
+  margin: 7% 0 10%;
 }
 .p-header::before {
   content: "";
@@ -207,6 +221,7 @@ img {
   background: url(/img/mushimegane.png) no-repeat center center/auto 100%;
   display: inline-block;
   top: 1.2rem;
+  left: 10%;
 }
 .p-header__search {
   margin-right: 1.1rem;
@@ -214,12 +229,14 @@ img {
   border-radius: 1rem;
   vertical-align: middle;
   height: 4.6rem;
+  width: 58%;
 }
 .p-header__submit {
   border: 0.1rem solid #707070;
   border-radius: 1rem;
   vertical-align: middle;
   height: 4.6rem;
+  width: 23%;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-header {
@@ -284,6 +301,7 @@ img {
 
 .p-main__title {
   position: relative;
+  font-size: 4.1rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-main__title {
