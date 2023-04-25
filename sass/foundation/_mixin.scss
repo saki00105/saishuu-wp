@@ -26,16 +26,9 @@
 
 
 // ブレイクポイント
-// $pc-1: 1280px;
 $pc:1024px;
 $tab: 768px;
 $sp: 768px;
-
-// @mixin pc-1 {
-//   @media screen and (min-width: ($pc-1)) {
-//     @content;
-//   }
-// }
 
 @mixin pc {
     @media screen and (min-width: ($pc)) {

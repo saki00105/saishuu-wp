@@ -9,6 +9,12 @@
         font-size: 1.4rem;
     }
 
+    @include m.sp{
+        padding: 5% 0 3%;
+        p{
+            margin-top: 18%;
+        }
+    }
 
     @include m.tab{
         padding: 4% 0 2%;
@@ -40,6 +46,10 @@
             top: 45%;
             left: 50%;
         }
+    }
+
+    @include m.sp{
+        font-size: 1.8rem;
     }
 
     @include m.tab{
