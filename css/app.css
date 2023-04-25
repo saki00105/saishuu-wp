@@ -90,10 +90,14 @@ img {
 .l-header {
   background-color: #FFF7EF;
   text-align: center;
-  padding: 10% 0 5%;
 }
 .l-header__title {
   font-size: 4rem;
+}
+@media screen and (max-width: 768px) {
+  .l-header {
+    padding: 10% 0 5%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .l-header {
@@ -114,29 +118,38 @@ img {
 }
 
 .l-main__visual {
-  height: 28rem;
   width: auto;
   position: relative;
-  background-image: url(../../img/mainvisual-sp@2x.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .l-main__title {
   position: absolute;
-  top: 12.2rem;
-  left: 2.5rem;
-  font-size: 3.6rem;
+}
+@media screen and (max-width: 768px) {
+  .l-main__visual {
+    height: 28rem;
+    background-image: url(../../img/mainvisual-sp@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .l-main__title {
+    top: 12.2rem;
+    left: 2.5rem;
+    font-size: 3.6rem;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .l-main__visual {
+    height: 28rem;
     background-image: url(../../img/mainvisual-pc@2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 50%;
   }
   .l-main__title {
+    top: 12rem;
     left: 8.6rem;
+    font-size: 3.6rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -146,6 +159,10 @@ img {
   }
   .l-main__visual {
     height: 53rem;
+    background-image: url(../../img/mainvisual-pc@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
   }
   .l-main__title {
     font-size: clamp(3.6rem, 3.143rem + 0.446vw, 4rem);
@@ -154,9 +171,10 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .l-section {
     flex-flow: column;
+    margin: 6%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -209,7 +227,6 @@ img {
   position: relative;
   height: 2.4rem;
   font-size: 1.6rem;
-  margin: 7% 0 10%;
 }
 .p-header::before {
   content: "";
@@ -221,7 +238,6 @@ img {
   background: url(/img/mushimegane.png) no-repeat center center/auto 100%;
   display: inline-block;
   top: 1.2rem;
-  left: 10%;
 }
 .p-header__search {
   margin-right: 1.1rem;
@@ -229,14 +245,26 @@ img {
   border-radius: 1rem;
   vertical-align: middle;
   height: 4.6rem;
-  width: 58%;
 }
 .p-header__submit {
   border: 0.1rem solid #707070;
   border-radius: 1rem;
   vertical-align: middle;
   height: 4.6rem;
-  width: 23%;
+}
+@media screen and (max-width: 768px) {
+  .p-header {
+    margin: 7% 0 10%;
+  }
+  .p-header::before {
+    left: 10%;
+  }
+  .p-header__search {
+    width: 58%;
+  }
+  .p-header__submit {
+    width: 23%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-header {
@@ -301,7 +329,22 @@ img {
 
 .p-main__title {
   position: relative;
-  font-size: 4.1rem;
+}
+@media screen and (max-width: 768px) {
+  .p-main__title {
+    font-size: 4.1rem;
+    margin: 3% 6%;
+    padding-bottom: 70%;
+  }
+  .p-main__title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 10%;
+    top: 99%;
+    border: 0.2rem solid #FFFFFF;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-main__title {
@@ -341,6 +384,11 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .p-main--TakeOut {
+    background-position: center center;
+  }
+}
 
 .p-main--EatIn {
   background-image: url(../../../img/473d814b175bd517b56eb309f2958725.jpg);
@@ -348,6 +396,11 @@ img {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 768px) {
+  .p-main__body {
+    margin: 3% 3%;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-main__body {
     margin: 3% 3%;
@@ -359,6 +412,11 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .p-main__sub {
+    padding: 3% 6 .p-main__sub;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-main__sub {
     padding: 3% 6%;
@@ -370,6 +428,11 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .p-main__sub + .p-main__sub {
+    margin-top: 3%;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-main__sub + .p-main__sub {
     margin-top: 3%;
@@ -381,6 +444,11 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .p-main__sub-title {
+    font-size: 2.2rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-main__sub-title {
     font-size: clamp(2.2rem, 1.6rem + 0.781vw, 2.4rem);
@@ -392,6 +460,12 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .p-main__sub-text {
+    margin-top: 5%;
+    font-size: 1.6rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-main__sub-text {
     margin-top: 5%;

@@ -4,7 +4,21 @@
 
 .p-main__title{
     position: relative;
-    font-size: 4.1rem;
+
+    @include m.sp{
+        font-size: 4.1rem;
+        margin: 3% 6%;
+        padding-bottom: 70%;
+
+        &::after{
+            @include after;
+            width: 10%;
+            top: 99%;
+            border: 0.2rem solid var.$white;
+
+        }
+
+    }
 
 
     @include m.tab{
@@ -18,17 +32,12 @@
             top: 25%;
             border: 0.2rem solid var.$white;
         }
-        
-        
     }
-
-
 
     @include m.pc{
         margin:5% 3%;
         padding-bottom: 95%;
         font-size:clamp(4.4rem, 0.286rem + 4.018vw, 8rem);
-        // position: relative;
     
         &::after{
             @include after;
@@ -43,6 +52,9 @@
 
 .p-main--TakeOut{
     @include bg-img(url(../../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg));
+    @include m.sp{
+        background-position: center center
+    }
 }
 
 .p-main--EatIn{
@@ -50,6 +62,9 @@
 }
 
 .p-main__body{
+    @include m.sp{
+        margin: 3% 3%;
+    }
 
     @include m.tab{
         margin: 3% 3%;
@@ -62,6 +77,9 @@
 }
 
 .p-main__sub{
+    @include m.sp{
+        padding: 3% 6&;
+    }
 
     @include m.tab{
 
@@ -76,6 +94,10 @@
 
 .p-main__sub + .p-main__sub{
 
+    @include m.sp{
+        margin-top: 3%;
+    }
+
     @include m.tab{
         margin-top: 3%;
     }
@@ -89,18 +111,24 @@
 
 
 .p-main__sub-title{
+    @include m.sp{
+        font-size: 2.2rem;
+    }
 
     @include m.tab{
         font-size: clamp(2.2rem, 1.6rem + 0.781vw, 2.4rem);
     }
 
     @include m.pc{
-        // font-size: clamp(0.8rem, -0.114rem + 0.893vw, 1.6rem);
         font-size: 2.4rem;
     }
 
 }
 .p-main__sub-text{
+    @include m.sp{
+        margin-top: 5%;
+        font-size: 1.6rem;
+    }
 
     @include m.tab{
         margin-top: 5%;
