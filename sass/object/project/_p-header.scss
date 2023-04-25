@@ -6,7 +6,6 @@
     position: relative;
     height: 2.4rem;
     font-size: 1.6rem;
-    margin: 7% 0 10%;
 
     &::before{
         @include after;
@@ -15,7 +14,6 @@
         background: url(/img/mushimegane.png) no-repeat center center / auto 100%;
         display: inline-block;
         top: 1.2rem;
-        left: 10%;
     }
 
     &__search{
@@ -24,7 +22,6 @@
         border-radius: 1rem;
         vertical-align: middle;
         height: 4.6rem;
-        width: 58%;
     }
 
     &__submit{
@@ -32,7 +29,24 @@
         border-radius: 1rem;
         vertical-align: middle;
         height: 4.6rem;
-        width: 23%;
+    }
+
+    @include m.sp{
+        margin: 7% 0 10%;
+
+        &::before{
+            left: 10%;
+
+        }
+        &__search{
+            width: 58%;
+
+        }
+        &__submit{
+            width: 23%;
+
+        }
+
     }
 
 
