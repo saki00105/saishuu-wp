@@ -327,6 +327,12 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .p-card__main + .p-card__main {
+    margin-top: 7%;
+  }
+}
+
 .p-main__title {
   position: relative;
 }
@@ -342,7 +348,7 @@ img {
     position: absolute;
     z-index: 10;
     width: 10%;
-    top: 99%;
+    top: 23%;
     border: 0.2rem solid #FFFFFF;
   }
 }
@@ -396,25 +402,21 @@ img {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px) {
-  .p-main__body {
-    margin: 3% 3%;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-main__body {
-    margin: 3% 3%;
+    margin: 3%;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-main__body {
-    margin: 3% 3%;
+    margin: 3%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .p-main__sub {
-    padding: 3% 6 .p-main__sub;
+    padding: 4% 6%;
+    margin: 5%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -428,11 +430,6 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .p-main__sub + .p-main__sub {
-    margin-top: 3%;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-main__sub + .p-main__sub {
     margin-top: 3%;
@@ -462,7 +459,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .p-main__sub-text {
-    margin-top: 5%;
+    margin-top: 3%;
     font-size: 1.6rem;
   }
 }
@@ -498,6 +495,15 @@ img {
   width: 10%;
   border: 0.2rem solid #FFFFFF;
 }
+@media screen and (max-width: 768px) {
+  .p-map__title {
+    font-size: 3rem;
+  }
+  .p-map__title::after {
+    top: 20%;
+    width: 25%;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-map__title {
     font-size: 3rem;
@@ -516,23 +522,41 @@ img {
   }
 }
 
-.p-map__entry {
-  background: rgba(0, 0, 0, 0.4);
+@media screen and (max-width: 768px) {
+  .p-map__entry {
+    padding: 10%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-map__entry {
+    background: rgba(0, 0, 0, 0.4);
     padding: 7% 5%;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-map__entry {
+    background: rgba(0, 0, 0, 0.4);
     width: 60%;
     padding: 5% 7%;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .p-map__layer {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 41rem;
+  }
+}
+
 .p-map__body {
   line-height: 3.3rem;
+}
+@media screen and (max-width: 768px) {
+  .p-map__body {
+    font-size: 1.4rem;
+    margin-top: 8%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-map__body {
@@ -551,6 +575,14 @@ img {
 }
 .p-footer p {
   font-size: 1.4rem;
+}
+@media screen and (max-width: 768px) {
+  .p-footer {
+    padding: 5% 0 3%;
+  }
+  .p-footer p {
+    margin-top: 18%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-footer {
@@ -586,6 +618,11 @@ img {
   border: 0.1rem solid #FFFFFF;
   top: 45%;
   left: 50%;
+}
+@media screen and (max-width: 768px) {
+  .p-footer__link {
+    font-size: 1.8rem;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .p-footer__link {

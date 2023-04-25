@@ -14,3 +14,8 @@
     }
 }
 
+.p-card__main + .p-card__main{
+    @include m.sp{
+        margin-top: 7%;
+    }
+}
