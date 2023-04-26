@@ -4,8 +4,6 @@
 .p-sideber{
     margin: 9rem 0 0 14%;
 
-    
-
     &__sub{
         margin-top: 9rem;
     }
@@ -16,16 +14,29 @@
         margin-top: 3.2rem;
         padding-left: 2rem;
     }
-    
-    @include m.pc{
-        font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
 
+    @include m.tab{
+        &__menu{
+
+        }
     }
 
+   
+    
+    @include m.pc{
+
+        font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
+
+        &__menu{
+            font-size: clamp(1.7rem, 0.394rem + 1.565vw, 3.4rem);
+        }
+        &__sub{
+            font-size: clamp(1.2rem, 0.278rem + 1.105vw, 2.4rem);
+        }
+    }
 }
-
-
 
 .p-sideber__item +  .p-sideber__item{
     margin-top: 2rem;
 }
+

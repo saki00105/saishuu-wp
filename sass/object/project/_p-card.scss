@@ -1,10 +1,7 @@
-@use "../../foundation/variable" as var;
 @use "../../foundation/mixin" as m;
 
 
 .p-card__main{
-    
-
     @include m.tab{
         width: 48%;
     }

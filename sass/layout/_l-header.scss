@@ -10,12 +10,9 @@
     }
     @include m.sp{
         padding: 10% 0 5%;
-
     }
 
     @include m.tab{
-        // height: 12%;
-        // flex-flow: column;
         padding: 5% 0 7%;
     }
 
@@ -26,10 +23,7 @@
         grid-column:1/2;
         &__title{
             margin: 2.3% 3.3% 2.4%;
-            // font-size: 6.4rem;
             font-size: clamp(4rem, 1.257rem + 2.679vw, 6.4rem);
-
-
         }
     }
 }
