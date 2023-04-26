@@ -12,7 +12,7 @@
 
         &::after{
             @include after;
-            width: 10%;
+            width: 7.5rem;
             top: 23%;
             border: 0.2rem solid var.$white;
 
@@ -62,9 +62,6 @@
 }
 
 .p-main__body{
-    // @include m.sp{
-    //     margin: 5%;
-    // }
 
     @include m.tab{
         margin: 3%;
