@@ -1,6 +1,6 @@
 @use "./variable" as var;
 
-
+//メインカードの幅
 @mixin main-cade($img){
     width: 40%;
     background:($img);
@@ -16,18 +16,15 @@
 
 //疑似要素
 @mixin after{
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 10;
-   
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
 }
-
-
 
 // ブレイクポイント
 $pc:1024px;
-$tab: 768px;
+$tab: 769px;
 $sp: 768px;
 
 @mixin pc {
@@ -41,7 +38,6 @@ $sp: 768px;
     @content;
   }
 }
-
 
 @mixin sp {
   @media screen and (max-width: ($sp)) {

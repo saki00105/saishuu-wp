@@ -1,22 +1,10 @@
 @use "../foundation/mixin" as m;
 
-
-
 .l-container{
-   
-
-
-
-
-
-
-
-
     @include m.pc{
         display: grid;
         width:100%;
         grid-template-rows: auto 1fr auto ;
         grid-template-columns: 1fr 15%; 
     }
-   
 }

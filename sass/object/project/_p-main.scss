@@ -159,7 +159,7 @@
     @include m.sp{
         font-size: 3rem;
         &::after{
-            top: 20%;
+            top: 145%;
             width: 25%;
         }
     }
@@ -189,6 +189,8 @@
 
     @include m.sp{
         padding: 10%;
+        background:linear-gradient(180deg,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 60%,rgba(255, 255, 255, 0)60%,rgba(255, 255, 255, 0)100%);
+        
     }
 
     @include m.tab{
@@ -206,15 +208,15 @@
     }
 }
 
-.p-map__layer{
+// .p-map__layer{
 
-    @include m.sp{
-        background:rgba(0,0,0,0.4);
-        width: 100%;
-        height: 41rem;
-    }
+//     @include m.sp{
+//         background:rgba(0,0,0,0.4);
+//         width: 100%;
+//         height: 41rem;
+//     }
 
-}
+// }
 
 
 .p-map__body{
@@ -222,7 +224,7 @@
 
     @include m.sp{
         font-size: 1.4rem;
-        margin-top: 8%;
+        margin-top: 15%;
     }
 
 
@@ -234,5 +236,7 @@
 
     @include m.pc{
         margin-top: 15%;
+        font-size: clamp(0.8rem, 0.186rem + 0.737vw, 1.6rem);
+
     }
 }
