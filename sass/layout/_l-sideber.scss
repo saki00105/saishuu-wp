@@ -3,14 +3,15 @@
 
 .l-sideber{
 
-
-
-
     @include m.tab{
         position: fixed;
-        right: -100%;
+        top: 0;
+        // right: -100%;
         transition: right .5s;
         background-color: $sideber-color;
+        z-index: 999;
+        width: 37rem;
+        height: 100%;
     }
     
 
