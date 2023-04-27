@@ -15,6 +15,14 @@
 }
 
 //疑似要素
+@mixin before{
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+}
+
+
 @mixin after{
   content: "";
   display: block;

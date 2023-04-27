@@ -193,9 +193,12 @@ img {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .l-sideber {
     position: fixed;
-    right: -100%;
+    top: 0;
     transition: right 0.5s;
     background-color: #F2EDE9;
+    z-index: 999;
+    width: 37rem;
+    height: 100%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -321,18 +324,54 @@ img {
   }
 }
 
-.p-sideber {
-  margin: 9rem 0 0 14%;
-}
 .p-sideber__sub {
-  margin-top: 9rem;
+  margin-top: 5rem;
 }
 .p-sideber__items {
   margin-top: 3.2rem;
   padding-left: 2rem;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-sideber {
+    margin: 18rem 0 0 4.6rem;
+  }
+  .p-sideber__menu {
+    display: none;
+  }
+  .p-sideber__box::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 5rem;
+    height: 0.6rem;
+    transform: rotate(45deg);
+    background-color: #707070;
+    top: 4rem;
+    right: 2rem;
+  }
+  .p-sideber__box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 5rem;
+    height: 0.6rem;
+    transform: rotate(135deg);
+    background-color: #707070;
+    top: 4rem;
+    right: 2rem;
+  }
+  .p-sideber__sub {
+    font-size: 2.4rem;
+  }
+  .p-sideber__items {
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .p-sideber {
+    margin: 9rem 0 0 14%;
     font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
   }
   .p-sideber__menu {
