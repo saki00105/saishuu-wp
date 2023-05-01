@@ -9,75 +9,50 @@
 
 .p-map__title{
     position: relative;
+    @include m.sp{
+        font-size: 3rem;
+    }
+    @include m.tab{
+        font-size: 3rem;
+    }
+    @include m.pc{
+        font-size: clamp(3rem, 2.539rem + 0.552vw, 3.6rem);
+    }
+
+
     &::after{
         @include after;
         width: 10%;
         border: 0.2rem solid var.$white;
 
-    }
-
-    @include m.sp{
-        font-size: 3rem;
-        &::after{
+        @include m.sp{
             top: 145%;
             width: 25%;
         }
-    }
-
-    @include m.tab{
-        font-size: 3rem;
-        &::after{
+        @include m.tab{
             top: 135%;
-        }   
-    }
-
-
-    @include m.pc{
-        font-size: clamp(3rem, 2.539rem + 0.552vw, 3.6rem);
-        // position: relative;
-    
-        &::after{
+        }
+        @include m.pc{
             width: 10%;
             top: 170%;
-
         }
     }
 }
 
 .p-map__entry{
-
-
     @include m.sp{
         padding: 10%;
-        background:linear-gradient(180deg,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 60%,rgba(255, 255, 255, 0)60%,rgba(255, 255, 255, 0)100%);
-        
     }
 
     @include m.tab{
-        background:rgba(0,0,0,0.4);
-
         padding: 7% 5%;
     }
 
-
     @include m.pc{
-        background:rgba(0,0,0,0.4);
-
         width: 60%;
         padding: 5% 7%;
     }
 }
-
-// .p-map__layer{
-
-//     @include m.sp{
-//         background:rgba(0,0,0,0.4);
-//         width: 100%;
-//         height: 41rem;
-//     }
-
-// }
-
 
 .p-map__body{
     line-height: 3.3rem;
@@ -87,16 +62,13 @@
         margin-top: 15%;
     }
 
-
     @include m.tab{
         font-size: 1.4rem;
         margin-top: 5%;
     }
 
-
     @include m.pc{
         margin-top: 15%;
         font-size: clamp(0.8rem, 0.186rem + 0.737vw, 1.6rem);
-
     }
 }

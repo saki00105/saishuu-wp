@@ -1,6 +1,48 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/mixin" as m;
 
+.p-main{
+    &__visual{
+        width: auto;
+        position: relative;  
+
+        @include m.sp{
+            height: 28rem;
+            @include bg-img(url(../../img/mainvisual-sp@2x.jpg));
+            background-position: center;
+        }
+        @include m.tab{
+            height: 28rem;
+            @include bg-img(url(../../img/mainvisual-pc@2x.jpg));
+            background-position-y: 50%;
+        }
+        @include m.pc{
+            height: 53rem;
+            @include bg-img(url(../../img/mainvisual-pc@2x.jpg));
+            background-position-y: 50%;
+        }
+    }
+    &__visual-title{
+        position: absolute;
+
+        @include m.sp{
+            top: 12.2rem;
+            left: 2.5rem;
+            font-size: 3.6rem;
+        }
+        @include m.tab{
+            top: 12rem;
+            left: 8.6rem;
+            font-size: 3.6rem;
+        }
+        @include m.pc{
+            font-size: clamp(3.6rem, 3.143rem + 0.446vw, 4rem);
+            top:23.4rem ;
+            left:8.6rem ;  
+        }
+
+    }  
+}
 
 .p-main__title{
     position: relative;
@@ -9,28 +51,19 @@
         font-size: 4.1rem;
         margin: 3% 6%;
         padding-bottom: 70%;
-
         &::after{
-            @include after;
-            width: 7.5rem;
+            width: 12%;
             top: 23%;
-            border: 0.2rem solid var.$white;
-
         }
-
     }
-
 
     @include m.tab{
         font-size: clamp(4.1rem, 3.2rem + 1.172vw, 4.4rem);
         margin: 2% 4%;
         padding-bottom: 70%;
-
         &::after{
-            @include after;
             width: 10%;
             top: 25%;
-            border: 0.2rem solid var.$white;
         }
     }
 
@@ -40,11 +73,8 @@
         font-size:clamp(4.4rem, 0.286rem + 4.018vw, 8rem);
     
         &::after{
-            @include after;
             width: 10%;
             top: 20%;
-            border: 0.2rem solid var.$white;
-
         }
     }
 }
@@ -62,12 +92,9 @@
 }
 
 .p-main__body{
-
     @include m.tab{
         margin: 3%;
     }
-
-
     @include m.pc{
         margin: 3%;
     }
@@ -80,10 +107,8 @@
     }
 
     @include m.tab{
-
         padding: 3% 6%;
     }
-
 
     @include m.pc{
         padding: 1.5% 3%;
@@ -95,11 +120,9 @@
         margin-top: 3%;
     }
 
-
     @include m.pc{
         margin-top: 3%;
     }
-
 }
 
 
@@ -128,12 +151,8 @@
         font-size: 1.4rem;
     }
 
-
     @include m.pc{
         margin-top: 2%;
         font-size: clamp(1.4rem, 1.171rem + 0.223vw, 1.6rem)
-
     }
 }
-
-

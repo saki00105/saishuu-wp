@@ -1,0 +1,18 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
+
+.c-border--form{
+    border: 0.1rem solid var.$sidber-text;
+    border-radius: 1rem;
+    vertical-align: middle;
+    border-radius: 10px;
+
+}
+
+.c-border--line{
+    &::after{
+        @include after;
+        border: 0.2rem solid var.$white;
+    }
+}

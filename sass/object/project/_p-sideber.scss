@@ -2,26 +2,31 @@
 
 
 .p-sideber{
-
-    &__sub{
-        margin-top: 5rem;
+    @include m.sp{
+        margin: 18rem 0 0 4.6rem;  
     }
-
-    &__items{
-        // font-size: 2rem;
-        // font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
-        margin-top: 3.2rem;
-        padding-left: 2rem;
-    }
-
     @include m.tab{
         margin: 18rem 0 0 4.6rem;
+    }
+    @include m.pc{
+        margin: 9rem 0 0 14%;
+        font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
+    }
 
-        &__menu{
+    &__menu{
+        @include m.sp{
             display: none;
         }
+        @include m.tab{
+            display: none;
+        }
+        @include m.pc{
+            font-size: clamp(1.7rem, 0.394rem + 1.565vw, 3.4rem);
+        }
+    }
 
-        &__box{
+    &__box{
+        @include m.sp{
             &::before{
                 @include before;
                 width: 5rem;
@@ -41,32 +46,54 @@
                 right: 2rem;
             }
         }
-           
-
-        &__sub{
-            font-size: 2.4rem;
-        }
-        &__items{
-            font-size: 2rem;
+    
+        @include m.tab{
+            &::before{
+                @include before;
+                width: 5rem;
+                height: 0.6rem;
+                transform: rotate(45deg);
+                background-color: $sidber-text;
+                top: 4rem;
+                right: 2rem;
+            }
+            &::after{
+                @include after;
+                width: 5rem;
+                height: 0.6rem;
+                transform: rotate(135deg);
+                background-color: $sidber-text;
+                top: 4rem;
+                right: 2rem;
+            }
         }
     }
-
-   
     
-    @include m.pc{
-        margin: 9rem 0 0 14%;
+    &__sub{
+        margin-top: 5rem;
 
-        font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
-
-        &__menu{
-            font-size: clamp(1.7rem, 0.394rem + 1.565vw, 3.4rem);
+        @include m.sp{
+            font-size: 2.4rem;
         }
-        &__sub{
+        @include m.tab{
+            font-size: 2.4rem;
+        }
+        @include m.pc{
             font-size: clamp(1.2rem, 0.278rem + 1.105vw, 2.4rem);
         }
     }
-}
 
+    &__items{
+        margin-top: 3.2rem;
+        padding-left: 2rem;
+        @include m.sp{
+            font-size: 2rem;
+        }
+        @include m.tab{
+            font-size: 2rem;
+        }
+    }
+}
 .p-sideber__item +  .p-sideber__item{
     margin-top: 2rem;
 }

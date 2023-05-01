@@ -7,6 +7,11 @@
     height: 2.4rem;
     font-size: 1.6rem;
 
+    @include m.pc{
+        margin: 4% 1.6%;
+        width: 35%;
+    }
+
     &::before{
         @include after;
         width: 2.4rem;
@@ -14,67 +19,59 @@
         background: url(/img/mushimegane.png) no-repeat center center / auto 100%;
         display: inline-block;
         top: 1.2rem;
+
+        @include m.sp{
+            left: 10%;
+        }
+        @include m.tab{
+            left: 18.5%;
+        }
+        @include m.pc{
+            left: 1.5rem;
+        }
     }
+
+    &__title{
+        font-size: 4rem;
+        @include m.sp{
+            padding: 10% 0 8%;
+        }
+        @include m.tab{
+            padding: 5% 0 4%;
+        }
+        @include m.pc{
+            margin: 2.3% 3.3% 2.4%;
+            font-size: clamp(4rem, 1.257rem + 2.679vw, 6.4rem);
+        }
+    }
+
 
     &__search{
         margin-right: 1.1rem;
-        border: 0.1rem solid var.$sidber-text;
-        border-radius: 1rem;
-        vertical-align: middle;
         height: 4.6rem;
+        padding-left: 4rem;
+        padding-right: 1rem;
+        @include m.sp{
+            width: 58%;
+        }
+        @include m.tab{
+            width: 47%;
+        }
+        @include m.pc{
+            width: 70%;
+        }
     }
 
     &__submit{
-        border: 0.1rem solid var.$sidber-text;
-        border-radius: 1rem;
-        vertical-align: middle;
         height: 4.6rem;
-    }
-
-    @include m.sp{
-        margin: 7% 0 10%;
-
-        &::before{
-            left: 10%;
-
-        }
-        &__search{
-            width: 58%;
-
-        }
-        &__submit{
+        @include m.sp{
             width: 23%;
         }
-    }
-
-
-    @include m.tab{
-        margin-top: 5%;
-    
-        &::before{
-            left: 18.5%;
-        }
-        &__search{  
-            width: 47%;
-        }
-        &__submit{
+        @include m.tab{
             width: 17%;
         }
-    }
-
-    @include m.pc{
-        margin: 4% 1.6%;
-        width: 35%;
-        &::before{
-            left: 1.5rem;
-        }
-        &__search{
-            width: 70%;
-        }
-        &__submit{
+        @include m.pc{
             width: 25%;
         }
     }
 }
-
-

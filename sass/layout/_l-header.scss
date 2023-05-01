@@ -4,27 +4,19 @@
 .l-header{
     background-color: var.$header-color;
     text-align: center;
-    
-    &__title{
-        font-size: 4rem;
-    }
+
     @include m.sp{
-        padding: 10% 0 5%;
+        padding: 0 0 15%;
     }
-
     @include m.tab{
-        padding: 5% 0 7%;
+        padding: 0 0 7%;
     }
-
+    
     @include m.pc{
         display: flex;
         justify-content: space-between;
         grid-row:1/2;
         grid-column:1/2;
-        &__title{
-            margin: 2.3% 3.3% 2.4%;
-            font-size: clamp(4rem, 1.257rem + 2.679vw, 6.4rem);
-        }
     }
 }
 
