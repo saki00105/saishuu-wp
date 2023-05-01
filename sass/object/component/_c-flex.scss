@@ -1,7 +1,8 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
 .c-flex{
    display: flex;
-    
-
 }
 
 .c-colum{

@@ -1,54 +1,9 @@
 @use "../foundation/mixin" as m;
 
 .l-main{
-    &__visual{
-        width: auto;
-        position: relative;  
-    }
-    &__title{
-        position: absolute;
-    }
-
-    @include m.sp{
-        &__visual{
-            height: 28rem;
-            @include bg-img(url(../../img/mainvisual-sp@2x.jpg));
-            background-position: center;
-        }
-        &__title{
-            top: 12.2rem;
-            left: 2.5rem;
-            font-size: 3.6rem;
-        }
-    }
-
-    @include m.tab{
-        &__visual{
-            height: 28rem;
-            @include bg-img(url(../../img/mainvisual-pc@2x.jpg));
-            background-position-y: 50%;
-        }
-        &__title{
-            top: 12rem;
-            left: 8.6rem;
-            font-size: 3.6rem;
-        }
-    }
-
     @include m.pc{
         grid-row:2/3;
         grid-column:1/2;
-
-        &__visual{
-            height: 53rem;
-            @include bg-img(url(../../img/mainvisual-pc@2x.jpg));
-            background-position-y: 50%;
-        }
-        &__title{
-            font-size: clamp(3.6rem, 3.143rem + 0.446vw, 4rem);
-            top:23.4rem ;
-            left:8.6rem ;  
-        }
     }
 }
 
@@ -59,12 +14,12 @@
     }
 
     @include m.tab{
-        margin: 4% 4%;
+        margin: 4%;
         justify-content:space-between;
     }
 
     @include m.pc{
-        margin: 5% 5%;
+        margin: 5%;
         justify-content:space-between;
     }
 }

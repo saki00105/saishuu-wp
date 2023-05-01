@@ -4,34 +4,45 @@
 
 .p-footer{
     text-align: center;
-    p{
-        font-size: 1.4rem;
-    }
 
     @include m.sp{
         padding: 5% 0 3%;
-        p{
-            margin-top: 18%;
-        }
-    }
 
+    }
     @include m.tab{
         padding: 4% 0 2%;
-        p{
-            margin-top: 5%;
-        }
-    }
 
+    }
     @include m.pc{
         margin: 2% 0 1% 0;
-       p{
-        margin-top: 2%;
-       }
+    }
+
+    p{
+        font-size: 1.4rem;
+        @include m.sp{
+            margin-top: 18%;
+        }
+        @include m.tab{
+            margin-top: 5%;
+        }
+        @include m.pc{
+            margin-top: 2%;
+        }
     }
 }
 
 .p-footer__link{
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
+    @include m.sp{
+        font-size: 1.8rem;
+    }
+    @include m.tab{
+        font-size: 2rem;
+    }
+    @include m.pc{
+        font-size: 2rem;
+    }
+
     ul{
         justify-content: center;
         position: relative;
@@ -45,23 +56,10 @@
             left: 50%;
         }
     }
-
-    @include m.sp{
-        font-size: 1.8rem;
-    }
-
-    @include m.tab{
-        font-size: 2rem;
-    }
-
-    @include m.pc{
-        font-size: 2rem;
-    }
 }
 
 .p-footer__link--shop + .p-footer__link--history{
     margin-left: 3%;
-
 }
 
 .p-footer__layer{
