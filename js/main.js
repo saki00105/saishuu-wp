@@ -8,7 +8,7 @@ $(function() {
         $(".l-sideber").delay(300).queue(function(){
             $(this).addClass("is-open");
         });
-        // return false;
+        return false;
     });
 
     //サイドバーを閉じる
@@ -16,7 +16,7 @@ $(function() {
       $('.l-sideber__layer').hide().removeClass('is-open');
       $('.l-sideber__box').removeClass('is-open');
       $(".l-sideber").removeClass("is-open");
-    //   return false;
+      return false;
     });
 
 });
