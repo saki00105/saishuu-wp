@@ -55,7 +55,7 @@
 
 .l-sideber.is-open{
     right: 0;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .l-sideber__layer{
@@ -64,9 +64,10 @@
     height:100%;
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 15;
     background:rgba(0,0,0,0.4);
     opacity: 0;
+    transition: .5s;
 
 }
 
