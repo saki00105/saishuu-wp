@@ -13,7 +13,7 @@ $(function() {
 
     //サイドバーを閉じる
     $('.p-sideber__box').on('click', function() {
-      $('.l-sideber__layer').removeClass('is-open');
+      $('.l-sideber__layer').hide().removeClass('is-open');
       $('.l-sideber__box').removeClass('is-open');
       $(".l-sideber").removeClass("is-open");
     //   return false;
