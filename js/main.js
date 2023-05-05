@@ -16,7 +16,9 @@ $(function() {
 
 
     //サイドバーを閉じる
-    $('.p-sideber__box').on('click', function() {
+    // $('.p-sideber__box').on('click', function() {
+    $(document).on('click', '.p-sideber__box', function() {
+
       $('.l-sideber__layer').hide().removeClass('is-open');
       $('.l-sideber__box').removeClass('is-open');
       $(".l-sideber").removeClass("is-open");
