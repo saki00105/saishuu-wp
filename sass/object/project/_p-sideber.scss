@@ -1,6 +1,7 @@
 @use "../../foundation/mixin" as m;
 
 .p-sideber{
+    position: relative;
     @include m.sp{
         margin: 18rem 0 0 4.6rem;  
     }
@@ -25,6 +26,12 @@
     }
 
     &__box{
+        position: absolute;
+        top: -16rem;
+        right: 2rem;
+        height: 5rem;
+        width: 5rem;
+
         @include m.sp{
             &::before{
                 @include before;
@@ -32,8 +39,7 @@
                 height: 0.6rem;
                 transform: rotate(45deg);
                 background-color: $sidber-text;
-                top: 4rem;
-                right: 2rem;
+                top: 2rem;
             }
             &::after{
                 @include after;
@@ -41,8 +47,7 @@
                 height: 0.6rem;
                 transform: rotate(135deg);
                 background-color: $sidber-text;
-                top: 4rem;
-                right: 2rem;
+                top: 2rem;
             }
         }
     
@@ -53,8 +58,7 @@
                 height: 0.6rem;
                 transform: rotate(45deg);
                 background-color: $sidber-text;
-                top: 4rem;
-                right: 2rem;
+                top: 2rem;
             }
             &::after{
                 @include after;
@@ -62,8 +66,7 @@
                 height: 0.6rem;
                 transform: rotate(135deg);
                 background-color: $sidber-text;
-                top: 4rem;
-                right: 2rem;
+                top: 2rem;
             }
         }
     }
