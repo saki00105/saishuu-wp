@@ -575,7 +575,7 @@ a {
     margin: 3% 6%;
     padding-bottom: 70%;
   }
-  .p-main__title::after {
+  .p-main__title.c-border--line::after {
     width: 12%;
     top: 23%;
   }
@@ -586,7 +586,7 @@ a {
     margin: 2% 4%;
     padding-bottom: 70%;
   }
-  .p-main__title::after {
+  .p-main__title.c-border--line::after {
     width: 10%;
     top: 25%;
   }
@@ -597,7 +597,7 @@ a {
     padding-bottom: 95%;
     font-size: clamp(4.4rem, 0.286rem + 4.018vw, 8rem);
   }
-  .p-main__title::after {
+  .p-main__title.c-border--line::after {
     width: 10%;
     top: 20%;
   }
