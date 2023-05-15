@@ -19,4 +19,11 @@ $(function() {
     });
 });
 
-
+//リサイズ
+$(function(){
+    $(window).resize(function(){
+        $(".l-sideber__box").removeClass("is-open");
+        $(".l-sideber__layer").removeClass("is-open").css("display","none");
+        $(".l-sideber").removeClass("is-open");
+    });
+});

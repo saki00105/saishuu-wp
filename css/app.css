@@ -189,7 +189,8 @@ a {
 
 .l-sideber.is-open {
   right: 0;
-  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  overflow-y: auto;
 }
 
 .l-sideber__layer {
@@ -785,38 +786,25 @@ a {
   .p-map__title {
     font-size: 3rem;
   }
+  .p-map__title.c-border--line::after {
+    top: 145%;
+    width: 25%;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-map__title {
     font-size: 3rem;
+  }
+  .p-map__title.c-border--line::after {
+    top: 135%;
+    width: 25%;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-map__title {
     font-size: clamp(3rem, 2.539rem + 0.552vw, 3.6rem);
   }
-}
-.p-map__title::after {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 10;
-  width: 10%;
-  border: 0.2rem solid #FFFFFF;
-}
-@media screen and (max-width: 768px) {
-  .p-map__title::after {
-    top: 145%;
-    width: 25%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-map__title::after {
-    top: 135%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-map__title::after {
+  .p-map__title.c-border--line::after {
     width: 10%;
     top: 170%;
   }

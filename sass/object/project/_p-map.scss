@@ -11,30 +11,29 @@
     position: relative;
     @include m.sp{
         font-size: 3rem;
+        &.c-border--line{
+            &::after{
+                top: 145%;
+                width: 25%;
+            }
+        }
     }
     @include m.tab{
         font-size: 3rem;
+        &.c-border--line{
+            &::after{
+                top: 135%;
+                width: 25%;
+            }
+        }
     }
     @include m.pc{
         font-size: clamp(3rem, 2.539rem + 0.552vw, 3.6rem);
-    }
-
-
-    &::after{
-        @include after;
-        width: 10%;
-        border: 0.2rem solid var.$white;
-
-        @include m.sp{
-            top: 145%;
-            width: 25%;
-        }
-        @include m.tab{
-            top: 135%;
-        }
-        @include m.pc{
-            width: 10%;
-            top: 170%;
+        &.c-border--line{
+            &::after{
+                width: 10%;
+                top: 170%;
+            }
         }
     }
 }

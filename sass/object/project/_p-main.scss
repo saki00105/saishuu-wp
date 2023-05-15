@@ -51,12 +51,12 @@
         font-size: 4.1rem;
         margin: 3% 6%;
         padding-bottom: 70%;
-            &.c-border--line{
-                &::after{
-                    width: 12%;
-                    top: 23%;
-                }
+        &.c-border--line{
+            &::after{
+                width: 12%;
+                top: 23%;
             }
+        }
     }
 
     @include m.tab{
