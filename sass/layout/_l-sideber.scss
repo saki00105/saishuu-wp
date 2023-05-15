@@ -55,7 +55,9 @@
 
 .l-sideber.is-open{
     right: 0;
-    overflow-y: scroll;
+    // overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    overflow-y: auto;
 }
 
 .l-sideber__layer{
