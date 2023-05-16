@@ -191,14 +191,6 @@ a {
   right: 0;
   overflow-y: scroll;
   overscroll-behavior-y: contain;
-  /*IE(Internet Explorer)・Microsoft Edge*/
-  -ms-overflow-style: none;
-  /*Firefox*/
-  scrollbar-width: none;
-  /*Google Chrome、Safari*/
-}
-.l-sideber.is-open::-webkit-scrollbar {
-  display: none;
 }
 
 .l-sideber__layer {
@@ -286,7 +278,7 @@ a {
   font-family: "M PLUS 1", sans-serif;
 }
 
-.fixed {
+.c-fixed {
   position: fixed;
   width: 100%;
   height: 100%;
