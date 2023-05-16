@@ -6,6 +6,9 @@ $(function() {
         $(".l-sideber").delay(500).queue(function(){
             $(this).addClass("is-open").dequeue();
         });
+        $("body").delay(500).queue(function(){
+            $(this).addClass("c-fixed").dequeue();
+        });
         return false;
     });
     //サイドバーを閉じる
@@ -13,21 +16,8 @@ $(function() {
       $('.l-sideber__layer').hide().removeClass('is-open');
       $('.l-sideber__box').removeClass('is-open');
       $(".l-sideber").removeClass("is-open");
+      $('body').removeClass('c-fixed');
       return false;
-    });
-});
-
-
-//サイドバー表示時のスクロール固定
-$(function(){
-    var scrollpos;
-    $('.l-sideber__box').on('click', function(){
-        scrollpos = $(window).scrollTop();
-        $('body').addClass('c-fixed').css({'top': -scrollpos});
-    });
-    $('.p-sideber__box').on('click', function(){
-        $('body').removeClass('fixed').css({'top': 0});
-        window.scrollTop( 0 , scrollpos );
     });
 });
 
@@ -37,5 +27,6 @@ $(function(){
         $(".l-sideber__box").removeClass("is-open");
         $(".l-sideber__layer").removeClass("is-open").css("display","none");
         $(".l-sideber").removeClass("is-open");
+        $('body').removeClass('c-fixed');
     });
 });
