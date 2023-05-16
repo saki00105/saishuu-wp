@@ -55,9 +55,19 @@
 
 .l-sideber.is-open{
     right: 0;
-    // overflow-y: scroll;
+    overflow-y: scroll;
     overscroll-behavior-y: contain;
-    overflow-y: auto;
+
+    //スクロールバーの非表示
+        /*IE(Internet Explorer)・Microsoft Edge*/
+        -ms-overflow-style: none;
+        /*Firefox*/
+        scrollbar-width: none;
+        /*Google Chrome、Safari*/
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
 }
 
 .l-sideber__layer{

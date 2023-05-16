@@ -189,8 +189,16 @@ a {
 
 .l-sideber.is-open {
   right: 0;
+  overflow-y: scroll;
   overscroll-behavior-y: contain;
-  overflow-y: auto;
+  /*IE(Internet Explorer)・Microsoft Edge*/
+  -ms-overflow-style: none;
+  /*Firefox*/
+  scrollbar-width: none;
+  /*Google Chrome、Safari*/
+}
+.l-sideber.is-open::-webkit-scrollbar {
+  display: none;
 }
 
 .l-sideber__layer {
