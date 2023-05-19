@@ -240,19 +240,22 @@ a {
   background: rgba(255, 255, 255, 0.8);
 }
 @media screen and (max-width: 768px) {
-  .c-color_bg--black {
+  .c-color_bg--black-map {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .c-color_bg--black {
+  .c-color_bg--black-map {
     background: rgba(0, 0, 0, 0.4);
   }
 }
 @media screen and (min-width: 1024px) {
-  .c-color_bg--black {
+  .c-color_bg--black-map {
     background: rgba(0, 0, 0, 0.4);
   }
+}
+.c-color_bg--black-top {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .c-border--form {
@@ -263,10 +266,10 @@ a {
 }
 
 .c-border--line::after {
-  content: "";
   display: block;
   position: absolute;
   z-index: 10;
+  content: "";
   border: 0.2rem solid #FFFFFF;
 }
 
@@ -296,10 +299,10 @@ a {
   }
 }
 .p-header::before {
-  content: "";
   display: block;
   position: absolute;
   z-index: 10;
+  content: "";
   width: 2.4rem;
   height: 2.4rem;
   background: url(/img/mushimegane.png) no-repeat center center/auto 100%;
@@ -423,10 +426,10 @@ a {
 }
 @media screen and (max-width: 768px) {
   .p-sideber__box::before {
-    content: "";
     display: block;
     position: absolute;
     z-index: 10;
+    content: "";
     width: 5rem;
     height: 0.6rem;
     transform: rotate(45deg);
@@ -434,10 +437,10 @@ a {
     top: 2rem;
   }
   .p-sideber__box::after {
-    content: "";
     display: block;
     position: absolute;
     z-index: 10;
+    content: "";
     width: 5rem;
     height: 0.6rem;
     transform: rotate(135deg);
@@ -447,10 +450,10 @@ a {
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-sideber__box::before {
-    content: "";
     display: block;
     position: absolute;
     z-index: 10;
+    content: "";
     width: 5rem;
     height: 0.6rem;
     transform: rotate(45deg);
@@ -458,10 +461,10 @@ a {
     top: 2rem;
   }
   .p-sideber__box::after {
-    content: "";
     display: block;
     position: absolute;
     z-index: 10;
+    content: "";
     width: 5rem;
     height: 0.6rem;
     transform: rotate(135deg);
@@ -764,10 +767,10 @@ a {
   position: relative;
 }
 .p-footer__link ul::after {
-  content: "";
   display: block;
   position: absolute;
   z-index: 10;
+  content: "";
   width: 2rem;
   transform: rotate(90deg);
   border: 0.1rem solid #FFFFFF;
@@ -864,56 +867,83 @@ a {
 .p-archive__visual {
   width: auto;
   position: relative;
+  background-position: center;
 }
 @media screen and (max-width: 768px) {
   .p-archive__visual {
     height: 28rem;
-    background-image: url(../../../img/archive-top.jpg);
+    background-image: url(../../../img/page-title_arcive.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-x: 1%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-archive__visual {
-    height: 22rem;
-    background-image: url(../../../img/archive-top.jpg);
+    height: 28rem;
+    background-image: url(../../../img/page-title_arcive.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 50%;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-archive__visual {
     height: 22rem;
-    background-image: url(../../../img/archive-top.jpg);
+    background-image: url(../../../img/archive-pc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -10;
   }
+}
+.p-archive__visual.c-color_bg--black-top {
+  background-blend-mode: soft-light;
 }
 .p-archive__visual-title {
   position: absolute;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .p-archive__visual-title {
-    top: 12.2rem;
-    left: 2.5rem;
+    top: 10rem;
+    left: 4rem;
     font-size: 3.6rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-archive__visual-title {
-    top: 12rem;
+    top: 10rem;
     left: 8.6rem;
-    font-size: 3.6rem;
+    font-size: 6rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-archive__visual-title {
-    font-size: clamp(3.6rem, 3.143rem + 0.446vw, 4rem);
-    top: 23.4rem;
+    font-size: 6rem;
+    top: 8.3rem;
     left: 8.6rem;
+  }
+}
+.p-archive__visual-title::after {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  content: "チーズバーガー";
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+  .p-archive__visual-title::after {
+    top: 6rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-archive__visual-title::after {
+    left: 20rem;
+    top: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-archive__visual-title::after {
+    left: 20rem;
+    top: 4rem;
   }
 }
 

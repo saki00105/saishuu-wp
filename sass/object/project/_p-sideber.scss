@@ -35,6 +35,7 @@
         @include m.sp{
             &::before{
                 @include before;
+                content: "";
                 width: 5rem;
                 height: 0.6rem;
                 transform: rotate(45deg);
@@ -43,6 +44,7 @@
             }
             &::after{
                 @include after;
+                content: "";
                 width: 5rem;
                 height: 0.6rem;
                 transform: rotate(135deg);
@@ -54,6 +56,7 @@
         @include m.tab{
             &::before{
                 @include before;
+                content: "";
                 width: 5rem;
                 height: 0.6rem;
                 transform: rotate(45deg);
@@ -62,6 +65,7 @@
             }
             &::after{
                 @include after;
+                content: "";
                 width: 5rem;
                 height: 0.6rem;
                 transform: rotate(135deg);
