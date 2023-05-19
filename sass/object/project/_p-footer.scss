@@ -47,6 +47,7 @@
 
         &::after{
             @include after;
+            content: "";
             width: 2rem;
             transform: rotate(90deg);
             border: 0.1rem solid var.$white;

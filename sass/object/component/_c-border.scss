@@ -13,6 +13,7 @@
 .c-border--line{
     &::after{
         @include after;
+        content: "";
         border: 0.2rem solid var.$white;
     }
 }
