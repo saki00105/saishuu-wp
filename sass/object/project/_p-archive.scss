@@ -64,3 +64,31 @@
         }
     }  
 }
+
+
+.p-archive{
+    &__title{
+        @include m.sp{
+            font-size: clamp(2.8rem, 2.146rem + 1.743vw, 3.6rem) ;
+        }
+        @include m.tab{
+            font-size: 3.6rem;
+        }
+        @include m.pc{
+           font-size: 3.6rem;
+        }
+    }
+    &__text{
+        font-size: 1.6rem;
+        @include m.sp{
+            margin-top: 2.5rem;
+        }
+        @include m.tab{
+            margin-top: 2rem;
+        }
+        @include m.pc{
+            margin-top: 2rem;
+        }
+    }
+
+}

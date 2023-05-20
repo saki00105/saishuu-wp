@@ -16,6 +16,7 @@
 @import "layout/l-main";
 @import "layout/l-sideber";
 @import "layout/l-container";
+@import "layout/l-inner";
 
 
 // // ==========================================================================
@@ -27,7 +28,7 @@
 // // -----------------------------------------------------------------
 
 @import "object/component/c-button";
-// @import "object/component/_dialog";
+// @import "object/component/c-inner";
 // @import "object/component/_grid";
 // @import "object/component/_media";
 @import "object/component/c-flex";
