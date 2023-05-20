@@ -26,7 +26,7 @@
 
             <form class="p-header c-fw-700" action="/" method="get">
                 <input type="search" name="search" placeholder="" class="p-header__search c-border--form">
-                <input type="submit" name="submit" value="検索" class="p-header__submit c-button c-border--form">
+                <input type="submit" name="submit" value="検索" class="p-header__submit c-button--form c-border--form">
             </form>
 
             <p class="l-sideber__box c-fw-700">
@@ -49,14 +49,14 @@
                 <nav class="l-sideber__body">
                     <ul>
                         <li class="p-sideber__sub c-fw-700">
-                            <a href="/">バーガー</a>
+                            <a href="/archive.html">バーガー</a>
                         </li>
                         <ul class="p-sideber__items">
                             <li class="p-sideber__item">
                                 <a href="/">ハンバーガー</a>
                             </li>
                             <li  class="p-sideber__item">
-                                <a href="/archive.html">チーズバーガー</a>
+                                <a href="/">チーズバーガー</a>
                             </li>
                             <li  class="p-sideber__item">
                                 <a href="/">テリヤキバーガー</a>
@@ -137,35 +137,47 @@
                     <p class="p-archive__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </div>
 
-                <div class="p-card__archive c-flex">
-                    <div class="p-card__archive-img">
-                        <img src="/img/e3472c768077e90f47f5ca3c6ba0144e.jpg" alt="チーズバーガーの写真">
-                    </div>
-                    <div class="p-card__archive-content">
-                        <h2 class="c-color--white">チーズバーガー</h2>
-                        <h3 class="c-color--white">小見出しが入ります</h3>
-                        <p class="c-color--white">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <p class="c-button--archive">
-                            <a href="/">詳しく見る</a>
-                        </p>
-                    </div>
-                    
-                </div>
                 <div class="p-card__archive">
-                    <h2>ダブルチーズバーガー</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <p class="c-button--menu">
-                        <a href="/">詳しく見る</a>
-                    </p>                
-                </div>
-                <div class="p-card__archive">
-                    <h2>スペシャルチーズバーガー</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <p class="c-button--menu">
-                        <a href="/">詳しく見る</a>
-                    </p>                
+                    <div class="p-card__archive-wrap c-flex">
+                        <div class="p-card__archive-img">
+                            <img src="/img/e3472c768077e90f47f5ca3c6ba0144e.jpg" alt="チーズバーガーの写真">
+                        </div>
+                        <div class="p-card__archive-content">
+                            <h2 class="p-card__archive-title c-color--white">チーズバーガー</h2>
+                            <h3 class="p-card__archive-sub c-color--white">小見出しが入ります</h3>
+                            <p class="p-card__archive-text c-color--white">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <p class="p-card__archive-button c-button--archive c-fw-700">
+                                <a href="/">詳しく見る</a>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="p-card__archive-wrap c-flex">
+                        <div class="p-card__archive-img">
+                            <img src="/img/e3472c768077e90f47f5ca3c6ba0144e.jpg" alt="ダブルチーズバーガーの写真">
+                        </div>
+                        <div class="p-card__archive-content">
+                            <h2 class="p-card__archive-title c-color--white">ダブルチーズバーガー</h2>
+                            <h3 class="p-card__archive-sub c-color--white">小見出しが入ります</h3>
+                            <p class="p-card__archive-text c-color--white">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <p class="c-button--archive">
+                                <a href="/">詳しく見る</a>
+                            </p>
+                        </div>            
+                    </div>
+                    <div class="p-card__archive-wrap c-flex">
+                        <div class="p-card__archive-img">
+                            <img src="/img/e3472c768077e90f47f5ca3c6ba0144e.jpg" alt="スペシャルチーズバーガーの写真">
+                        </div>
+                        <div class="p-card__archive-content">
+                            <h2 class="p-card__archive-title c-color--white">スペシャルチーズバーガー</h2>
+                            <h3 class="p-card__archive-sub c-color--white">小見出しが入ります</h3>
+                            <p class="p-card__archive-text c-color--white">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <p class="c-button--archive">
+                                <a href="/">詳しく見る</a>
+                            </p>
+                        </div>            
+                    </div>
                 </div>
             </section>
         </main>

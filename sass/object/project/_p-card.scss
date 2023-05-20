@@ -1,17 +1,14 @@
 @use "../../foundation/mixin" as m;
 @use "../../foundation/variable" as var;
 
-
 .p-card__main{
     @include m.tab{
         width: 48%;
     }
-
     @include m.pc{
         width: 48%;
     }
 }
-
 .p-card__main + .p-card__main{
     @include m.sp{
         margin-top: 7%;
@@ -19,33 +16,70 @@
 }
 
 .p-card__archive{
+    display: grid;
+    gap: 3rem;
+    margin-top: 7rem;
 
-    @include m.sp{
-        // flex-flow: column;
-        // justify-content:space-between;
-        flex-direction: column;
-
+    &-wrap{
+        @include m.sp{
+            flex-flow: column;
+            // justify-content:space-between;
+            // flex-direction: column;
+        }
     }
 
    &-img{
         object-fit: cover;
-        @include m.sp{
-            height: 23rem;
-        }
-        @include m.tab{
-            height: 35rem;
-        }
-        @include m.pc{
-            height: 47rem;
-            height: 90%;
-            height: auto;
-            // width: auto;
-            width: 67rem;
-        }
-
     }    
-   &-content{
+    &-content{
         background-color: var.$archive-color;
         padding: 3%;
+        position: relative;
+    }
+    &-title{
+        @include m.sp{
+            font-size: 2rem;
+        }
+        @include m.tab{
+            font-size: 2rem;
+        }
+        @include m.pc{
+            font-size: clamp(2rem, 0.771rem + 1.473vw, 3.6rem);
+        }
+    }
+    &-sub{
+        margin-top: 4rem;
+        @include m.sp{
+            font-size: 1.6rem;
+        }
+        @include m.tab{
+            font-size: 1.6rem;
+        }
+        @include m.pc{
+            font-size: clamp(1.6rem, 0.771rem + 1.473vw, 2.4rem);
+        }
+    }
+    &-text{
+        margin-top: 1.5rem;
+        font-size: 1.6rem;
+        padding-right: 15%;
+    }
+    &-button{
+        &.c-button--archive{
+            border-radius: 5rem;
+            width: 45%;
+            height: 18%;
+            position: absolute;
+            top: 70%;
+            left: 25%;
+            margin: 10% 25% 0;
+            a{
+                font-size: 1.6rem;
+                position: absolute;
+                // margin: 10% 38%;
+                top: 40%;
+                left: 35%;
+            }
+        }
     }
 }

@@ -222,8 +222,14 @@ a {
 }
 
 .c-button {
+  display: inline-block;
+}
+.c-button--form {
   border: 1px solid #707070;
   background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
+}
+.c-button--archive {
+  background-color: #FFFFFF;
 }
 
 .c-flex {
@@ -530,36 +536,77 @@ a {
   }
 }
 
+.p-card__archive {
+  display: grid;
+  gap: 3rem;
+  margin-top: 7rem;
+}
 @media screen and (max-width: 768px) {
-  .p-card__archive {
-    flex-direction: column;
+  .p-card__archive-wrap {
+    flex-flow: column;
   }
 }
 .p-card__archive-img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media screen and (max-width: 768px) {
-  .p-card__archive-img {
-    height: 23rem;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-card__archive-img {
-    height: 35rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-card__archive-img {
-    height: 47rem;
-    height: 90%;
-    height: auto;
-    width: 67rem;
-  }
-}
 .p-card__archive-content {
   background-color: #3C2B1C;
   padding: 3%;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .p-card__archive-title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-card__archive-title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-card__archive-title {
+    font-size: clamp(2rem, 0.771rem + 1.473vw, 3.6rem);
+  }
+}
+.p-card__archive-sub {
+  margin-top: 4rem;
+}
+@media screen and (max-width: 768px) {
+  .p-card__archive-sub {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-card__archive-sub {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-card__archive-sub {
+    font-size: clamp(1.6rem, 0.771rem + 1.473vw, 2.4rem);
+  }
+}
+.p-card__archive-text {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  padding-right: 15%;
+}
+.p-card__archive-button.c-button--archive {
+  border-radius: 5rem;
+  width: 45%;
+  height: 18%;
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  margin: 10% 25% 0;
+}
+.p-card__archive-button.c-button--archive a {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 40%;
+  left: 35%;
 }
 
 .p-main__visual {
