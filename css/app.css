@@ -231,6 +231,7 @@ a {
 .c-button--archive {
   border-radius: 5rem;
   background-color: #FFFFFF;
+  text-align: center;
 }
 
 .c-flex {
@@ -603,13 +604,9 @@ a {
   width: 45%;
   margin: 10% 25% 0;
   padding: 5.5%;
-  position: relative;
 }
 .p-card__archive-button.c-button--archive a {
   font-size: 1.6rem;
-  position: absolute;
-  top: 40%;
-  left: 35%;
 }
 
 .p-main__visual {
