@@ -229,6 +229,7 @@ a {
   background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
 }
 .c-button--archive {
+  border-radius: 5rem;
   background-color: #FFFFFF;
 }
 
@@ -547,12 +548,17 @@ a {
   }
 }
 .p-card__archive-img {
+  justify-content: space-around;
+  width: 50%;
+}
+.p-card__archive-img img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 .p-card__archive-content {
+  width: 50%;
   background-color: #3C2B1C;
-  padding: 3%;
+  padding: 5%;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -571,7 +577,7 @@ a {
   }
 }
 .p-card__archive-sub {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 @media screen and (max-width: 768px) {
   .p-card__archive-sub {
@@ -591,16 +597,13 @@ a {
 .p-card__archive-text {
   margin-top: 1.5rem;
   font-size: 1.6rem;
-  padding-right: 15%;
+  padding-right: 10%;
 }
 .p-card__archive-button.c-button--archive {
-  border-radius: 5rem;
   width: 45%;
-  height: 18%;
-  position: absolute;
-  top: 70%;
-  left: 25%;
   margin: 10% 25% 0;
+  padding: 5.5%;
+  position: relative;
 }
 .p-card__archive-button.c-button--archive a {
   font-size: 1.6rem;
