@@ -29,11 +29,16 @@
     }
 
    &-img{
-        object-fit: cover;
+        justify-content: space-around;
+        width: 50%;
+        img{
+            object-fit: cover;
+        }
     }    
     &-content{
+        width: 50%;
         background-color: var.$archive-color;
-        padding: 3%;
+        padding: 5%;
         position: relative;
     }
     &-title{
@@ -48,7 +53,7 @@
         }
     }
     &-sub{
-        margin-top: 4rem;
+        margin-top: 6rem;
         @include m.sp{
             font-size: 1.6rem;
         }
@@ -62,23 +67,20 @@
     &-text{
         margin-top: 1.5rem;
         font-size: 1.6rem;
-        padding-right: 15%;
+        padding-right: 10%;
     }
     &-button{
         &.c-button--archive{
-            border-radius: 5rem;
             width: 45%;
-            height: 18%;
-            position: absolute;
-            top: 70%;
-            left: 25%;
             margin: 10% 25% 0;
+            padding: 5.5%;
+            position: relative;
             a{
                 font-size: 1.6rem;
                 position: absolute;
-                // margin: 10% 38%;
                 top: 40%;
                 left: 35%;
+
             }
         }
     }
