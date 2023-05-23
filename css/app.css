@@ -217,8 +217,20 @@ a {
   }
 }
 
-.l-inner__archive {
-  margin: 4rem 4rem;
+@media screen and (max-width: 768px) {
+  .l-inner__archive {
+    margin: 10% 5%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .l-inner__archive {
+    margin: 5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .l-inner__archive {
+    margin: 4% 5%;
+  }
 }
 
 .c-button {
@@ -540,8 +552,8 @@ a {
 
 .p-card__archive {
   display: grid;
-  gap: 3rem;
-  margin-top: 7rem;
+  margin-top: 4%;
+  display: inline-block;
 }
 @media screen and (max-width: 768px) {
   .p-card__archive-wrap {
@@ -550,17 +562,47 @@ a {
 }
 .p-card__archive-img {
   justify-content: space-around;
-  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .p-card__archive-img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-card__archive-img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-card__archive-img {
+    width: 50%;
+  }
 }
 .p-card__archive-img img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 .p-card__archive-content {
-  width: 50%;
   background-color: #3C2B1C;
-  padding: 5%;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .p-card__archive-content {
+    width: 100%;
+    padding: 10% 5%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-card__archive-content {
+    width: 50%;
+    padding: 5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-card__archive-content {
+    width: 50%;
+    padding: 5%;
+  }
 }
 @media screen and (max-width: 768px) {
   .p-card__archive-title {
@@ -577,36 +619,74 @@ a {
     font-size: clamp(2rem, 0.771rem + 1.473vw, 3.6rem);
   }
 }
-.p-card__archive-sub {
-  margin-top: 6rem;
-}
 @media screen and (max-width: 768px) {
   .p-card__archive-sub {
     font-size: 1.6rem;
+    margin-top: 5%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-card__archive-sub {
     font-size: 1.6rem;
+    margin-top: 10%;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-card__archive-sub {
     font-size: clamp(1.6rem, 0.771rem + 1.473vw, 2.4rem);
+    margin-top: 10%;
   }
 }
 .p-card__archive-text {
-  margin-top: 1.5rem;
   font-size: 1.6rem;
-  padding-right: 10%;
 }
-.p-card__archive-button.c-button--archive {
-  width: 45%;
-  margin: 10% 25% 0;
-  padding: 5.5%;
+@media screen and (max-width: 768px) {
+  .p-card__archive-text {
+    margin-top: 3%;
+    padding-right: 5%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-card__archive-text {
+    margin-top: 2%;
+    padding-right: 5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-card__archive-text {
+    margin-top: 1.5rem;
+    padding-right: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-card__archive-button.c-button--archive {
+    margin: 10% 23% 0;
+    padding: 3%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-card__archive-button.c-button--archive {
+    margin: 10% 23% 0;
+    padding: 3%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-card__archive-button.c-button--archive {
+    margin: 10% 25% 0;
+    padding: 4%;
+  }
 }
 .p-card__archive-button.c-button--archive a {
   font-size: 1.6rem;
+}
+
+.p-card__archive-wrap + .p-card__archive-wrap {
+  margin-top: 5%;
+}
+@media screen and (min-width: 1024px) {
+  .p-card__archive-wrap + .p-card__archive-wrap {
+    margin-top: 2%;
+  }
 }
 
 .p-main__visual {
