@@ -17,29 +17,44 @@
 
 .p-card__archive{
     display: grid;
-    gap: 3rem;
-    margin-top: 7rem;
-
+    // gap: 2%;
+    margin-top: 4%;
+    display: inline-block;
     &-wrap{
         @include m.sp{
             flex-flow: column;
-            // justify-content:space-between;
-            // flex-direction: column;
         }
     }
-
    &-img{
         justify-content: space-around;
-        width: 50%;
+        @include m.sp{
+            width: 100%;
+        }
+        @include m.tab{
+            width: 50%;
+        }
+        @include m.pc{
+            width: 50%;
+        }
         img{
             object-fit: cover;
         }
     }    
     &-content{
-        width: 50%;
         background-color: var.$archive-color;
-        padding: 5%;
         position: relative;
+        @include m.sp{
+            width: 100%;
+            padding: 10% 5%;
+        }
+        @include m.tab{
+            width: 50%;
+            padding: 5%;
+        }
+        @include m.pc{
+            width: 50%;
+            padding: 5%;
+        }
     }
     &-title{
         @include m.sp{
@@ -53,30 +68,58 @@
         }
     }
     &-sub{
-        margin-top: 6rem;
         @include m.sp{
             font-size: 1.6rem;
+            margin-top: 5%;
         }
         @include m.tab{
             font-size: 1.6rem;
+            margin-top: 10%;
         }
         @include m.pc{
             font-size: clamp(1.6rem, 0.771rem + 1.473vw, 2.4rem);
+            margin-top: 10%;
         }
     }
     &-text{
-        margin-top: 1.5rem;
         font-size: 1.6rem;
-        padding-right: 10%;
+        @include m.sp{
+            margin-top: 3%;
+            padding-right: 5%;
+        }
+        @include m.tab{
+            margin-top: 2%;
+            padding-right: 5%;
+        }
+        @include m.pc{
+            margin-top: 1.5rem;
+            padding-right: 10%;
+        }
     }
     &-button{
         &.c-button--archive{
-            width: 45%;
-            margin: 10% 25% 0;
-            padding: 5.5%;
+            @include m.sp{
+                margin: 10% 23% 0;
+                padding: 3%;
+            }
+            @include m.tab{
+                margin: 10% 23% 0;
+                padding: 3%;
+            }
+            @include m.pc{
+                margin: 10% 25% 0;
+                padding: 4%;
+            }
             a{
                 font-size: 1.6rem;
             }
         }
+    }
+}
+
+.p-card__archive-wrap + .p-card__archive-wrap{
+    margin-top: 5%;
+    @include m.pc{
+        margin-top: 2%;
     }
 }
