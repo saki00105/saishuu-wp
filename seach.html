@@ -24,7 +24,7 @@
         <header class="l-header">
             <h1 class="p-header__title">Hamburger</h1>
 
-            <form class="p-header c-fw-700" action="/" method="get">
+            <form class="p-header c-fw-700" action="seach.html" method="get" data-persist="garlic">
                 <input type="search" name="search" placeholder="" class="p-header__search c-border--form">
                 <input type="submit" name="submit" value="検索" class="p-header__submit c-button--form c-border--form">
             </form>
@@ -126,61 +126,113 @@
             </div>
         </div>
 
-
-        
         <main class="l-main">
-            <div class="p-main__visual">
-                <p class="p-main__visual-title c-color--white c-fw-700">Seach:</p>
+            <div class="p-archive__visual c-color_bg--black-top">
+                <p class="p-archive__visual-title  c-color--white c-fw-700">Seach:</p>
             </div>
 
-            <section>
+            <section class="l-inner__archive">
                 <div>
-                    <h2>小見出しが入ります</h2>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-
+                    <h2 class="p-archive__title">小見出しが入ります</h2>
+                    <p class="p-archive__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </div>
 
-                <div class="c-card__archive">
-                    <h2>見出しが入ります</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <p>
-                        <a href="/">詳しく見る</a>
-                    </p>
-                </div>
+                <div class="p-card__archive">
+                    <div class="p-card__archive-wrap c-flex">
+                        <div class="p-card__archive-img c-flex">
+                            <img src="/img/e3472c768077e90f47f5ca3c6ba0144e.jpg" alt="チーズバーガーの写真">
+                        </div>
+                        <div class="p-card__archive-content">
+                            <h2 class="p-card__archive-title c-color--white">見出しが入ります</h2>
+                            <h3 class="p-card__archive-sub c-color--white">小見出しが入ります</h3>
+                            <p class="p-card__archive-text c-color--white">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p> 
+                            <a  class="p-card__archive-button c-button--archive c-fw-700" href="/">詳しく見る</a>
+                        </div>
+                    </div>
 
-                <div class="c-card__archive">
-                    <h2>見出しが入ります</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <p>
-                        <a href="/">詳しく見る</a>
-                    </p>
-                </div>
-                <div class="c-card__archive">
-                    <h2>見出しが入ります</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <p>
-                        <a href="/">詳しく見る</a>
-                    </p>
-                </div>
-                <div class="c-card__archive">
-                    <h2>見出しが入ります</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <p>
-                        <a href="/">詳しく見る</a>
-                    </p>
-                </div>
-                <div class="c-card__archive">
-                    <h2>見出しが入ります</h2>
-                    <h3>小見出しが入ります</h3>
-                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                    <p>
-                        <a href="/">詳しく見る</a>
-                    </p>
-                </div>
+                    <div class="p-card__archive-wrap c-flex">
+                        <div class="p-card__archive-img c-flex">
+                            <img src="/img/e3472c768077e90f47f5ca3c6ba0144e.jpg" alt="チーズバーガーの写真">
+                        </div>
+                        <div class="p-card__archive-content">
+                            <h2 class="p-card__archive-title c-color--white">見出しが入ります</h2>
+                            <h3 class="p-card__archive-sub c-color--white">小見出しが入ります</h3>
+                            <p class="p-card__archive-text c-color--white">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p> 
+                            <a  class="p-card__archive-button c-button--archive c-fw-700" href="/">詳しく見る</a>
+                        </div>
+                    </div>
+                    <div class="p-card__archive-wrap c-flex">
+                        <div class="p-card__archive-img c-flex">
+                            <img src="/img/e3472c768077e90f47f5ca3c6ba0144e.jpg" alt="チーズバーガーの写真">
+                        </div>
+                        <div class="p-card__archive-content">
+                            <h2 class="p-card__archive-title c-color--white">見出しが入ります</h2>
+                            <h3 class="p-card__archive-sub c-color--white">小見出しが入ります</h3>
+                            <p class="p-card__archive-text c-color--white">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p> 
+                            <a  class="p-card__archive-button c-button--archive c-fw-700" href="/">詳しく見る</a>
+                        </div>
+                    </div>
+                    <div class="p-card__archive-wrap c-flex">
+                        <div class="p-card__archive-img c-flex">
+                            <img src="/img/e3472c768077e90f47f5ca3c6ba0144e.jpg" alt="チーズバーガーの写真">
+                        </div>
+                        <div class="p-card__archive-content">
+                            <h2 class="p-card__archive-title c-color--white">見出しが入ります</h2>
+                            <h3 class="p-card__archive-sub c-color--white">小見出しが入ります</h3>
+                            <p class="p-card__archive-text c-color--white">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p> 
+                            <a  class="p-card__archive-button c-button--archive c-fw-700" href="/">詳しく見る</a>
+                        </div>
+                    </div>
+                    <div class="p-card__archive-wrap c-flex">
+                        <div class="p-card__archive-img c-flex">
+                            <img src="/img/e3472c768077e90f47f5ca3c6ba0144e.jpg" alt="チーズバーガーの写真">
+                        </div>
+                        <div class="p-card__archive-content">
+                            <h2 class="p-card__archive-title c-color--white">見出しが入ります</h2>
+                            <h3 class="p-card__archive-sub c-color--white">小見出しが入ります</h3>
+                            <p class="p-card__archive-text c-color--white">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p> 
+                            <a  class="p-card__archive-button c-button--archive c-fw-700" href="/">詳しく見る</a>
+                        </div>
+                    </div>
+                </div>  
+
+
+                <ul class="p-pagination c-flex">
+                    <li class="p-pagination__item">
+                        <a  href="/">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="p-pagination__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="p-pagination__item-link c-flex c-link--pagination c-border--pagination">
+                        <a href="/">1</a>
+                    </li>
+                    <li class="p-pagination__item-link c-flex c-link--pagination c-border--pagination">
+                        <a href="/">2</a>
+                    </li>
+                    <li class="p-pagination__item-link c-flex c-link--pagination c-border--pagination">
+                        <a href="/">3</a>
+                    </li>
+                    <li class="p-pagination__item-link c-flex c-link--pagination c-border--pagination">
+                        <a href="/">4</a>
+                    </li>
+                    <li class="p-pagination__item-link c-flex c-link--pagination c-border--pagination">
+                        <a href="">5</a>
+                    </li>
+                    <li class="p-pagination__item-link c-flex c-link--pagination c-border--pagination">
+                        <a href="/">6</a>
+                    </li>
+                    <li class="p-pagination__item-link c-flex c-link--pagination c-border--pagination">
+                        <a href="/">7</a>
+                    </li>
+                    <li class="p-pagination__item-link c-flex c-link--pagination c-border--pagination">
+                        <a href="/">8</a>
+                    </li>
+                    <li class="p-pagination__item-link c-flex c-link--pagination c-border--pagination">
+                        <a href="/">9</a>
+                    </li>
+                </ul>
             </section>
 
         </main>
