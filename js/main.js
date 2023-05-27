@@ -31,30 +31,3 @@ $(function(){
     });
 });
 
-
-// $(function() {
-//     02
-//         $("#search_button").click(function() {
-//     03
-//             if($('form input[name="search_box"]').val() == "") {
-//     04
-//                 alert("キーワードを入力して下さい。");
-//     05
-//                 return false;
-//     06
-//             }
-//     07
-//             var search_catch = $("#search_box").val();
-//     08
-//             var space = search_catch.replace(/　/g," ").split(" ");
-//     09
-//             var totalNumber = space.length;
-//     10
-//             alert(space[0]);
-//     11
-//             alert(totalNumber);
-//     12
-//         });
-//     13
-//     });
-    
