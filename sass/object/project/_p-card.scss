@@ -120,7 +120,14 @@
 }
 
 .p-card__archive-wrap + .p-card__archive-wrap{
-    margin-top: 5%;
+
+    @include m.sp{
+        margin-top: 5%;
+    }
+    @include m.tab{
+        margin-top: 3%;
+    }
+
     @include m.pc{
         margin-top: 2%;
     }
