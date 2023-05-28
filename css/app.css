@@ -428,12 +428,12 @@ a {
 }
 @media screen and (max-width: 768px) {
   .p-sideber {
-    margin: 18rem 0 0 4.6rem;
+    margin: 18rem 0 30rem 4.6rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-sideber {
-    margin: 18rem 0 0 4.6rem;
+    margin: 18rem 0 30rem 4.6rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1242,10 +1242,10 @@ a {
   height: 3.5rem;
   line-height: 3.5rem;
 }
-.p-pagination__link:hover {
+.p-pagination__link:hover, .p-pagination__link:active {
   background-color: #3C2A10;
 }
-.p-pagination__link:hover a {
+.p-pagination__link:hover a, .p-pagination__link:active a {
   color: #FFFFFF;
 }
 

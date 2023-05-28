@@ -30,3 +30,15 @@ $(function(){
         $('body').removeClass('c-fixed');
     });
 });
+
+// カレント表示
+href = location.href;
+
+var links = jQuery(".header-nav__item > a");
+
+// links.each(function (index, value) {
+// 	if (value.href == href) {
+// 		jQuery(".header-nav__item").eq(index).addClass("current");
+//     });
+// });
+

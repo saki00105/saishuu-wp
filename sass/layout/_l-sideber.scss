@@ -3,7 +3,6 @@
 
 .l-sideber{
     background-color: $sideber-color;
-
     @include m.sp{
         position: fixed;
         top: 0;
@@ -13,7 +12,6 @@
         width: 37rem;
         height: 100%;
     }
-
     @include m.tab{
         position: fixed;
         top: 0;
@@ -23,7 +21,6 @@
         width: 37rem;
         height: 100%;
     }
-
     @include m.pc{
         grid-row:1/3;
         grid-column:2/3;
@@ -66,7 +63,6 @@
     //     &::-webkit-scrollbar{
     //         display: none;
     //     }
-
 }
 
 .l-sideber__layer{
@@ -79,11 +75,9 @@
     // opacity: 0;
     // transition: .5s;
     display: none;
-
 }
 
 .l-sideber__layer.is-open{
     opacity: 1;
     z-index: 15;
-
 }
