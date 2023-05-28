@@ -1173,10 +1173,12 @@ a {
 .p-pagination {
   color: #707070;
   font-size: 1.6rem;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .p-pagination {
     margin-top: 20%;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1197,13 +1199,38 @@ a {
 .p-pagination__icon {
   width: 3rem;
 }
+@media screen and (max-width: 768px) {
+  .p-pagination__icon--previous::after {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    content: "前へ";
+    left: 3rem;
+    top: 12%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-pagination__icon--next::before {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    content: "次へ";
+    right: 3.5rem;
+    top: 12%;
+  }
+}
 @media screen and (min-width: 1024px) {
-  .p-pagination__icon--previous {
+  .p-pagination__icon--next {
     display: none;
   }
 }
 .p-pagination__link {
   background-color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .p-pagination__link {
+    display: none;
+  }
 }
 .p-pagination__link.c-link--pagination {
   width: 3.5rem;
@@ -1222,8 +1249,15 @@ a {
   color: #FFFFFF;
 }
 
-.p-pagination > * + * {
-  margin-left: 1.5rem;
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-pagination > * + * {
+    margin-left: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-pagination > * + * {
+    margin-left: 1.5rem;
+  }
 }
 
 .u_m-0 {
