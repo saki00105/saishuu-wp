@@ -64,12 +64,13 @@
         line-height: 3.5rem;
       }
     }
-    &:hover{
+    &:hover,&:active{
       background-color:var.$text-color;
       a{
         color: var.$white;
       }
     }
+    // .index .nav-list>li:nth-child(1)>a,
   }
 }
 

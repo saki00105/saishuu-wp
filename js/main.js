@@ -31,16 +31,13 @@ $(function(){
     });
 });
 
-//ページネーションのレスポンシブ
-$(function(){
-    // if ($(window).width() <= 768 ) {
-    //     $(".p-pagination__links").css("display","none");
-    // }else{
-    //     $(".p-pagination__links").css("display","block");
-    // }
-    // return false;
+// カレント表示
+href = location.href;
 
-    // $(window).resize(function(){
-    //     $(".box").removeClass("open");
-    // });
-});
+var links = jQuery(".header-nav__item > a");
+
+// links.each(function (index, value) {
+// 	if (value.href == href) {
+// 		jQuery(".header-nav__item").eq(index).addClass("current");
+//     });
+// });
