@@ -31,3 +31,16 @@ $(function(){
     });
 });
 
+//ページネーションのレスポンシブ
+$(function(){
+    // if ($(window).width() <= 768 ) {
+    //     $(".p-pagination__links").css("display","none");
+    // }else{
+    //     $(".p-pagination__links").css("display","block");
+    // }
+    // return false;
+
+    // $(window).resize(function(){
+    //     $(".box").removeClass("open");
+    // });
+});
