@@ -64,7 +64,7 @@
         line-height: 3.5rem;
       }
     }
-    &:hover,&:active{
+    &:hover,&.is-active{
       background-color:var.$text-color;
       a{
         color: var.$white;
