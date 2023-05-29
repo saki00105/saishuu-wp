@@ -1242,10 +1242,10 @@ a {
   height: 3.5rem;
   line-height: 3.5rem;
 }
-.p-pagination__link:hover, .p-pagination__link:active {
+.p-pagination__link:hover, .p-pagination__link.is-active {
   background-color: #3C2A10;
 }
-.p-pagination__link:hover a, .p-pagination__link:active a {
+.p-pagination__link:hover a, .p-pagination__link.is-active a {
   color: #FFFFFF;
 }
 

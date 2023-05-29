@@ -32,13 +32,14 @@ $(function(){
 });
 
 // カレント表示
-href = location.href;
-
-var links = jQuery(".header-nav__item > a");
-
-// links.each(function (index, value) {
-// 	if (value.href == href) {
-// 		jQuery(".header-nav__item").eq(index).addClass("current");
-//     });
-// });
-
+$(function() {
+    $('.p-pagination__link a').each(function(){
+        var $href = $(this).attr('href');
+        if(location.href.match($href)) {
+            $(this).parent().addClass('is-active');
+        } else {
+            $(this).parent().removeClass('is-active');
+        }
+        return false;
+    });
+});
