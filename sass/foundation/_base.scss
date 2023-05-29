@@ -13,21 +13,20 @@ body,input{
 body, input,a{
     color: var.$sidber-text;
 }
+
 main{
     color:var.$text-color;
 }
-
 
 html {
     font-size: 10px;
 }
 
-ul,li{
+ul,ol,li{
     list-style: none;
     padding-left: 0px;
 }
    
-
 a{
     text-decoration: none;
 }

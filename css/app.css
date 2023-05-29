@@ -58,7 +58,7 @@ html {
   font-size: 10px;
 }
 
-ul, li {
+ul, ol, li {
   list-style: none;
   padding-left: 0px;
 }
