@@ -10,8 +10,13 @@ body,input{
     font-family: 'Roboto','M PLUS 1', sans-serif;
 }
 
-body, input,a{
+body, input{
     color: var.$sidber-text;
+}
+
+a:not(cite>a){
+    color: var.$sidber-text;
+    text-decoration: none;
 }
 
 main{
@@ -27,11 +32,8 @@ ul,ol,li{
     padding-left: 0px;
 }
    
-p > a , li > a{
-    text-decoration: none;
-}
-
-// img{
-//     object-fit: cover;
-//     z-index: -10;
+// p > a , li > a{
+//     text-decoration: none;
 // }
+
+

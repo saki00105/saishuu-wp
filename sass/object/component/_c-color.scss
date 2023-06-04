@@ -26,6 +26,10 @@
     &--black-top{
         background:rgba(0,0,0,0.4);
     }
+    &--blockquote{
+        // background:rgba(0,15,255,0.1);
+        background-color: $blockquote-color;
+    }
 
 }
 
