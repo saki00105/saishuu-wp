@@ -1,84 +1,8 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/mixin" as m;
 
-.p-archive{
-    &__visual{
-        width: auto;
-        position: relative;  
-        background-position: center;
-
-        @include m.sp{
-            height: 28rem;
-            @include bg-img(url(../../../img/page-title_arcive.jpg));
-            background-position-x: 1%;
-        }
-        @include m.tab{
-            height: 28rem;
-            @include bg-img(url(../../../img/page-title_arcive.jpg));
-
-        }
-        @include m.pc{
-            height: 22rem;
-            @include bg-img(url(../../../img/archive-pc.jpg));
-        }
-        &.c-color_bg--black-top{
-            background-blend-mode: soft-light;
-        } 
-    }
-
-    &__visual-title{
-        position: absolute;
-        position: relative;
-
-        @include m.sp{
-            top: 10rem;
-            left: 4rem;
-            font-size: 3.6rem;
-        }
-        @include m.tab{
-            top: 10rem;
-            left: 8.6rem;
-            font-size: 6rem;
-        }
-        @include m.pc{
-            font-size: 6rem;
-            top:8.3rem ;
-            left:8.6rem ;  
-        }
-        &::after{
-            @include after;
-            content: "チーズバーガー";
-            font-size: 1.6rem;
-            @include m.sp{
-                top: 6rem;
-            }
-            @include m.tab{
-                left: 20rem;
-                top: 4rem;
-            }
-            @include m.pc{
-                left: 20rem;
-                top: 4rem;
-            }   
-        }
-    }  
-}
-
-
-.p-archive{
-    &__title{
-        @include m.sp{
-            font-size: clamp(2.8rem, 2.146rem + 1.743vw, 3.6rem) ;
-        }
-        @include m.tab{
-            font-size: 3.6rem;
-        }
-        @include m.pc{
-           font-size: 3.6rem;
-        }
-    }
-    &__text{
-        font-size: 1.6rem;
+.p-archive__text{
+    &.c-text--p{
         @include m.sp{
             margin-top: 2.5rem;
         }
@@ -89,5 +13,5 @@
             margin-top: 2rem;
         }
     }
-
+    
 }
