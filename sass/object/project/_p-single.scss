@@ -55,6 +55,7 @@
     &__content{
         display: flex;
         gap: 3%;
+        // @extend .p-single__full-image;
         @include m.sp{
             margin-top: 8%;
         }
@@ -89,6 +90,7 @@
             max-height: 36rem;
         }
         &--center{
+            // @extend .p-single__full-image;
             margin: 0 auto;
             object-fit: cover;
             object-position: bottom;
@@ -109,5 +111,33 @@
             
         }
         
+    }
+    &__flex-wraps{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+    &__flex-wrap{
+        object-fit: cover;
+        object-position: bottom;
+        @include m.sp{
+            width: 100%;
+            flex-flow: column;
+            &:nth-of-type(n+2){
+                margin-top: 4.5%;
+            }
+        }
+        @include m.tab{
+            width: 49%;
+            &:nth-of-type(n+3){
+                margin-top: 2%;
+            }
+        }
+        @include m.pc{
+            width: 32%;
+            &:nth-of-type(n+4){
+                margin-top: 1.5%;
+            }
+        }
     }
 }
