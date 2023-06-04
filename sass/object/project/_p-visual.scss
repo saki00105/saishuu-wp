@@ -1,0 +1,133 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
+.p-visual{
+    &--main{
+        width: auto;
+        position: relative;  
+        @include m.sp{
+            height: 28rem;
+            @include bg-img(url(../../img/mainvisual-sp@2x.jpg));
+            background-position: center;
+        }
+        @include m.tab{
+            height: 28rem;
+            @include bg-img(url(../../img/mainvisual-pc@2x.jpg));
+            background-position-y: 50%;
+        }
+        @include m.pc{
+            height: 53rem;
+            @include bg-img(url(../../img/mainvisual-pc@2x.jpg));
+            background-position-y: 50%;
+        }
+    }
+    &--main-title{
+        position: absolute;
+        @include m.sp{
+            top: 12.2rem;
+            left: 2.5rem;
+            font-size: 3.6rem;
+        }
+        @include m.tab{
+            top: 12rem;
+            left: 8.6rem;
+            font-size: 3.6rem;
+        }
+        @include m.pc{
+            font-size: clamp(3.6rem, 3.143rem + 0.446vw, 4rem);
+            top:23.4rem ;
+            left:8.6rem ;  
+        }
+
+    }  
+
+    &--archive{
+        width: auto;
+        position: relative;  
+        background-position: center;
+
+        @include m.sp{
+            height: 28rem;
+            @include bg-img(url(../../../img/page-title_arcive.jpg));
+            background-position-x: 1%;
+        }
+        @include m.tab{
+            height: 28rem;
+            @include bg-img(url(../../../img/page-title_arcive.jpg));
+
+        }
+        @include m.pc{
+            height: 22rem;
+            @include bg-img(url(../../../img/archive-pc.jpg));
+        }
+        &.c-color_bg--black-top{
+            background-blend-mode: soft-light;
+        } 
+    }
+    &--archive-title{
+        position: absolute;
+        position: relative;
+
+        @include m.sp{
+            top: 10rem;
+            left: 4rem;
+        }
+        @include m.tab{
+            top: 10rem;
+            left: 8.6rem;
+        }
+        @include m.pc{
+            top:8.3rem ;
+            left:8.6rem ;  
+        }
+        &::after{
+            @include after;
+            content: "チーズバーガー";
+            font-size: 1.6rem;
+            @include m.sp{
+                top: 6rem;
+            }
+            @include m.tab{
+                left: 20rem;
+                top: 4rem;
+            }
+            @include m.pc{
+                left: 20rem;
+                top: 4rem;
+            }   
+        }
+    }
+
+    &--single{
+        width: auto;
+        position: relative;  
+        background-position: center;
+        @include m.sp{
+            height: 19rem;
+            @include bg-img(url(../../../img/sp-ham-burger-with-vegetables-1639557.png));
+        }
+        @include m.tab{
+            height: 46rem;
+            @include bg-img(url(../../../img/ham-burger-with-vegetables-1639557.jpg));
+        }
+        @include m.pc{
+            height: 46rem;
+            @include bg-img(url(../../../img/ham-burger-with-vegetables-1639557.jpg));
+        }
+    }
+    &--single-title{
+        position: absolute;
+        @include m.sp{
+            top: 8rem;
+            left: 2rem;
+        }
+        @include m.tab{
+            top: 21rem;
+            left: 8rem;
+        }
+        @include m.pc{
+            top:21rem ;
+            left:8rem ;  
+        }
+    }
+}

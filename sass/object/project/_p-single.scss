@@ -1,0 +1,14 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
+.p-single__text > * + * {
+    @include m.sp{
+        margin-top: 6%;
+    }
+    @include m.tab{
+        margin-top: 5%;
+    }
+    @include m.pc{
+        margin-top: 4%;
+    }
+}

@@ -63,7 +63,7 @@ ul, ol, li {
   padding-left: 0px;
 }
 
-a {
+p > a, li > a {
   text-decoration: none;
 }
 
@@ -218,17 +218,17 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .l-inner__archive {
+  .l-inner {
     margin: 10% 5%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .l-inner__archive {
+  .l-inner {
     margin: 4% 5%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .l-inner__archive {
+  .l-inner {
     margin: 4% 5%;
   }
 }
@@ -310,6 +310,70 @@ a {
   font-family: "M PLUS 1", sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+  .c-text--h1 {
+    font-size: clamp(3.6rem, 1.677rem + 5.128vw, 6rem);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .c-text--h1 {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .c-text--h1 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-text--h2 {
+    font-size: clamp(2.8rem, 2.146rem + 1.743vw, 3.6rem);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .c-text--h2 {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .c-text--h2 {
+    font-size: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-text--h3 {
+    font-size: clamp(2.4rem, 2.079rem + 0.855vw, 2.8rem);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .c-text--h3 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .c-text--h3 {
+    font-size: 2.8rem;
+  }
+}
+
+.c-text--h4 {
+  font-size: 2rem;
+}
+
+.c-text--h5 {
+  font-size: 2rem;
+}
+
+.c-text--h6 {
+  font-size: 2rem;
+}
+
+.c-text--p {
+  font-size: 1.6rem;
+}
+
 .c-fixed {
   position: fixed;
   width: 100%;
@@ -320,6 +384,9 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+.c-link--disc {
+  list-style: disc;
 }
 
 .c-center {
@@ -621,21 +688,6 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
-  .p-card__archive-title {
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-card__archive-title {
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-card__archive-title {
-    font-size: clamp(2rem, 0.771rem + 1.473vw, 3.6rem);
-  }
-}
-@media screen and (max-width: 768px) {
   .p-card__archive-sub {
     font-size: 1.6rem;
     margin-top: 5%;
@@ -652,9 +704,6 @@ a {
     font-size: clamp(1.6rem, 0.771rem + 1.473vw, 2.4rem);
     margin-top: 10%;
   }
-}
-.p-card__archive-text {
-  font-size: 1.6rem;
 }
 @media screen and (max-width: 768px) {
   .p-card__archive-text {
@@ -1053,119 +1102,18 @@ a {
   }
 }
 
-.p-archive__visual {
-  width: auto;
-  position: relative;
-  background-position: center;
-}
 @media screen and (max-width: 768px) {
-  .p-archive__visual {
-    height: 28rem;
-    background-image: url(../../../img/page-title_arcive.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 1%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-archive__visual {
-    height: 28rem;
-    background-image: url(../../../img/page-title_arcive.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-archive__visual {
-    height: 22rem;
-    background-image: url(../../../img/archive-pc.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-.p-archive__visual.c-color_bg--black-top {
-  background-blend-mode: soft-light;
-}
-.p-archive__visual-title {
-  position: absolute;
-  position: relative;
-}
-@media screen and (max-width: 768px) {
-  .p-archive__visual-title {
-    top: 10rem;
-    left: 4rem;
-    font-size: 3.6rem;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-archive__visual-title {
-    top: 10rem;
-    left: 8.6rem;
-    font-size: 6rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-archive__visual-title {
-    font-size: 6rem;
-    top: 8.3rem;
-    left: 8.6rem;
-  }
-}
-.p-archive__visual-title::after {
-  display: block;
-  position: absolute;
-  z-index: 10;
-  content: "チーズバーガー";
-  font-size: 1.6rem;
-}
-@media screen and (max-width: 768px) {
-  .p-archive__visual-title::after {
-    top: 6rem;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-archive__visual-title::after {
-    left: 20rem;
-    top: 4rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-archive__visual-title::after {
-    left: 20rem;
-    top: 4rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .p-archive__title {
-    font-size: clamp(2.8rem, 2.146rem + 1.743vw, 3.6rem);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-archive__title {
-    font-size: 3.6rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-archive__title {
-    font-size: 3.6rem;
-  }
-}
-.p-archive__text {
-  font-size: 1.6rem;
-}
-@media screen and (max-width: 768px) {
-  .p-archive__text {
+  .p-archive__text.c-text--p {
     margin-top: 2.5rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-archive__text {
+  .p-archive__text.c-text--p {
     margin-top: 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-archive__text {
+  .p-archive__text.c-text--p {
     margin-top: 2rem;
   }
 }
@@ -1257,6 +1205,207 @@ a {
 @media screen and (min-width: 1024px) {
   .p-pagination > * + * {
     margin-left: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-single__text > * + * {
+    margin-top: 6%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-single__text > * + * {
+    margin-top: 5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-single__text > * + * {
+    margin-top: 4%;
+  }
+}
+
+.p-visual--main {
+  width: auto;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .p-visual--main {
+    height: 28rem;
+    background-image: url(../../img/mainvisual-sp@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-visual--main {
+    height: 28rem;
+    background-image: url(../../img/mainvisual-pc@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-visual--main {
+    height: 53rem;
+    background-image: url(../../img/mainvisual-pc@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
+}
+.p-visual--main-title {
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .p-visual--main-title {
+    top: 12.2rem;
+    left: 2.5rem;
+    font-size: 3.6rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-visual--main-title {
+    top: 12rem;
+    left: 8.6rem;
+    font-size: 3.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-visual--main-title {
+    font-size: clamp(3.6rem, 3.143rem + 0.446vw, 4rem);
+    top: 23.4rem;
+    left: 8.6rem;
+  }
+}
+.p-visual--archive {
+  width: auto;
+  position: relative;
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  .p-visual--archive {
+    height: 28rem;
+    background-image: url(../../../img/page-title_arcive.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 1%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-visual--archive {
+    height: 28rem;
+    background-image: url(../../../img/page-title_arcive.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-visual--archive {
+    height: 22rem;
+    background-image: url(../../../img/archive-pc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.p-visual--archive.c-color_bg--black-top {
+  background-blend-mode: soft-light;
+}
+.p-visual--archive-title {
+  position: absolute;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .p-visual--archive-title {
+    top: 10rem;
+    left: 4rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-visual--archive-title {
+    top: 10rem;
+    left: 8.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-visual--archive-title {
+    top: 8.3rem;
+    left: 8.6rem;
+  }
+}
+.p-visual--archive-title::after {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  content: "チーズバーガー";
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+  .p-visual--archive-title::after {
+    top: 6rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-visual--archive-title::after {
+    left: 20rem;
+    top: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-visual--archive-title::after {
+    left: 20rem;
+    top: 4rem;
+  }
+}
+.p-visual--single {
+  width: auto;
+  position: relative;
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  .p-visual--single {
+    height: 19rem;
+    background-image: url(../../../img/sp-ham-burger-with-vegetables-1639557.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-visual--single {
+    height: 46rem;
+    background-image: url(../../../img/ham-burger-with-vegetables-1639557.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-visual--single {
+    height: 46rem;
+    background-image: url(../../../img/ham-burger-with-vegetables-1639557.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.p-visual--single-title {
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .p-visual--single-title {
+    top: 8rem;
+    left: 2rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-visual--single-title {
+    top: 21rem;
+    left: 8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-visual--single-title {
+    top: 21rem;
+    left: 8rem;
   }
 }
 

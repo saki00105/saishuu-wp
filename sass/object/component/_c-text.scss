@@ -1,7 +1,56 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
 .c-fw-700{
     font-weight: 700;
 }
-
 .c-ff-M{
     font-family: 'M PLUS 1', sans-serif;
+}
+
+.c-text--h1{
+    @include m.sp{
+        font-size: clamp(3.6rem, 1.677rem + 5.128vw, 6rem)
+    }
+    @include m.tab{
+        font-size: 6rem;
+    }
+    @include m.pc{
+       font-size: 6rem;
+    }
+}
+.c-text--h2{
+    @include m.sp{
+        font-size: clamp(2.8rem, 2.146rem + 1.743vw, 3.6rem) ;
+    }
+    @include m.tab{
+        font-size: 3.6rem;
+    }
+    @include m.pc{
+       font-size: 3.6rem;
+    }
+}
+.c-text--h3{
+    @include m.sp{
+        font-size: clamp(2.4rem, 2.079rem + 0.855vw, 2.8rem);
+    }
+    @include m.tab{
+        font-size: 2.8rem;
+    }
+    @include m.pc{
+       font-size: 2.8rem;
+    }
+}
+.c-text--h4{
+   font-size: 2rem;
+}
+.c-text--h5{
+    font-size: 2rem;
+}
+.c-text--h6{
+    font-size: 2rem;
+}
+
+.c-text--p{
+    font-size: 1.6rem;
 }
