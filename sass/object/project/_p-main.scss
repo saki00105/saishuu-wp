@@ -1,48 +1,7 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/mixin" as m;
 
-.p-main{
-    &__visual{
-        width: auto;
-        position: relative;  
 
-        @include m.sp{
-            height: 28rem;
-            @include bg-img(url(../../img/mainvisual-sp@2x.jpg));
-            background-position: center;
-        }
-        @include m.tab{
-            height: 28rem;
-            @include bg-img(url(../../img/mainvisual-pc@2x.jpg));
-            background-position-y: 50%;
-        }
-        @include m.pc{
-            height: 53rem;
-            @include bg-img(url(../../img/mainvisual-pc@2x.jpg));
-            background-position-y: 50%;
-        }
-    }
-    &__visual-title{
-        position: absolute;
-
-        @include m.sp{
-            top: 12.2rem;
-            left: 2.5rem;
-            font-size: 3.6rem;
-        }
-        @include m.tab{
-            top: 12rem;
-            left: 8.6rem;
-            font-size: 3.6rem;
-        }
-        @include m.pc{
-            font-size: clamp(3.6rem, 3.143rem + 0.446vw, 4rem);
-            top:23.4rem ;
-            left:8.6rem ;  
-        }
-
-    }  
-}
 
 .p-main__title{
     position: relative;
