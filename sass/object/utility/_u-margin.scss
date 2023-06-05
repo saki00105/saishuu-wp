@@ -10,3 +10,9 @@
         margin-top: 15%;
     }
 }
+
+.p-list__contents + .p-list__contents{
+    @include m.sp{
+        margin-top: 18%;
+    }
+}

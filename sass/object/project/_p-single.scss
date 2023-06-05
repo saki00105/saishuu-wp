@@ -51,7 +51,6 @@
             margin-top: 5%;
         }
     }
-    
     &__content{
         display: flex;
         gap: 3%;
@@ -70,9 +69,7 @@
         }
         &:nth-child(even){
             flex-direction: row-reverse;
-
         }
-        
     }
     &__half-image{
         object-fit: cover;
@@ -107,10 +104,8 @@
                 margin-top: 4%;
                 width: 45%;
                 max-height: 36rem;
-            }
-            
+            }   
         }
-        
     }
     &__flex-wraps{
         flex-wrap: wrap;

@@ -1,0 +1,49 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
+.p-list__contents{
+    @include m.sp{
+        margin-top: 10%;
+    }
+    @include m.tab{
+        margin: 5% 0 0 5%; 
+    }
+    @include m.pc{
+        margin: 5% 0 0 5%; 
+    }
+    li ol{
+        @include m.sp{
+            margin: 5% 0 0 5%;
+        }
+        @include m.tab{
+            margin: 1.5% 0 0 3%;
+        }
+        @include m.pc{
+            margin: 1.5% 0 0 3%;
+        }
+    }
+    &--decimal{
+        @include m.sp{
+            padding-left: 2rem;
+        }
+        @include m.tab{
+            padding-left: 1.6rem;
+        }
+        @include m.pc{
+            padding-left: 1.6rem;
+        }
+    }
+}
+
+.p-list__content + .p-list__content{
+    @include m.sp{
+        margin-top: 5%;
+    }
+    @include m.tab{
+        margin-top: 1.5%;
+    }
+    @include m.pc{
+        margin-top: 1.5%;
+    }
+}
+

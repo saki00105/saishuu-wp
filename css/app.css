@@ -389,6 +389,9 @@ ul, ol, li {
   align-items: center;
   flex-wrap: wrap;
 }
+.c-link--decimal {
+  list-style-type: decimal;
+}
 
 .c-center {
   align-items: center;
@@ -1517,8 +1520,76 @@ ul, ol, li {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .p-list__contents {
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-list__contents {
+    margin: 5% 0 0 5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-list__contents {
+    margin: 5% 0 0 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-list__contents li ol {
+    margin: 5% 0 0 5%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-list__contents li ol {
+    margin: 1.5% 0 0 3%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-list__contents li ol {
+    margin: 1.5% 0 0 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-list__contents--decimal {
+    padding-left: 2rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-list__contents--decimal {
+    padding-left: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-list__contents--decimal {
+    padding-left: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-list__content + .p-list__content {
+    margin-top: 5%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-list__content + .p-list__content {
+    margin-top: 1.5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-list__content + .p-list__content {
+    margin-top: 1.5%;
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-single__content + .p-single__content {
     margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-list__contents + .p-list__contents {
+    margin-top: 18%;
   }
 }/*# sourceMappingURL=app.css.map */
