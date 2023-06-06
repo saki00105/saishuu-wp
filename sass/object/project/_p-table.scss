@@ -2,14 +2,40 @@
 @use "../../foundation/variable" as var;
 
 .p-table{
-    // border:1px black solid;
-    // padding:10px 30px;
+    border-collapse: collapse;
     width: 100%;
-    text-align: center;
-    &--wide{
-
+    @include m.sp{
+        margin-top: 7%;
     }
-    &--small{
-
+    @include m.tab{
+        margin-top: 7%;
+    }
+    @include m.pc{
+        margin-top: 5%;
+    }
+    &__small{
+        @include m.sp{
+            width: 40%;
+            padding: 7%;
+        }
+        @include m.tab{
+            width: 27%;
+            padding: 3%;
+        }
+        @include m.pc{
+            width: 30%;
+            padding: 2%;
+        }
+    }
+    &__wide{
+        @include m.sp{
+            padding: 7%;
+        }
+        @include m.tab{
+            padding: 3%;
+        }
+        @include m.pc{
+            padding: 2%;  
+        }
     }
 }
