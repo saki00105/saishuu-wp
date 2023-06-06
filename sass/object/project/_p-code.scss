@@ -1,0 +1,28 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as var;
+
+.p-code{
+    &.c-color_bg--blockquote{
+        @include m.sp{
+            padding: 15% ;
+        }
+        @include m.tab{
+            padding: 4% ;
+        }
+        @include m.pc{
+            padding: 4% ;
+        }
+    }
+    &__child{
+        @include m.sp{
+            margin-left: 15%;
+        }
+        @include m.tab{
+            margin-left: 3%;
+        }
+        @include m.pc{
+            margin-left: 3%;
+        }
+    }
+   
+}

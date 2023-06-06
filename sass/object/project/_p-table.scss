@@ -1,0 +1,15 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as var;
+
+.p-table{
+    // border:1px black solid;
+    // padding:10px 30px;
+    width: 100%;
+    text-align: center;
+    &--wide{
+
+    }
+    &--small{
+
+    }
+}
