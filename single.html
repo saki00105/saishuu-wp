@@ -140,7 +140,7 @@
 
                 <blockquote cite="/" class="c-color_bg--blockquote c-text--p">
                     <p>Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ</p>
-                    <p>出典元：<cite><a href="/" class="">○○○○○○○○○○○○</a></cite></p>
+                    <p class="c-color_bg--blockquote-source">出典元：<cite><a href="/" class="">○○○○○○○○○○○○</a></cite></p>
                 </blockquote>
                 
                 <div>
@@ -187,7 +187,7 @@
                         <li class="c-link--decimal c-ff-M">リストリストリスト</li>
                     </ol>
                 </div>
-                <div class="p-list__contents c-text--p u-margin__list">
+                <div class="p-list__contents c-text--p">
                     <ol class="p-list__content">
                         <li>リストリストリスト</li>
                         <li>リストリストリスト
@@ -202,18 +202,33 @@
                         <li>リストリストリスト</li>
                     </ol>
                 </div>
-
-                <div class="c-text--p">
-                    <html>
-                        <head>
-                        </head>
-                        <body>
-                        </body>
-                    </html>
+ 
+                <!-- <pre class="p-code c-text--p c-color_bg--blockquote">
+                    <span><</span>html<span>></span>
+                        <span><</span>head<span>></span>
+                        <span><</span>/head<span>></span>
+                        <span><</span>body<span>></span>
+                        <span><</span>/body<span>></span>
+                    <span><</span>/html<span>></span>
+                </pre> -->
+                
+                <div class="p-code c-text--p c-color_bg--blockquote c-ff-M">
+                    <p><span><</span>html<span>></span><br></p>
+                        <p class="p-code__child">
+                            <span><</span>head<span>></span><br>
+                            <span><</span>/head<span>></span><br>
+                            <span><</span>body<span>></span><br>
+                            <span><</span>/body<span>></span>
+                        </p>
+                    <p><span><</span>/html<span>></span></p>
                 </div>
 
+        
+
+                
+
                 <div class="c-text--p">
-                    <table>
+                    <table border="1" style="border-collapse: collapse;">
                         <!-- <thead>
                             <tr>
                                 <th>テーブル</th>

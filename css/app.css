@@ -1191,12 +1191,12 @@ ul, ol, li {
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .c-color_bg--blockquote p:last-of-type {
+  .c-color_bg--blockquote-source {
     margin-top: 5%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .c-color_bg--blockquote p:last-of-type {
+  .c-color_bg--blockquote-source {
     margin-top: 4.5%;
   }
 }
@@ -1582,6 +1582,41 @@ ul, ol, li {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .p-code.c-color_bg--blockquote {
+    padding: 15%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-code.c-color_bg--blockquote {
+    padding: 4%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-code.c-color_bg--blockquote {
+    padding: 4%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-code__child {
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-code__child {
+    margin-left: 3%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-code__child {
+    margin-left: 3%;
+  }
+}
+
+.p-table {
+  width: 100%;
+  text-align: center;
+}
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-single__content + .p-single__content {
     margin-top: 15%;
