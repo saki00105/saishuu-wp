@@ -240,6 +240,7 @@ ul, ol, li {
 .c-button--form {
   border: 1px solid #707070;
   background: linear-gradient(90deg, #F2EDE9 0%, #DED8D3 100%);
+  display: inline-block;
 }
 .c-button--archive {
   border-radius: 5rem;
@@ -1174,7 +1175,7 @@ ul, ol, li {
 
 @media screen and (max-width: 768px) {
   .c-color_bg--blockquote {
-    margin-top: 5%;
+    margin-top: 7%;
     padding: 7% 5%;
   }
 }
@@ -1333,6 +1334,17 @@ ul, ol, li {
   .p-single__flex-wrap:nth-of-type(n+4) {
     margin-top: 1.5%;
   }
+}
+
+.p-single__button {
+  display: inline-block;
+  width: 30%;
+  height: 10rem;
+}
+.p-single__button .c-button--form {
+  width: 100%;
+  height: 10rem;
+  border-radius: 2rem;
 }
 
 .p-visual--main {
@@ -1614,9 +1626,58 @@ ul, ol, li {
 }
 
 .p-table {
+  border-collapse: collapse;
   width: 100%;
-  text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .p-table {
+    margin-top: 7%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-table {
+    margin-top: 7%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-table {
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-table__small {
+    width: 40%;
+    padding: 7%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-table__small {
+    width: 27%;
+    padding: 3%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-table__small {
+    width: 30%;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-table__wide {
+    padding: 7%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-table__wide {
+    padding: 3%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-table__wide {
+    padding: 2%;
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-single__content + .p-single__content {
     margin-top: 15%;

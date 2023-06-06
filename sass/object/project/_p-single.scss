@@ -15,7 +15,7 @@
 
 .c-color_bg--blockquote{
     @include m.sp{
-        margin-top: 5%;
+        margin-top: 7%;
         padding: 7% 5%;
     }
     @include m.tab{
@@ -134,5 +134,17 @@
                 margin-top: 1.5%;
             }
         }
+    }
+}
+
+
+.p-single__button{
+    display: inline-block;
+    width: 30%;
+    height: 10rem;
+    .c-button--form{
+        width: 100%;
+        height: 10rem;
+        border-radius: 2rem;
     }
 }
