@@ -1,13 +1,27 @@
 @use "../foundation/mixin" as m;
 
 .l-inner{
-    @include m.sp{
-        margin: 10% 5%;
+    &--archive{
+        @include m.sp{
+            margin: 10% 5%;
+        }
+        @include m.tab{
+            margin: 4% 5%;
+        }
+        @include m.pc{
+            margin: 4% 5%;
+        }
     }
-    @include m.tab{
-        margin: 4% 5%;
+    &--single_page{
+        @include m.sp{
+            margin: 10% 5% 20%;
+        }
+        @include m.tab{
+            margin: 4% 5% 17%;
+        }
+        @include m.pc{
+            margin: 4% 5% 15%;
+        }
     }
-    @include m.pc{
-        margin: 4% 5%;
-    }
+    
 }
