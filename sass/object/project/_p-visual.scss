@@ -115,7 +115,7 @@
             @include bg-img(url(../../../img/ham-burger-with-vegetables-1639557.jpg));
         }
     }
-    &--single-title{
+    &--single_page-title{
         position: absolute;
         @include m.sp{
             top: 8rem;
@@ -129,5 +129,24 @@
             top:21rem ;
             left:8rem ;  
         }
+    }
+    &--page{
+        width: auto;
+        position: relative; 
+        background-position: center; 
+        @include m.sp{
+            height: 19rem;
+            @include bg-img(url(../../../img/black-steel-lamp-post-1070945.png));
+        }
+        @include m.tab{
+            height: 46rem;
+            @include bg-img(url(../../../img/black-steel-lamp-post-1070945.png));
+        }
+        @include m.pc{
+            background-position-y: 1%;
+            height: 46rem;
+            @include bg-img(url(../../../img/black-steel-lamp-post-1070945.png));
+        }
+
     }
 }
