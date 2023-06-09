@@ -10,7 +10,6 @@
 @mixin bg-img($path, $size: cover, $repeat: no-repeat) {
     background-image: ($path);
     background-size: $size;
-    // background-position: $pos;
     background-repeat: $repeat;
 }
 
@@ -38,13 +37,11 @@ $sp: 768px;
       @content;
     }
 }
-
 @mixin tab {
   @media screen and (min-width: ($tab) ) and (max-width:($pc)) {
     @content;
   }
 }
-
 @mixin sp {
   @media screen and (max-width: ($sp)) {
     @content;

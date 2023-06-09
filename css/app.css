@@ -68,6 +68,13 @@ ul, ol, li {
   padding-left: 0px;
 }
 
+button {
+  all: unset;
+}
+button:hover {
+  cursor: pointer;
+}
+
 .l-footer {
   background-image: url("../../img/レイヤー 1.jpg");
   background-color: #9D8670;
@@ -493,6 +500,9 @@ ul, ol, li {
 }
 .p-header__submit {
   height: 4.6rem;
+}
+.p-header__submit:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .p-header__submit {
@@ -1377,14 +1387,10 @@ ul, ol, li {
   }
 }
 .p-single__button button {
-  all: unset;
   display: flex;
   margin: 0 auto;
   height: 100%;
   align-items: center;
-}
-.p-single__button button:hover {
-  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

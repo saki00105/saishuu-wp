@@ -42,11 +42,9 @@
     @include m.sp{
         padding: 10%;
     }
-
     @include m.tab{
         padding: 7% 5%;
     }
-
     @include m.pc{
         width: 60%;
         padding: 5% 7%;
@@ -60,12 +58,10 @@
         font-size: 1.4rem;
         margin-top: 15%;
     }
-
     @include m.tab{
         font-size: 1.4rem;
         margin-top: 5%;
     }
-
     @include m.pc{
         margin-top: 15%;
         font-size: clamp(0.8rem, 0.186rem + 0.737vw, 1.6rem);

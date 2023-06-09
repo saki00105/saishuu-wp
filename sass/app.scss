@@ -28,9 +28,6 @@
 // // -----------------------------------------------------------------
 
 @import "object/component/c-button";
-// @import "object/component/c-inner";
-// @import "object/component/_grid";
-// @import "object/component/_media";
 @import "object/component/c-flex";
 @import "object/component/c-color";
 @import "object/component/c-border";
@@ -43,10 +40,6 @@
 // // Project
 // // -----------------------------------------------------------------
 
-// @import "object/project/_articles";
-// @import "object/project/_comments";
-// @import "object/project/_gallery";
-// @import "object/project/_profile";
 @import "object/project/p-header";
 @import "object/project/p-sideber";
 @import "object/project/p-card";
@@ -68,11 +61,5 @@
 // // Utility
 // // -----------------------------------------------------------------
 
-// @import "object/utility/_align";
-// @import "object/utility/_clearfix";
 @import "object/utility/u-margin";
-@import "object/utility/u-padding";
 @import "object/utility/u-position";
-// @import "object/utility/_size";
-@import "object/utility/u-text";
-@import "object/utility/u-color";

@@ -4,14 +4,12 @@
 .l-header{
     background-color: var.$header-color;
     text-align: center;
-
     @include m.sp{
         padding: 0 0 15%;
     }
     @include m.tab{
         padding: 0 0 7%;
     }
-    
     @include m.pc{
         display: flex;
         justify-content: space-between;

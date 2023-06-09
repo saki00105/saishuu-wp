@@ -31,6 +31,13 @@ ul,ol,li{
     list-style: none;
     padding-left: 0px;
 }
+
+button{
+    all: unset;
+    &:hover{
+        cursor: pointer;
+    }
+}
    
 // p > a , li > a{
 //     text-decoration: none;

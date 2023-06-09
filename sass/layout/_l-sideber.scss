@@ -54,17 +54,7 @@
     right: 0;
     overflow-y: scroll;
     overscroll-behavior-y: contain;
-    // //スクロールバーの非表示
-    //     /*IE(Internet Explorer)・Microsoft Edge*/
-    //     -ms-overflow-style: none;
-    //     /*Firefox*/
-    //     scrollbar-width: none;
-    //     /*Google Chrome、Safari*/
-    //     &::-webkit-scrollbar{
-    //         display: none;
-    //     }
 }
-
 .l-sideber__layer{
     position: fixed;
     width: 100%;
@@ -72,8 +62,6 @@
     top: 0;
     left: 0;
     background:rgba(0,0,0,0.4);
-    // opacity: 0;
-    // transition: .5s;
     display: none;
 }
 

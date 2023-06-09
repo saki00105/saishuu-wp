@@ -9,27 +9,22 @@
     &--white{
         background:rgba(255,255,255,0.8);
     }
-
     &--black-map{
         @include m.sp{
             background:linear-gradient(180deg,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 60%,rgba(255, 255, 255, 0)60%,rgba(255, 255, 255, 0)100%);
         }
-
         @include m.tab{
             background:rgba(0,0,0,0.4);
         }
         @include m.pc{
             background:rgba(0,0,0,0.4);
         }
-
     }
     &--black-top{
         background:rgba(0,0,0,0.4);
     }
     &--blockquote{
-        // background:rgba(0,15,255,0.1);
         background-color: $blockquote-color;
     }
-
 }
 
