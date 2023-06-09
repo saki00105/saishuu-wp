@@ -54,7 +54,6 @@
     &__content{
         display: flex;
         gap: 3%;
-        // @extend .p-single__full-image;
         @include m.sp{
             margin-top: 8%;
         }
@@ -87,7 +86,6 @@
             max-height: 36rem;
         }
         &--center{
-            // @extend .p-single__full-image;
             margin: 0 auto;
             object-fit: cover;
             object-position: bottom;
@@ -138,7 +136,6 @@
 }
 
 .p-single__button{
-    // display: inline-block;
     color: var.$text-color;
     border-radius: 2rem;
     @include m.sp{
@@ -158,14 +155,14 @@
     }   
 
     button{
-        all: unset;
+        // all: unset;
         display: flex;
         margin: 0 auto;
         height: 100%;
         align-items: center;
-        &:hover{
-            cursor: pointer;
-        }
+        // &:hover{
+        //     cursor: pointer;
+        // }
     }
 }
 

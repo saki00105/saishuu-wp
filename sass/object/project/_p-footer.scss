@@ -4,7 +4,6 @@
 
 .p-footer{
     text-align: center;
-
     @include m.sp{
         padding: 5% 0 3%;
     }
@@ -14,7 +13,6 @@
     @include m.pc{
         margin: 2% 0 1% 0;
     }
-
     p{
         font-size: 1.4rem;
         @include m.sp{
@@ -30,7 +28,6 @@
 }
 
 .p-footer__link{
-    // font-size: 1.8rem;
     @include m.sp{
         font-size: 1.8rem;
     }
@@ -40,7 +37,6 @@
     @include m.pc{
         font-size: 2rem;
     }
-
     ul{
         justify-content: center;
         position: relative;
@@ -60,7 +56,6 @@
 .p-footer__link--shop + .p-footer__link--history{
     margin-left: 3%;
 }
-
 .p-footer__layer{
     background-image: url(../../../img/レイヤー\ 1.jpg);
 }
