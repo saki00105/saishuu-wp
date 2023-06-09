@@ -1,0 +1,11 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
+.p-visual--single_page-title{
+    &.u-position{
+        position: absolute;
+        @include m.sp{
+            left: 4.5rem;
+        }
+    }
+}

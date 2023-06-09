@@ -1566,25 +1566,55 @@ ul, ol, li {
     background-repeat: no-repeat;
   }
 }
-.p-visual--single-title {
+.p-visual--single_page-title {
   position: absolute;
 }
 @media screen and (max-width: 768px) {
-  .p-visual--single-title {
+  .p-visual--single_page-title {
     top: 8rem;
     left: 2rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-visual--single-title {
+  .p-visual--single_page-title {
     top: 21rem;
     left: 8rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-visual--single-title {
+  .p-visual--single_page-title {
     top: 21rem;
     left: 8rem;
+  }
+}
+.p-visual--page {
+  width: auto;
+  position: relative;
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  .p-visual--page {
+    height: 19rem;
+    background-image: url(../../../img/black-steel-lamp-post-1070945.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-visual--page {
+    height: 46rem;
+    background-image: url(../../../img/black-steel-lamp-post-1070945.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-visual--page {
+    background-position-y: 1%;
+    height: 46rem;
+    background-image: url(../../../img/black-steel-lamp-post-1070945.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -1743,5 +1773,14 @@ ul, ol, li {
 @media screen and (max-width: 768px) {
   .p-list__contents + .p-list__contents {
     margin-top: 18%;
+  }
+}
+
+.p-visual--single_page-title.u-position {
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .p-visual--single_page-title.u-position {
+    left: 4.5rem;
   }
 }/*# sourceMappingURL=app.css.map */
