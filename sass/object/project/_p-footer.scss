@@ -11,7 +11,8 @@
         padding: 4% 0 2%;
     }
     @include m.pc{
-        margin: 2% 0 1% 0;
+        // margin: 2% 0 1% 0;
+        padding: 2% 0 1% 0;
     }
     p{
         font-size: 1.4rem;

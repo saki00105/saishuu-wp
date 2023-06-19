@@ -107,7 +107,7 @@
     }
 }
 
-.p-card__archive-wrap + .p-card__archive-wrap{
+.p-card__archive li + li{
     @include m.sp{
         margin-top: 5%;
     }

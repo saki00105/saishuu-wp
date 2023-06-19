@@ -3,13 +3,13 @@
 .p-sideber{
     position: relative;
     @include m.sp{
-        margin: 18rem 0 30rem 4.6rem;  
+        padding: 18rem 0 30rem 4.6rem;  
     }
     @include m.tab{
-        margin: 18rem 0 30rem 4.6rem;
+        padding: 18rem 0 30rem 4.6rem;
     }
     @include m.pc{
-        margin: 9rem 0 0 14%;
+        padding: 9rem 0 0 14%;
         font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
     }
 
