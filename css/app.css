@@ -525,17 +525,17 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .p-sideber {
-    margin: 18rem 0 30rem 4.6rem;
+    padding: 18rem 0 30rem 4.6rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-sideber {
-    margin: 18rem 0 30rem 4.6rem;
+    padding: 18rem 0 30rem 4.6rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-sideber {
-    margin: 9rem 0 0 14%;
+    padding: 9rem 0 0 14%;
     font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
   }
 }
@@ -779,17 +779,17 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .p-card__archive-wrap + .p-card__archive-wrap {
+  .p-card__archive li + li {
     margin-top: 5%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-card__archive-wrap + .p-card__archive-wrap {
+  .p-card__archive li + li {
     margin-top: 3%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-card__archive-wrap + .p-card__archive-wrap {
+  .p-card__archive li + li {
     margin-top: 2%;
   }
 }
@@ -937,7 +937,7 @@ button:hover {
 }
 @media screen and (min-width: 1024px) {
   .p-footer {
-    margin: 2% 0 1% 0;
+    padding: 2% 0 1% 0;
   }
 }
 .p-footer p {
@@ -999,6 +999,7 @@ button:hover {
 }
 
 .p-map {
+  display: block;
   background-image: url(../../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
   background-size: cover;
   background-repeat: no-repeat;
