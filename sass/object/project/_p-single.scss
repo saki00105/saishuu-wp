@@ -1,7 +1,8 @@
 @use "../../foundation/variable" as var;
 @use "../../foundation/mixin" as m;
 
-.p-single__text > * + * {
+// .p-single__text > * + * {
+.p-single__text {
     @include m.sp{
         margin-top: 6%;
     }

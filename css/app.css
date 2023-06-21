@@ -1184,17 +1184,17 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .p-single__text > * + * {
+  .p-single__text {
     margin-top: 6%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-single__text > * + * {
+  .p-single__text {
     margin-top: 5%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-single__text > * + * {
+  .p-single__text {
     margin-top: 4%;
   }
 }
