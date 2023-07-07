@@ -2,7 +2,7 @@
 
 
 
-        <div class="l-sideber">
+        <!-- <div class="l-sideber">
             <aside class="p-sideber">
                 <p class="p-sideber__menu c-fw-700">
                     <a href="/">Memu</a>
@@ -87,7 +87,40 @@
                     </ul>
                 </nav>
             </aside>
+        </div> -->
+
+
+    <div class="p-sidebar">
+        <?php
+            if ( is_active_sidebar( 'hamburger_widget' ) ) :
+                dynamic_sidebar( 'hamburger_widget' );
+            else:
+        ?>
+        <div class="widget">
+            <h2>No Widget</h2>
+            <p>ウィジットは設定されていません。</p>
         </div>
+        <?php endif; ?>
+        <?php
+            if ( is_active_sidebar( 'side_widget' ) ) :
+                dynamic_sidebar( 'side_widget' );
+            else:
+        ?>
+        <div class="widget">
+            <h2>No Widget</h2>
+            <p>ウィジットは設定されていません。</p>
+        </div>
+        <?php endif; ?>
+        <?php
+            if ( is_active_sidebar( 'drink_widget' ) ) :
+                dynamic_sidebar( 'drink_widget' );
+            else:
+        ?>
+        <div class="widget">
+            <h2>No Widget</h2>
+            <p>ウィジットは設定されていません。</p>
+        </div>
+        <?php endif; ?>
+    </div>
 
-
-        <?php wp_nav_menu(); ?>
+        
