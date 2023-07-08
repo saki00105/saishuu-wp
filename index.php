@@ -2,7 +2,8 @@
 
     <?php get_header(); ?>
 
-    <?php wp_nav_menu(); ?>
+        <?php get_sidebar(); ?>
+
         
         <main class="l-main">
             <div class="p-visual--main">
