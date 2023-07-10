@@ -1,18 +1,24 @@
 <?php
     add_theme_support( 'menus' );
     add_theme_support( 'title-tag');
-
+    register_nav_menus( array(
+        'sideber-menu' => esc_html__( 'Sideber Menu', 'rtbread' ) ,
+        'footer-menu'  => esc_html__( 'Footer Menu', 'rtbread' ),
+    ) );
+    
+   
     //タイトル出力
-    function wpbeg_title( $title ) {
-        if ( is_front_page() && is_home() ) { //トップページなら
-            $title = get_bloginfo( 'name', 'display' );
-        } elseif ( is_singular() ) { //シングルページなら
-            $title = single_post_title( '', false );
-        }
-            return $title;
-        }
-    add_filter( 'pre_get_document_title', 'wpbeg_title' );
+    // function wpbeg_title( $title ) {
+    //     if ( is_front_page() && is_home() ) { //トップページなら
+    //         $title = get_bloginfo( 'name', 'display' );
+    //     } elseif ( is_singular() ) { //シングルページなら
+    //         $title = single_post_title( '', false );
+    //     }
+    //         return $title;
+    //     }
+    // add_filter( 'pre_get_document_title', 'wpbeg_title' );
 
+    //スタイルシート
     function wpbeg_script() {
         wp_enqueue_style( 'mplus1p', 'https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;700&display=swap', array() );
         wp_enqueue_style( 'roboto', 'https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap', array() );
@@ -28,39 +34,25 @@
     }
     add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
 
-    function wpbeg_widgets_init() {
-        register_sidebar (
-            array(
-                'name'          => 'ハンバーガーウィジェット',
-                'id'            => 'hamburgrt_widget',
-                'description'   => 'ハンバーガー用ウィジェットです',
-                'before_widget' => '<div id="%1$s" class="widget %2$s">',
-                'after_widget'  => '</div>',
-                'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
-                'after_title'   => "</h2>\n",
-            )
-        );
-        register_sidebar(
-            array(
-              'name'          => 'サイドウィジェット',
-              'id'            => 'side_widget',
-              'description'   => 'サイド用ウィジェットです',
-              'before_widget' => '<div id="%1$s" class="widget %2$s">',
-              'after_widget'  => '</div>',
-              'before_title'  => '<h2><i class="fa fa-tags" aria-hidden="true"></i>',
-              'after_title'   => "</h2>\n",
-            )
-          );
-          register_sidebar(
-            array(
-              'name'          => 'ドリンクウィジェット',
-              'id'            => 'drink_widget',
-              'description'   => 'ドリンク用ウィジェットです',
-              'before_widget' => '<div id="%1$s" class="widget %2$s">',
-              'after_widget'  => '</div>',
-              'before_title'  => '<h2><i class="fa fa-archive" aria-hidden="true"></i>',
-              'after_title'   => "</h2>\n",
-            )
-          );
-    }
-    add_action( 'widgets_init', 'wpbeg_widgets_init' );
+
+    //ウィジット
+    // function wpbeg_widgets_init() {
+    //     register_sidebar (
+    //         array(
+    //             'name'          => 'サイドバーウィジェット',
+    //             'id'            => 'side_widget',
+    //             'description'   => 'サイドバー用ウィジェットです',
+    //             'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    //             'after_widget'  => '</div>',
+    //             'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
+    //             'after_title'   => "</h2>\n",
+    //         )
+    //     );
+    // }
+    // add_action( 'widgets_init', 'wpbeg_widgets_init' );
+
+    //カスタムメニュー
+    // function  register_nav_menus(){
+        
+    // }   
+    // add_action( 'after_setup_theme', 'register_my_menus' );
