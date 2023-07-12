@@ -25,7 +25,7 @@
 
         <header class="l-header">
             <!-- <p class="p-header__title">Hamburger</p> -->
-            <a class="p-header__title" href="<?php echo esc_url( home_url('/') );?>"></a>
+            <a class="p-header__title" href="<?php echo esc_url( home_url('/') );?>"><?php bloginfo( 'name' ); ?></a>
 
             
             <?php get_search_form( );?>
