@@ -2,7 +2,7 @@
 @use "../../foundation/mixin" as m;
 
 .p-pagination{
-  color: var.$sidber-text;
+  color: var.$sidebar-text;
   font-size: 1.6rem; 
   position: relative;
   @include m.sp{

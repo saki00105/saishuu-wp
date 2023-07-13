@@ -129,6 +129,11 @@
                 <h1 class="p-visual--archive-title c-text--h1 c-color--white c-fw-700">Menu:</h1>
             </div>
 
+            <!-- <?php 
+            if (have_posts(  )):
+                while(have_posts(  )):
+                the_post(  ); 
+                ?> -->
             <div class="l-inner--archive">
                 <h2 class="c-text--h2">小見出しが入ります</h2>
                 <p class="p-archive__text c-text--p">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
@@ -174,6 +179,10 @@
                         </figure> 
                     </li>
                 </ul>
+
+                <!-- <?php endwhile ; else :?>
+                <p>記事はありません</p>
+            <?php endif; ?> -->
            
                 <ul class="p-pagination c-flex c-center">
                     <li class="p-pagination__text">

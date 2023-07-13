@@ -1,10 +1,17 @@
-<div class="l-sideber__layer"></div>
+<div class="l-sidebar__layer"></div>
 
-<div class="p-sidebar">
+<div class="l-sidebar">
+    <p class="p-sidebar__menu c-fw-700">
+        <a href="/">Menu</a>
+    </p>
+    
+    <a class="p-sidebar__box" href="/"></a>
+
+
     <?php wp_nav_menu( array(
-        'theme_location' => 'sideber-menu',
-        'menu_class' => 'menu-item-class'
+        'theme_location' => 'sidebar-menu',
         ) );
     ?>
+    
 </div>
 

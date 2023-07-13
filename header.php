@@ -30,8 +30,8 @@
             
             <?php get_search_form( );?>
 
-            <p class="l-sideber__box c-fw-700">
-                <a href="/">Memu</a>
+            <p class="l-sidebar__box c-fw-700">
+                <a href="/">Menu</a>
             </p>
 
         </header>

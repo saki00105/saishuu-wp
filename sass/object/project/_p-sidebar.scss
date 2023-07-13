@@ -1,29 +1,24 @@
 @use "../../foundation/mixin" as m;
 
-.p-sideber{
-    position: relative;
-    @include m.sp{
-        padding: 18rem 0 30rem 4.6rem;  
-    }
-    @include m.tab{
-        padding: 18rem 0 30rem 4.6rem;
-    }
-    @include m.pc{
-        padding: 9rem 0 0 14%;
-        font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
-    }
 
+.p-sidebar{
     &__menu{
         @include m.sp{
             display: none;
+            padding: 18rem 0 30rem 4.6rem;  
+    
         }
         @include m.tab{
             display: none;
+            padding: 18rem 0 30rem 4.6rem;
+    
         }
         @include m.pc{
+            padding: 9rem 0 0 14%;
             font-size: clamp(1.7rem, 0.394rem + 1.565vw, 3.4rem);
         }
     }
+    
 
     &__box{
         position: absolute;
@@ -39,7 +34,7 @@
                 width: 5rem;
                 height: 0.6rem;
                 transform: rotate(45deg);
-                background-color: $sidber-text;
+                background-color: $sidebar-text;
                 top: 2rem;
             }
             &::after{
@@ -48,7 +43,7 @@
                 width: 5rem;
                 height: 0.6rem;
                 transform: rotate(135deg);
-                background-color: $sidber-text;
+                background-color: $sidebar-text;
                 top: 2rem;
             }
         }
@@ -60,7 +55,7 @@
                 width: 5rem;
                 height: 0.6rem;
                 transform: rotate(45deg);
-                background-color: $sidber-text;
+                background-color: $sidebar-text;
                 top: 2rem;
             }
             &::after{
@@ -69,40 +64,66 @@
                 width: 5rem;
                 height: 0.6rem;
                 transform: rotate(135deg);
-                background-color: $sidber-text;
+                background-color: $sidebar-text;
                 top: 2rem;
             }
         }
     }
     
-    &__sub{
-        margin-top: 5rem;
-        > a{
-            @include m.sp{
-                font-size: 2.4rem;
-            }
-            @include m.tab{
-                font-size: 2.4rem;
-            }
-            @include m.pc{
-                font-size: clamp(1.2rem, 0.278rem + 1.105vw, 2.4rem);
-            }
-        }
-       
+}
+
+.menu-sidebar-container{
+    position: relative;
+    @include m.sp{
+        padding: 15rem 0 30rem 4.6rem;  
+    }
+    @include m.tab{
+        padding: 15rem 0 30rem 4.6rem;
+    }
+    @include m.pc{
+        padding: 3rem 0 0 14%;
+        font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
     }
 
-    &__items{
-        margin-top: 3.2rem;
-        padding-left: 2rem;
+
+    
+}  
+
+.menu-item-has-children{
+    > a{
+        font-weight: 700;
         @include m.sp{
-            font-size: 2rem;
+            font-size: 2.4rem;
         }
         @include m.tab{
-            font-size: 2rem;
+            font-size: 2.4rem;
+        }
+        @include m.pc{
+            font-size: clamp(1.2rem, 0.278rem + 1.105vw, 2.4rem);
         }
     }
+    
 }
-.p-sideber__item +  .p-sideber__item{
+
+#menu-sidebar{
+    > .menu-item{
+        margin-top: 5rem;
+    }
+}
+
+
+.sub-menu{
+    margin-top: 3.2rem;
+    padding-left: 2rem;
+    @include m.sp{
+        font-size: 2rem;
+    }
+    @include m.tab{
+        font-size: 2rem;
+    }
+}
+
+.sub-menu > *{
     margin-top: 2rem;
 }
 

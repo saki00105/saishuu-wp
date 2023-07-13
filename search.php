@@ -30,7 +30,7 @@
             </form>
 
             <p class="l-sideber__box c-fw-700">
-                <a href="/">Memu</a>
+                <a href="/">Menu</a>
             </p>
 
         </header>

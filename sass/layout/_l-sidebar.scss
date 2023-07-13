@@ -1,8 +1,8 @@
 @use "../foundation/variable" as var;
 @use "../foundation/mixin" as m;
 
-.l-sideber{
-    background-color: $sideber-color;
+.l-sidebar{
+    background-color: $sidebar-color;
     @include m.sp{
         position: fixed;
         top: 0;
@@ -50,12 +50,12 @@
 }
 
 
-.l-sideber.is-open{
+.l-sidebar.is-open{
     right: 0;
     overflow-y: scroll;
     overscroll-behavior-y: contain;
 }
-.l-sideber__layer{
+.l-sidebar__layer{
     position: fixed;
     width: 100%;
     height:100%;
@@ -65,7 +65,7 @@
     display: none;
 }
 
-.l-sideber__layer.is-open{
+.l-sidebar__layer.is-open{
     opacity: 1;
     z-index: 15;
 }

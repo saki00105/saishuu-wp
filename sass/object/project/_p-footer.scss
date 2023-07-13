@@ -14,49 +14,59 @@
         // margin: 2% 0 1% 0;
         padding: 2% 0 1% 0;
     }
-    p{
-        font-size: 1.4rem;
-        @include m.sp{
-            margin-top: 18%;
-        }
-        @include m.tab{
-            margin-top: 5%;
-        }
-        @include m.pc{
-            margin-top: 2%;
-        }
-    }
 }
-
-.p-footer__link{
+.menu-footer-container{
+    font-size: 1.4rem;
     @include m.sp{
-        font-size: 1.8rem;
+        margin-top: 18%;
     }
     @include m.tab{
-        font-size: 2rem;
+        margin-top: 5%;
     }
     @include m.pc{
-        font-size: 2rem;
+        margin-top: 2%;
     }
-    ul{
-        justify-content: center;
-        position: relative;
+   
+}
 
-        &::after{
-            @include after;
-            content: "";
-            width: 2rem;
-            transform: rotate(90deg);
-            border: 0.1rem solid var.$white;
-            top: 45%;
-            left: 50%;
+#menu-footer{
+    display: inline-flex;
+   
+    .menu-item{
+        width: 100%;
+        @include m.sp{
+            font-size: 1.8rem;
+        }
+        @include m.tab{
+            font-size: 2rem;
+        }
+        @include m.pc{
+            font-size: 2rem;
+        }
+        
+
+        + .menu-item{
+            margin-left: 3%;
+            
+        }
+        a{
+            color: var.$white;
+            justify-content: center;
+            position: relative;
+            &::after{
+                @include after;
+                content: "";
+                width: 2rem;
+                transform: rotate(90deg);
+                border: 0.1rem solid var.$white;
+                top: 45%;
+                left: 50
+            }
+           
         }
     }
 }
 
-.p-footer__link--shop + .p-footer__link--history{
-    margin-left: 3%;
-}
 .p-footer__layer{
     background-image: url(../../../img/レイヤー\ 1.jpg);
 }

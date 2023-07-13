@@ -1,9 +1,9 @@
 $(function() {
     // サイドバーのクリック表示
-    $('.l-sideber__box').on('click', function() {
+    $('.l-sidebar__box').on('click', function() {
         $(this).addClass("is-open");
-        $('.l-sideber__layer').fadeIn(500).addClass("is-open");
-        $(".l-sideber").delay(500).queue(function(){
+        $('.l-sidebar__layer').fadeIn(500).addClass("is-open");
+        $(".l-sidebar").delay(500).queue(function(){
             $(this).addClass("is-open").dequeue();
         });
         $("body").delay(500).queue(function(){
@@ -12,10 +12,10 @@ $(function() {
         return false;
     });
     //サイドバーを閉じる
-    $('.p-sideber__box').on('click', function() {
-      $('.l-sideber__layer').hide().removeClass('is-open');
-      $('.l-sideber__box').removeClass('is-open');
-      $(".l-sideber").removeClass("is-open");
+    $('.p-sidebar__box').on('click', function() {
+      $('.l-sidebar__layer').hide().removeClass('is-open');
+      $('.l-sidebar__box').removeClass('is-open');
+      $(".l-sidebar").removeClass("is-open");
       $('body').removeClass('c-fixed');
       return false;
     });
@@ -24,9 +24,9 @@ $(function() {
 //リサイズ
 $(function(){
     $(window).resize(function(){
-        $(".l-sideber__box").removeClass("is-open");
-        $(".l-sideber__layer").removeClass("is-open").css("display","none");
-        $(".l-sideber").removeClass("is-open");
+        $(".l-sidebar__box").removeClass("is-open");
+        $(".l-sidebar__layer").removeClass("is-open").css("display","none");
+        $(".l-sidebar").removeClass("is-open");
         $('body').removeClass('c-fixed');
     });
 });
