@@ -1,14 +1,13 @@
 
 
     <?php get_header(); ?>
-
-   
-
         
         <main class="l-main">
             <div class="p-visual--main">
                 <h1 class="p-visual--main-title c-color--white c-fw-700">ダミーサイト</h1>
             </div>
+
+            
 
             <article class="l-section c-flex">
                 <section class="p-card__main p-main--TakeOut c-colum">
@@ -59,6 +58,7 @@
                     </ul>
                 </section>
             </article>
+           
 
             <div class="p-map">
                 <section class="p-map__entry c-color--white c-color_bg--black-map">
