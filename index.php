@@ -1,9 +1,10 @@
 
 
-    <?php get_header(); ?>
+<?php get_header(); ?>
         
         <main class="l-main">
             <div class="p-visual--main">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/">
                 <h1 class="p-visual--main-title c-color--white c-fw-700">ダミーサイト</h1>
             </div>
 
