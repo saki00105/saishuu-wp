@@ -306,7 +306,8 @@ button:hover {
 .c-color_bg--black-top {
   background: rgba(0, 0, 0, 0.4);
 }
-.c-color_bg--blockquote {
+
+.wp-block-quote {
   background-color: #f5f5f5;
 }
 
@@ -1201,121 +1202,102 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .p-single__text {
+  .wp-block-heading {
     margin-top: 6%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-single__text {
+  .wp-block-heading {
     margin-top: 5%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-single__text {
+  .wp-block-heading {
     margin-top: 4%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .c-color_bg--blockquote {
+  .wp-block-quote {
     margin-top: 7%;
     padding: 7% 5%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .c-color_bg--blockquote {
+  .wp-block-quote {
     margin-top: 6%;
     padding: 6%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .c-color_bg--blockquote {
+  .wp-block-quote {
     margin-top: 5%;
     padding: 4%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .c-color_bg--blockquote-source {
+  .wp-block-quote cite {
     margin-top: 5%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .c-color_bg--blockquote-source {
+  .wp-block-quote cite {
     margin-top: 4.5%;
   }
 }
 
-.p-single__full-image {
+.wp-block-image.__full-image {
   width: 100%;
   height: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media screen and (max-width: 768px) {
-  .p-single__full-image {
+  .wp-block-image.__full-image {
     margin-top: 8%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-single__full-image {
+  .wp-block-image.__full-image {
     margin-top: 7%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-single__full-image {
+  .wp-block-image.__full-image {
     margin-top: 5%;
   }
 }
-.p-single__content {
-  display: flex;
+
+.wp-block-media-text {
   gap: 3%;
 }
 @media screen and (max-width: 768px) {
-  .p-single__content {
+  .wp-block-media-text {
     margin-top: 8%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-single__content {
+  .wp-block-media-text {
     margin-top: 7%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-single__content {
+  .wp-block-media-text {
     margin-top: 4%;
   }
 }
-.p-single__content p {
-  width: 55%;
+.wp-block-media-text__content {
+  height: 100%;
+  padding: 0 !important;
 }
-.p-single__content:nth-child(even) {
-  flex-direction: row-reverse;
-}
-.p-single__half-image {
+
+.__half-image {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
 }
-@media screen and (max-width: 768px) {
-  .p-single__half-image {
-    width: 45%;
-    height: 50%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-single__half-image {
-    width: 45%;
-    height: 50%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-single__half-image {
-    width: 45%;
-    max-height: 36rem;
-  }
-}
-.p-single__half-image--center {
+.__half-image--center {
   margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1323,92 +1305,87 @@ button:hover {
      object-position: bottom;
 }
 @media screen and (max-width: 768px) {
-  .p-single__half-image--center {
+  .__half-image--center {
     margin-top: 8%;
     width: 80%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-single__half-image--center {
+  .__half-image--center {
     margin-top: 7%;
     width: 80%;
     max-height: 36rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-single__half-image--center {
+  .__half-image--center {
     margin-top: 4%;
     width: 45%;
     max-height: 36rem;
   }
 }
-.p-single__flex-wraps {
+
+.wp-block-gallery {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 5%;
 }
-.p-single__flex-wrap {
+.wp-block-gallery .wp-block-image {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
 }
 @media screen and (max-width: 768px) {
-  .p-single__flex-wrap {
+  .wp-block-gallery .wp-block-image {
     width: 100%;
     flex-flow: column;
   }
-  .p-single__flex-wrap:nth-of-type(n+2) {
+  .wp-block-gallery .wp-block-image:nth-of-type(n+2) {
     margin-top: 4.5%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-single__flex-wrap {
+  .wp-block-gallery .wp-block-image {
     width: 49%;
   }
-  .p-single__flex-wrap:nth-of-type(n+3) {
+  .wp-block-gallery .wp-block-image:nth-of-type(n+3) {
     margin-top: 2%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-single__flex-wrap {
+  .wp-block-gallery .wp-block-image {
     width: 32%;
   }
-  .p-single__flex-wrap:nth-of-type(n+4) {
+  .wp-block-gallery .wp-block-image:nth-of-type(n+4) {
     margin-top: 1.5%;
   }
 }
 
-.p-single__button {
+.wp-block-button {
   color: #3C2A10;
   border-radius: 2rem;
 }
 @media screen and (max-width: 768px) {
-  .p-single__button {
+  .wp-block-button {
     margin-top: 18%;
     width: 100%;
     height: 8rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-single__button {
+  .wp-block-button {
     margin-top: 7%;
     width: 60%;
     height: 10rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-single__button {
+  .wp-block-button {
     margin-top: 5%;
     width: 30%;
     height: 10rem;
   }
-}
-.p-single__button button {
-  display: flex;
-  margin: 0 auto;
-  height: 100%;
-  align-items: center;
 }
 
 @media screen and (max-width: 768px) {

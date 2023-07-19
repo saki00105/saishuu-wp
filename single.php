@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
         <main class="l-main">
-            <div class="p-visual--single">
+            <!-- <div class="p-visual--single">
                 <h1 class="p-visual--single_page-title c-text--h1 c-color--white c-fw-700">h1 チーズバーガー</h1>
             </div>
 
@@ -123,7 +123,8 @@
                     <p class="c-ff-M c-fw-700 c-text--p">boldboldboldboldboldboldbold</p>
                 </div>
             
-            </div>
+            </div> -->
+            <?php the_content( ); ?>
 
         </main>
 
