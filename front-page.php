@@ -1,15 +1,28 @@
+<?php
+/*
+Template Name: TOPページ
+*/
+?>
+
 <?php get_header(); ?>
 
 
-<main class="l-main">
-            <div class="p-visual--main">
-            <img src="<?php echo esc_url( get_template_file_uri( '/img/mainvisual-sp@2x') ) ; ?>/img/">
-                <h1 class="p-visual--main-title c-color--white c-fw-700">ダミーサイト</h1>
+    <main class="l-main">
+        <div class="p-visual--main">
+            <img src="/">
+            <h1 class="p-visual--main-title c-color--white c-fw-700">ダミーサイト</h1>
+        </div>
+
+        <article class="l-section c-flex">
+
+            <div class="">
+                <?php the_content( ); ?>
             </div>
 
-            
 
-            <article class="l-section c-flex">
+        </article>
+
+            <!-- <article class="l-section c-flex">
                 <section class="p-card__main p-main--TakeOut c-colum">
                     <h2 class="p-main__title c-color--white c-border--line">Take Out</h2>
 
@@ -57,20 +70,20 @@
                         </li>
                     </ul>
                 </section>
-            </article>
+            </article> -->
            
 
-            <div class="p-map">
+            <!-- <div class="p-map">
                 <section class="p-map__entry c-color--white c-color_bg--black-map">
                     <h2 class="p-map__title c-border--line c-fw-700">
                        見出しが入ります 
                     </h2>
                     <p class="p-map__body c-fw-700">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 -->
-                    </p>
+                    <!-- </p>
                 </section>
-            </div>
+            </div> --> 
 
-        </main>
+    </main>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
