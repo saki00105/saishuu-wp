@@ -1362,30 +1362,35 @@ button:hover {
   }
 }
 
-.wp-block-button {
-  color: #3C2A10;
-  border-radius: 2rem;
-}
 @media screen and (max-width: 768px) {
-  .wp-block-button {
+  .p-single__button {
     margin-top: 18%;
-    width: 100%;
     height: 8rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .wp-block-button {
+  .p-single__button {
     margin-top: 7%;
-    width: 60%;
     height: 10rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .wp-block-button {
+  .p-single__button {
     margin-top: 5%;
-    width: 30%;
     height: 10rem;
   }
+}
+
+.wp-block-button {
+  color: #3C2A10;
+  border-radius: 2rem;
+}
+.wp-block-button__link {
+  display: flex;
+  margin: 0 auto;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -1634,34 +1639,23 @@ button:hover {
     margin: 5% 0 0 5%;
   }
 }
+
+.p-list__content {
+  list-style: auto;
+}
 @media screen and (max-width: 768px) {
-  .p-list__contents li ol {
+  .p-list__content li ol {
     margin: 5% 0 0 5%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-list__contents li ol {
+  .p-list__content li ol {
     margin: 1.5% 0 0 3%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-list__contents li ol {
+  .p-list__content li ol {
     margin: 1.5% 0 0 3%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .p-list__contents--decimal {
-    padding-left: 2rem;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-list__contents--decimal {
-    padding-left: 1.6rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-list__contents--decimal {
-    padding-left: 1.6rem;
   }
 }
 
@@ -1681,35 +1675,8 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .p-code.c-color_bg--blockquote {
-    padding: 15%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-code.c-color_bg--blockquote {
-    padding: 4%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-code.c-color_bg--blockquote {
-    padding: 4%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .p-code__child {
-    margin-left: 15%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-code__child {
-    margin-left: 3%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-code__child {
-    margin-left: 3%;
-  }
+.wp-block-code {
+  margin-top: 5%;
 }
 
 .p-table {
