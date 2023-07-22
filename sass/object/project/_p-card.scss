@@ -2,6 +2,7 @@
 @use "../../foundation/variable" as var;
 
 .p-card__main{
+    
     @include m.tab{
         width: 48%;
     }
