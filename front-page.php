@@ -8,9 +8,14 @@ Template Name: TOPページ
 
 
     <main class="l-main">
-        <div class="p-visual--main">
-            <img src="/">
-            <h1 class="p-visual--main-title c-color--white c-fw-700">ダミーサイト</h1>
+        <?php
+            if( has_post_thumbnail() ) {
+                $postthumb =wp_get_attachment_image_src( get_post_thumbnail_id(),'full' );
+                $url = $postthumb[0];
+            }
+        ?>
+        <div class="p-visual--main" style="background-image: url(<?php echo $url; ?>);">
+            <h1 class="p-visual--main-title c-color--white c-fw-700"><?php the_title( );?></h1>
         </div>
 
         <article class="l-section c-flex">
