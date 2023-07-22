@@ -112,6 +112,9 @@ button:hover {
   }
 }
 
+.l-main {
+  position: relative;
+}
 @media screen and (min-width: 1024px) {
   .l-main {
     grid-row: 2/3;
@@ -1584,27 +1587,6 @@ button:hover {
     background-repeat: no-repeat;
   }
 }
-.p-visual--single_page-title {
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  .p-visual--single_page-title {
-    top: 8rem;
-    left: 2rem;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-visual--single_page-title {
-    top: 21rem;
-    left: 8rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-visual--single_page-title {
-    top: 21rem;
-    left: 8rem;
-  }
-}
 .p-visual--page {
   width: auto;
   position: relative;
@@ -1633,6 +1615,27 @@ button:hover {
     background-image: url(../../../img/black-steel-lamp-post-1070945.png);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+.p-visual--single_page-title {
+  position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .p-visual--single_page-title {
+    top: 3%;
+    left: 2rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-visual--single_page-title {
+    top: 4%;
+    left: 8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-visual--single_page-title {
+    top: 3.5%;
+    left: 8rem;
   }
 }
 
