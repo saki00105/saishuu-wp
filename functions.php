@@ -1,6 +1,9 @@
 <?php
 //テーマサポート
 add_theme_support( 'title-tag' );
+//本体ギャラリーCSS停止
+add_filter( 'use_default_gallery_style', '__return_false' );
+add_theme_support('post-thumbnails');
 
 //タイトル出力
 // function wpbeg_title( $title ) {
@@ -38,4 +41,16 @@ function theme_setup(){
         );
 }
 add_action( 'after_setup_theme', 'theme_setup');
+
+
+//サムネイルの表示
+function thumb_url( $size ) {
+  if( has_post_thumbnail() ) {//サムネイルがある場合
+    $postthumb =wp_get_attachment_image_src( get_post_thumbnail_id(), $size );
+    $url = $postthumb[0];
+    } else {//サムネイルがない場合
+    $url = get_template_directory_uri() . '/img/20200502_noimage';
+  }
+  return $url;
+}
 

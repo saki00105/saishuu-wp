@@ -11,12 +11,12 @@
     @include m.pc{
         margin: 5% 0 0 5%; 
     }
+    
 }
 .p-list__content{
-    list-style: auto;
-    li ol {
+    &--number{
         @include m.sp{
-            margin: 5% 0 0 5%;
+            margin: 5% 0 0 2%;
         }
         @include m.tab{
             margin: 1.5% 0 0 3%;
@@ -24,21 +24,37 @@
         @include m.pc{
             margin: 1.5% 0 0 3%;
         }
+        li {
+            list-style: auto;
+           
+        }
+
+    }
+    &--no-number{
+        @include m.sp{
+            margin:5% 0 0 5%;
+        }
+        @include m.tab{
+            margin:1.5% 0 0 2%;;
+        }
+        @include m.pc{
+            margin:1.5% 0 0 2%;        
+        }
+    }
+
+   
+    &--decimal{
+        @include m.sp{
+            padding:5% 0 0 2rem;
+        }
+        @include m.tab{
+            padding:1.5% 0 0 1.6rem;
+        }
+        @include m.pc{
+            padding: 1.5% 0 0 1.6rem;
+        }
     }
 }
-   
-    // &--decimal{
-    //     @include m.sp{
-    //         padding-left: 2rem;
-    //     }
-    //     @include m.tab{
-    //         padding-left: 1.6rem;
-    //     }
-    //     @include m.pc{
-    //         padding-left: 1.6rem;
-    //     }
-    // }
-
 
 .p-list__content + .p-list__content{
     @include m.sp{
