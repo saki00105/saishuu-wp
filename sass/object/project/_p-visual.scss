@@ -115,21 +115,7 @@
             @include bg-img(url(../../../img/ham-burger-with-vegetables-1639557.jpg));
         }
     }
-    &--single_page-title{
-        position: absolute;
-        @include m.sp{
-            top: 8rem;
-            left: 2rem;
-        }
-        @include m.tab{
-            top: 21rem;
-            left: 8rem;
-        }
-        @include m.pc{
-            top:21rem ;
-            left:8rem ;  
-        }
-    }
+
     &--page{
         width: auto;
         position: relative; 
@@ -149,4 +135,21 @@
         }
 
     }
+
+    &--single_page-title{
+        position: absolute;
+        @include m.sp{
+            top: 3%;
+            left: 2rem;
+        }
+        @include m.tab{
+            top: 4%;
+            left: 8rem;
+        }
+        @include m.pc{
+            top:3.5% ;
+            left:8rem ;  
+        }
+    }
+    
 }

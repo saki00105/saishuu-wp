@@ -31,6 +31,7 @@
 
 #menu-footer{
     display: inline-flex;
+    // width: 30%;
    
     .menu-item{
         width: 100%;
@@ -47,22 +48,23 @@
 
         + .menu-item{
             margin-left: 3%;
+            a{
+                &::after{
+                    @include after;
+                    content: "";
+                    width: 2rem;
+                    transform: rotate(90deg);
+                    border: 0.1rem solid var.$white;
+                    top: 45%;
+                    left: -25%
+                }
+            }
             
         }
         a{
             color: var.$white;
             justify-content: center;
             position: relative;
-            &::after{
-                @include after;
-                content: "";
-                width: 2rem;
-                transform: rotate(90deg);
-                border: 0.1rem solid var.$white;
-                top: 45%;
-                left: 50
-            }
-           
         }
     }
 }

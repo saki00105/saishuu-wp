@@ -1,6 +1,7 @@
 @use "../foundation/mixin" as m;
 
 .l-main{
+    position: relative;
     @include m.pc{
         grid-row:2/3;
         grid-column:1/2;
