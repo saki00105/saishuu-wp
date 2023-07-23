@@ -1,5 +1,9 @@
 @use "./variable" as var;
 
+/* wp-block-coverのパディングを削除する */
+.wp-block-cover {
+    padding: 0 !important;
+}
 
 .body{
     font-size: 1.6rem;

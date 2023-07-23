@@ -11,13 +11,13 @@
     }
     &--black-map{
         @include m.sp{
-            background:linear-gradient(180deg,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 60%,rgba(255, 255, 255, 0)60%,rgba(255, 255, 255, 0)100%);
+            background:linear-gradient(180deg,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 60%,rgba(255, 255, 255, 0)60%,rgba(255, 255, 255, 0)100%);
         }
         @include m.tab{
-            background:rgba(0,0,0,0.4);
+            background:rgba(0,0,0,0.2);
         }
         @include m.pc{
-            background:rgba(0,0,0,0.4);
+            background:rgba(0,0,0,0.2);
         }
     }
     &--black-top{
