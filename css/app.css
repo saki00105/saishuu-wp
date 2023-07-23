@@ -37,6 +37,11 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* wp-block-coverのパディングを削除する */
+.wp-block-cover {
+  padding: 0 !important;
+}
+
 .body {
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -122,20 +127,24 @@ button:hover {
   }
 }
 
+#l-section > .wp-block-group__inner-container {
+  display: flex;
+  justify-content: space-between;
+}
 @media screen and (max-width: 768px) {
-  .l-section {
+  #l-section {
     flex-flow: column;
     margin: 6%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .l-section {
+  #l-section {
     margin: 4%;
     justify-content: space-between;
   }
 }
 @media screen and (min-width: 1024px) {
-  .l-section {
+  #l-section {
     margin: 5%;
     justify-content: space-between;
   }
@@ -293,17 +302,17 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .c-color_bg--black-map {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .c-color_bg--black-map {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
   }
 }
 @media screen and (min-width: 1024px) {
   .c-color_bg--black-map {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
   }
 }
 .c-color_bg--black-top {
@@ -845,10 +854,6 @@ button:hover {
   }
 }
 
-.p-main__body > .wp-block-group__inner-container {
-  display: flex;
-  justify-content: space-between;
-}
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-main__body {
     margin: 3%;
@@ -869,22 +874,13 @@ button:hover {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-main__sub {
     padding: 3% 6%;
+    margin: 6%;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-main__sub {
     padding: 1.5% 3%;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-main__sub + .p-main__sub {
-    margin-top: 3%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-main__sub + .p-main__sub {
-    margin-top: 3%;
+    margin: 3%;
   }
 }
 

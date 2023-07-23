@@ -18,7 +18,7 @@ Template Name: TOPページ
             <h1 class="p-visual--main-title c-color--white c-fw-700"><?php the_title( );?></h1>
         </div>
 
-        <article class="l-section c-flex">
+        <article class="">
 
             <div class="">
                 <?php the_content( ); ?>
