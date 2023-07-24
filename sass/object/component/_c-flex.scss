@@ -6,7 +6,10 @@
 }
 
 .c-colum{
-    display:flex;
-    flex-flow: column;
-    justify-content:space-between;
+    >.wp-block-group__inner-container{
+        display:flex;
+        flex-flow: column;
+        // justify-content:space-between;
+    }
+    
 }
