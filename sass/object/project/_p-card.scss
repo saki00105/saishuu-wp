@@ -2,7 +2,12 @@
 @use "../../foundation/variable" as var;
 
 .p-card__main{
-    
+    >.wp-block-cover__inner-container{
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
     @include m.tab{
         width: 48%;
     }

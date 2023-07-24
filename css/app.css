@@ -127,24 +127,28 @@ button:hover {
   }
 }
 
-#l-section > .wp-block-group__inner-container {
+.l-section > .wp-block-group__inner-container {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
-  #l-section {
+  .l-section > .wp-block-group__inner-container {
     flex-flow: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-section {
     margin: 6%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  #l-section {
+  .l-section {
     margin: 4%;
     justify-content: space-between;
   }
 }
 @media screen and (min-width: 1024px) {
-  #l-section {
+  .l-section {
     margin: 5%;
     justify-content: space-between;
   }
@@ -287,10 +291,9 @@ button:hover {
   display: flex;
 }
 
-.c-colum {
+.c-colum > .wp-block-group__inner-container {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
 }
 
 .c-color--white {
@@ -669,6 +672,12 @@ button:hover {
   margin-top: 2rem;
 }
 
+.p-card__main > .wp-block-cover__inner-container {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-card__main {
     width: 48%;
