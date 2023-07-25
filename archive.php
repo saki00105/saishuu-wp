@@ -27,7 +27,7 @@
                                         <div class="p-card__archive-img c-flex">
                                             <?php 
                                             if (has_post_thumbnail( )):
-                                                the_post_thumbnail('e3472c768077e90f47f5ca3c6ba0144e' );
+                                                the_post_thumbnail('' );
                                             else:
                                                 ?><div class="no-thumbnail"></div><?php
                                             endif;
@@ -38,11 +38,9 @@
                                         <figcaption class="p-card__archive-content">
                                             <h2 class="c-text--h2 c-color--white"><?php the_title();?></h2>
 
-                                            <h3 class="p-card__archive-sub c-color--white">小見出し</h3>
+                                            <h3 class="p-card__archive-sub c-color--white"></h3>
                                             <p class="p-card__archive-text c-text--p c-color--white"><?php the_excerpt(  ); ?></p> 
-                                            <a  class="p-card__archive-button c-button--archive c-fw-700" href="<?php the_permalink( ); ?>">詳しく見る</a>
-                                            <?php the_category( ', ' ); ?>
-                                            ><?php the_tags( '' ); ?>
+                                            <a  class="p-card__archive-button c-button--archive c-fw-700" href="<?php the_permalink( ); ?>"></a>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -62,10 +60,7 @@
                     
                 </ul>
 
-                
-           
-            <!-- <?php get_pagination(); ?> -->
-
+    
             </div>
         </main>
 

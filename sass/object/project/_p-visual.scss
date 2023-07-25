@@ -82,7 +82,7 @@
         }
         &::after{
             @include after;
-            content: "チーズバーガー";
+            // content: "チーズバーガー";
             font-size: 1.6rem;
             @include m.sp{
                 top: 6rem;
