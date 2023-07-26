@@ -20,6 +20,11 @@ function wpbeg_script() {
 }
 add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
 
+//エディタスタイル
+function wpbeg_theme_add_editor_styles() {
+  wp_enqueue_style( 'editor-style', get_theme_file_uri( '/css/editor-style.css' ) , array(), '1.0.0');
+}
+add_action( 'admin_init', 'wpbeg_theme_add_editor_styles' );
 
 //カスタムメニュー
 function theme_setup(){
