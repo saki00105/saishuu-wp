@@ -726,6 +726,7 @@ button:hover {
 .p-card__archive-img img {
   -o-object-fit: cover;
      object-fit: cover;
+  height: auto;
 }
 .p-card__archive-content {
   background-color: #3C2B1C;
@@ -1601,7 +1602,6 @@ button:hover {
 }
 @media screen and (min-width: 1024px) {
   .p-visual--page {
-    background-position-y: 1%;
     height: 46rem;
     background-image: url(../../../img/black-steel-lamp-post-1070945.png);
     background-size: cover;
@@ -1613,19 +1613,19 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .p-visual--single_page-title {
-    top: 3%;
+    top: 5rem;
     left: 2rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-visual--single_page-title {
-    top: 4%;
+    top: 18rem;
     left: 8rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-visual--single_page-title {
-    top: 3.5%;
+    top: 18rem;
     left: 8rem;
   }
 }
