@@ -49,3 +49,27 @@ function thumb_url( $size ) {
   return $url;
 }
 
+
+
+/*アーカイブページによって表示テキストを出し分ける*/
+// add_filter( 'get_the_archive_title', function ( $title ) {
+//  if( is_category('Menu') ) {
+//   $title = 'Menu:';
+//  } elseif( is_category() or is_tag() ) {
+//   $title = '【' . single_cat_title( '', false ) . '】に関する記事の一覧';
+//  }
+//  return $title;
+// });
+
+
+// add_filter( 'get_the_archive_title', function ( $title ) {
+//   if( is_category() ) {
+//     $title = single_cat_title( '', false );
+//   }
+//   return $title;
+// });
+
+// archiveタイトル 
+add_filter( 'get_the_archive_title', function( $title ) {
+  return 'Menu:'. single_cat_title('', false) ;
+});

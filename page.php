@@ -3,7 +3,7 @@
     <main class="l-main">
         <?php
             if( has_post_thumbnail() ) {
-                $postthumb =wp_get_attachment_image_src( get_post_thumbnail_id(),'full' );
+                $postthumb =wp_get_attachment_image_src( get_post_thumbnail_id(),'thumbnail' );
                 $url = $postthumb[0];
             }
         ?>

@@ -26,7 +26,7 @@
                                             <?php the_post_thumbnail(  );?>
                                         </div>
                                         <figcaption class="p-card__archive-content c-color--white">
-                                            <?php the_title();?>
+                                            <h2 class="c-text--h2"><?php the_title();?></h2>
                                             <?php the_content(  );?>
                                             <a  class="p-card__archive-button c-button--archive c-fw-700" href="<?php the_permalink( ); ?>">詳しく見る</a>
                                         </figcaption>
@@ -50,21 +50,24 @@
                                             </figcaption>
                                         </figure> -->
                                 </li>
-                                <?php if( get_previous_post() || get_next_post() ) : ?>
-                                    <ul class="p-pagenation">
-                                        <?php if ( get_previous_post() ) : ?>
-                                            <li class="prevpostslink"><?php previous_post_link( '%link', 'Prev' ); ?></li>
-                                        <?php endif; ?>
-                                        <?php if( get_next_post() ): ?>
-                                            <li class="prevpostslink"><?php next_post_link( '%link', 'Next' ); ?></li>
-                                        <?php endif; ?>
-                                    </ul>
-                                <?php endif; ?>
+                                
 
 
                             <?php endwhile;
                         else:
                             ?><p>記事はありません</p>
+
+                            <?php if( get_previous_post() || get_next_post() ) : ?>
+                                    <ul class="p-pagination c-flex c-center">
+                                        <?php if ( get_previous_post() ) : ?>
+                                            <li class="p-pagination__icon--previous"><?php previous_post_link( '%link', 'Prev' ); ?></li>
+                                        <?php endif; ?>
+                                        <?php if( get_next_post() ): ?>
+                                            <li class="p-pagination__icon--next"><?php next_post_link( '%link', 'Next' ); ?></li>
+                                        <?php endif; ?>
+                                    </ul>
+                                <?php endif; ?>
+
                     <?php endif; ?>
 
                     
