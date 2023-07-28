@@ -80,7 +80,7 @@
             top:8.3rem ;
             left:8.6rem ;  
         }
-        &::after{
+        span{
             @include after;
             // content: "チーズバーガー";
             font-size: 1.6rem;
@@ -95,7 +95,11 @@
                 left: 20rem;
                 top: 4rem;
             }   
+
         }
+        // &::after{
+            
+        // }
     }
 
     &--single{
