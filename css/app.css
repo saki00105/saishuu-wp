@@ -625,7 +625,7 @@ button:hover {
 }
 @media screen and (min-width: 1024px) {
   .menu-sidebar-container {
-    padding: 3rem 0 0 14%;
+    padding: 3rem 0 30rem 14%;
     font-size: clamp(1rem, 0.232rem + 0.921vw, 2rem);
   }
 }
@@ -1527,25 +1527,25 @@ button:hover {
     left: 8.6rem;
   }
 }
-.p-visual--archive-title::after {
+.p-visual--archive-title span {
   display: block;
   position: absolute;
   z-index: 10;
   font-size: 1.6rem;
 }
 @media screen and (max-width: 768px) {
-  .p-visual--archive-title::after {
+  .p-visual--archive-title span {
     top: 6rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-visual--archive-title::after {
+  .p-visual--archive-title span {
     left: 20rem;
     top: 4rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-visual--archive-title::after {
+  .p-visual--archive-title span {
     left: 20rem;
     top: 4rem;
   }

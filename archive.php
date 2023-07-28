@@ -3,7 +3,7 @@
        
         <main class="l-main">
             <div class="p-visual--archive c-color_bg--black-top">
-                <h1 class="p-visual--archive-title c-text--h1 c-color--white c-fw-700"><?php the_archive_title( ); ?></h1>
+                <h1 class="p-visual--archive-title c-text--h1 c-color--white c-fw-700">Menu:<?php the_archive_title( ); ?></h1>
             </div>
 
             <div class="l-inner--archive">
@@ -54,20 +54,19 @@
 
 
                             <?php endwhile;
-                        else:
-                            ?><p>記事はありません</p>
-
-                            <?php if( get_previous_post() || get_next_post() ) : ?>
-                                    <ul class="p-pagination c-flex c-center">
-                                        <?php if ( get_previous_post() ) : ?>
-                                            <li class="p-pagination__icon--previous"><?php previous_post_link( '%link', 'Prev' ); ?></li>
-                                        <?php endif; ?>
-                                        <?php if( get_next_post() ): ?>
-                                            <li class="p-pagination__icon--next"><?php next_post_link( '%link', 'Next' ); ?></li>
-                                        <?php endif; ?>
-                                    </ul>
-                                <?php endif; ?>
-
+                        else:?>
+                            <p>記事はありません</p>
+                    <?php endif; ?>
+                    
+                    <?php if( get_previous_post() || get_next_post() ) : ?>
+                        <ul class="p-pagination c-flex c-center">
+                            <?php if ( get_previous_post() ) : ?>
+                                <li class="p-pagination__icon--previous"><?php previous_post_link( '%link', 'Prev' ); ?></li>
+                            <?php endif; ?>
+                            <?php if( get_next_post() ): ?>
+                                <li class="p-pagination__icon--next"><?php next_post_link( '%link', 'Next' ); ?></li>
+                            <?php endif; ?>
+                        </ul>
                     <?php endif; ?>
 
                     
