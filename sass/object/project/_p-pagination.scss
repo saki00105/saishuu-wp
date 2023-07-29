@@ -77,11 +77,62 @@
   }
 }
 
-.p-pagination > * + * {
-  @include m.tab{
-    margin-left: 1.5rem;
+// .p-pagination > * + * {
+//   @include m.tab{
+//     margin-left: 1.5rem;
+//   }
+//   @include m.pc{
+//     margin-left: 1.5rem;
+//   }
+// }
+
+.wp-pagenavi{
+  .pages , .nextpostslink , .previouspostslink{
+    border: none;
+    width: auto;
   }
-  @include m.pc{
-    margin-left: 1.5rem;
+  span , a{
+    display: inline-block;
+    background-color: var.$white;
+    width: 3.5rem;
+    height: 3.5rem;
+    text-align: center;
+    
+
   }
+  .previouspostslink{
+    @include m.sp{
+      &::after{
+        @include after;
+        content: "前へ";
+        left: 3rem;
+        top: 12%;
+      }
+    }
+  }
+  .nextpostslink{
+    @include m.sp{
+      &::before{
+        @include before;
+        content: "次へ";
+        right: 3.5rem;
+        top: 12%;
+      }
+    }
+    // @include m.pc{
+    //   display: none;
+    // }
+  }
+  .current{
+    background-color:var.$text-color;
+    color: var.$white;
+  }
+  .page{
+    
+      border: solid 0.1rem var.$sidebar-text;
+  
+  }
+
+
 }
+  

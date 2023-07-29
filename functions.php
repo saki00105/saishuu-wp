@@ -74,16 +74,6 @@ add_filter( 'get_the_archive_title', function( $title ) {
   return single_cat_title('', false) ;
 });
 
-//ページネーション
-function custom_pager(){
-	the_posts_pagination(
-		array(
-			'mid_size'  => '10',// 現在のページの両端に表示するページ数
-			'prev_text' => '＜＜',
-			'next_text' => '＞＞',
-		)
-	);
-}
 
 
 //アーカイブ記事の抜粋

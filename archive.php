@@ -56,7 +56,7 @@
 
                 </ul>
                 <ul class="p-pagination c-flex c-center">
-                    <li class="p-pagination__link c-flex c-link--pagination c-border--pagination">
+                    <li class="p-pagination__link c-flex ">
                         <?php wp_pagenavi(); ?>
                     </li>
 
