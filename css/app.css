@@ -1216,15 +1216,43 @@ button:hover {
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-pagination > * + * {
-    margin-left: 1.5rem;
+.wp-pagenavi .pages, .wp-pagenavi .nextpostslink, .wp-pagenavi .previouspostslink {
+  border: none;
+  width: auto;
+}
+.wp-pagenavi span, .wp-pagenavi a {
+  display: inline-block;
+  background-color: #FFFFFF;
+  width: 3.5rem;
+  height: 3.5rem;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .wp-pagenavi .previouspostslink::after {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    content: "前へ";
+    left: 3rem;
+    top: 12%;
   }
 }
-@media screen and (min-width: 1024px) {
-  .p-pagination > * + * {
-    margin-left: 1.5rem;
+@media screen and (max-width: 768px) {
+  .wp-pagenavi .nextpostslink::before {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    content: "次へ";
+    right: 3.5rem;
+    top: 12%;
   }
+}
+.wp-pagenavi .current {
+  background-color: #3C2A10;
+  color: #FFFFFF;
+}
+.wp-pagenavi .page {
+  border: solid 0.1rem #707070;
 }
 
 @media screen and (max-width: 768px) {
