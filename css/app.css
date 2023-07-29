@@ -341,7 +341,7 @@ button:hover {
   border: 0.2rem solid #FFFFFF;
 }
 
-.c-border--pagination {
+.c-border--pagination .page-numbers {
   border: solid 0.1rem #707070;
 }
 
@@ -751,63 +751,93 @@ button:hover {
   }
 }
 @media screen and (max-width: 768px) {
-  .p-card__archive-sub {
+  .p-card__archive-content .p-card__archive-sub {
     font-size: 1.6rem;
     margin-top: 5%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-card__archive-sub {
+  .p-card__archive-content .p-card__archive-sub {
     font-size: 1.6rem;
     margin-top: 10%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-card__archive-sub {
+  .p-card__archive-content .p-card__archive-sub {
     font-size: clamp(1.6rem, 0.771rem + 1.473vw, 2.4rem);
     margin-top: 10%;
   }
 }
 @media screen and (max-width: 768px) {
-  .p-card__archive-text {
+  .p-card__archive-content .p-card__archive-text {
     margin-top: 3%;
     padding-right: 5%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-card__archive-text {
+  .p-card__archive-content .p-card__archive-text {
     margin-top: 2%;
     padding-right: 5%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-card__archive-text {
+  .p-card__archive-content .p-card__archive-text {
     margin-top: 1.5rem;
     padding-right: 10%;
   }
 }
-.p-card__archive-button.c-button--archive {
+.p-card__archive-content .p-card__archive-button.c-button--archive {
   font-size: 1.6rem;
 }
 @media screen and (max-width: 768px) {
-  .p-card__archive-button.c-button--archive {
+  .p-card__archive-content .p-card__archive-button.c-button--archive {
     margin: 10% 23% 0;
     padding: 3%;
     width: 55%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-card__archive-button.c-button--archive {
+  .p-card__archive-content .p-card__archive-button.c-button--archive {
     margin: 10% 23% 0;
     padding: 3%;
     width: 55%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-card__archive-button.c-button--archive {
+  .p-card__archive-content .p-card__archive-button.c-button--archive {
     margin: 10% 25% 0;
     padding: 5%;
     width: 55%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-card__archive-sub {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-card__archive-sub {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-card__archive-sub {
+    font-size: clamp(1.6rem, 0.771rem + 1.473vw, 2.4rem);
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-card__archive-text {
+    margin-top: 3%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .p-card__archive-text {
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-card__archive-text {
+    margin-top: 1.5rem;
   }
 }
 
@@ -1161,28 +1191,28 @@ button:hover {
     display: none;
   }
 }
-.p-pagination__link {
+.p-pagination__link .page-numbers {
   background-color: #FFFFFF;
 }
 @media screen and (max-width: 768px) {
-  .p-pagination__link {
+  .p-pagination__link .page-numbers {
     display: none;
   }
 }
-.p-pagination__link.c-link--pagination {
+.p-pagination__link .page-numbers.c-link--pagination {
   width: 3.5rem;
   height: 3.5rem;
 }
-.p-pagination__link.c-link--pagination a {
+.p-pagination__link .page-numbers.c-link--pagination a {
   text-align: center;
   width: 100%;
   height: 3.5rem;
   line-height: 3.5rem;
 }
-.p-pagination__link:hover, .p-pagination__link.is-active {
+.p-pagination__link .page-numbers:hover, .p-pagination__link .page-numbers.is-active {
   background-color: #3C2A10;
 }
-.p-pagination__link:hover a, .p-pagination__link.is-active a {
+.p-pagination__link .page-numbers:hover a, .p-pagination__link .page-numbers.is-active a {
   color: #FFFFFF;
 }
 

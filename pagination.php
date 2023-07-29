@@ -42,4 +42,17 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />                            </svg>
         </a>
     </li>
-</ul>
+</ul> <!-- <?php if( get_previous_post() || get_next_post() ) : ?>
+                        <ul class="p-pagination c-flex c-center">
+                            <?php if ( get_previous_post() ) : ?>
+                                <li class="p-pagination__icon--previous"><?php previous_post_link( '%link', 'Prev' ); ?></li>
+                            <?php endif; ?>
+                            <?php if( get_next_post() ): ?>
+                                <li class="p-pagination__icon--next"><?php next_post_link( '%link', 'Next' ); ?></li>
+                            <?php endif; ?>
+                        </ul>
+                    <?php endif; ?> -->
+
+
+
+                    

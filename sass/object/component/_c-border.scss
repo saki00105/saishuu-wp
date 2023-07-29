@@ -19,6 +19,7 @@
 }
 
 .c-border--pagination{
-    border: solid 0.1rem var.$sidebar-text;
-
+    .page-numbers{
+        border: solid 0.1rem var.$sidebar-text;
+    }
 }

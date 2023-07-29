@@ -1,12 +1,12 @@
 
 <?php get_header(); ?>     
     <main class="l-main">
-        <?php
+        <?php 
             if( has_post_thumbnail() ) {
                 $postthumb =wp_get_attachment_image_src( get_post_thumbnail_id(),'thumbnail' );
                 $url = $postthumb[0];
             }
-        ?>
+        ;?>
         <div class="p-visual--page" style="background-image: url(<?php echo $url; ?>);"></div>
 
 

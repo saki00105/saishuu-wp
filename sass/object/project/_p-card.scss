@@ -61,57 +61,91 @@
             width: 50%;
             padding: 5%;
         }
+        .p-card__archive-sub{
+            @include m.sp{
+                font-size: 1.6rem;
+                margin-top: 5%;
+            }
+            @include m.tab{
+                font-size: 1.6rem;
+                margin-top: 10%;
+            }
+            @include m.pc{
+                font-size: clamp(1.6rem, 0.771rem + 1.473vw, 2.4rem);
+                margin-top: 10%;
+            }
+        }
+        .p-card__archive-text{
+            @include m.sp{
+                margin-top: 3%;
+                padding-right: 5%;
+            }
+            @include m.tab{
+                margin-top: 2%;
+                padding-right: 5%;
+            }
+            @include m.pc{
+                margin-top: 1.5rem;
+                padding-right: 10%;
+            }
+        }
+        // .more-link{
+        //     display: none;
+        // }
+        .p-card__archive-button{
+            &.c-button--archive{
+                font-size: 1.6rem;
+    
+                @include m.sp{
+                    margin: 10% 23% 0;
+                    padding: 3%;
+                    width: 55%;
+                }
+                @include m.tab{
+                    margin: 10% 23% 0;
+                    padding: 3%;
+                    width: 55%;
+                }
+                @include m.pc{
+                    margin: 10% 25% 0;
+                    padding: 5%;
+                    width: 55%;
+                }
+            }
+        }
+
     }
     
     &-sub{
         @include m.sp{
             font-size: 1.6rem;
-            margin-top: 5%;
+            // margin-top: 5%;
         }
         @include m.tab{
             font-size: 1.6rem;
-            margin-top: 10%;
+            // margin-top: 10%;
         }
         @include m.pc{
             font-size: clamp(1.6rem, 0.771rem + 1.473vw, 2.4rem);
-            margin-top: 10%;
+            // margin-top: 10%;
         }
     }
     &-text{
         @include m.sp{
             margin-top: 3%;
-            padding-right: 5%;
+            // padding-right: 5%;
         }
         @include m.tab{
             margin-top: 2%;
-            padding-right: 5%;
+            // padding-right: 5%;
         }
         @include m.pc{
             margin-top: 1.5rem;
-            padding-right: 10%;
+            // padding-right: 10%;
         }
     }
-    &-button{
-        &.c-button--archive{
-            font-size: 1.6rem;
-
-            @include m.sp{
-                margin: 10% 23% 0;
-                padding: 3%;
-                width: 55%;
-            }
-            @include m.tab{
-                margin: 10% 23% 0;
-                padding: 3%;
-                width: 55%;
-            }
-            @include m.pc{
-                margin: 10% 25% 0;
-                padding: 5%;
-                width: 55%;
-            }
-        }
-    }
+    
+   
 }
 
 .p-card__archive li + li{
