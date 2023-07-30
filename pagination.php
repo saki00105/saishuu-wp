@@ -55,4 +55,18 @@
 
 
 
-                    
+                }elseif {
+                                                
+
+                                                $content = get_the_content();
+                                                $trimmed_content = wp_trim_words($content, 60, ''); // 20文字に切り詰める
+                                                echo '<div class="p-card__archive-text c-text--p">';
+                                                echo $trimmed_content;
+                                                echo '</div>';
+                                               
+
+                                                
+
+                                          }  
+
+                                         

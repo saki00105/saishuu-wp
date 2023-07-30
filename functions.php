@@ -5,6 +5,8 @@ add_theme_support( 'title-tag' );
 add_filter( 'use_default_gallery_style', '__return_false' );
 //サムネイル機能
 add_theme_support('post-thumbnails');
+//固定ページの抜粋文
+add_post_type_support( 'page', 'excerpt' );
 
 
 //スタイルシート
@@ -73,11 +75,3 @@ function thumb_url( $size ) {
 add_filter( 'get_the_archive_title', function( $title ) {
   return single_cat_title('', false) ;
 });
-
-
-
-//アーカイブ記事の抜粋
-function wpdocs_custom_excerpt_length( $length ) {
-  return 20;
-}
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

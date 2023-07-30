@@ -45,20 +45,24 @@
         width: auto;
         position: relative;  
         background-position: center;
+        object-fit: cover;
+        width: 100%;
 
         @include m.sp{
             height: 28rem;
-            @include bg-img(url(../../../img/page-title_arcive.jpg));
+            // @include bg-img(url(../../../img/page-title_arcive.jpg));
             background-position-x: 1%;
         }
         @include m.tab{
             height: 28rem;
-            @include bg-img(url(../../../img/page-title_arcive.jpg));
+            // @include bg-img(url(../../../img/page-title_arcive.jpg));
 
         }
         @include m.pc{
             height: 22rem;
-            @include bg-img(url(../../../img/archive-pc.jpg));
+            background: url(/img/page-title_arcive.jpg), lightgray 50% / cover no-repeat;
+
+            // @include bg-img(url(../../../img/archive-pc.jpg));
         }
         &.c-color_bg--black-top{
             background-blend-mode: soft-light;
@@ -69,37 +73,39 @@
         position: relative;
 
         @include m.sp{
-            top: 10rem;
-            left: 4rem;
+            top:-28rem ;
+            height: 28rem;
+            padding: 8rem 0 0 4rem
         }
         @include m.tab{
-            top: 10rem;
-            left: 8.6rem;
+            top:-28rem ;
+            height: 28rem;
+            padding: 10rem 0 0 8.6rem
+
         }
         @include m.pc{
-            top:8.3rem ;
-            left:8.6rem ;  
+            top:-22rem ;
+            height: 22rem;
+            padding: 8rem 0 0 8.6rem
         }
         span{
             @include after;
             // content: "チーズバーガー";
             font-size: 1.6rem;
             @include m.sp{
-                top: 6rem;
+                top: 16rem;
             }
             @include m.tab{
-                left: 20rem;
-                top: 4rem;
+                left: 28rem;
+                top: 14rem;
             }
             @include m.pc{
-                left: 20rem;
-                top: 4rem;
+                left: 28rem;
+                top: 12rem;
             }   
 
         }
-        // &::after{
-            
-        // }
+        
     }
 
     &--single{

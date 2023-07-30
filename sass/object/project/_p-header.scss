@@ -10,7 +10,7 @@
         margin: 4% 1.6%;
         width: 35%;
     }
-    &::before{
+    &__icon{
         @include after;
         content: "";
         width: 2.4rem;
