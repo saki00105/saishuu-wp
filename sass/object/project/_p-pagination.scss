@@ -17,64 +17,64 @@
   }
   
 
-  &__text{
-    @include m.sp{
-      display: none;
-    }
-  }
+  // &__text{
+  //   @include m.sp{
+  //     display: none;
+  //   }
+  // }
 
-  &__icon{
-    width: 3rem;
-    &--previous{
-      @include m.sp{
-        &::after{
-          @include after;
-          content: "前へ";
-          left: 3rem;
-          top: 12%;
-        }
-      }
-    }
-    &--next{
-      @include m.sp{
-        &::before{
-          @include before;
-          content: "次へ";
-          right: 3.5rem;
-          top: 12%;
-        }
-      }
-      @include m.pc{
-        display: none;
-      }
-    }
-  }
+  // &__icon{
+  //   width: 3rem;
+  //   &--previous{
+  //     @include m.sp{
+  //       &::after{
+  //         @include after;
+  //         content: "前へ";
+  //         left: 3rem;
+  //         top: 12%;
+  //       }
+  //     }
+  //   }
+  //   &--next{
+  //     @include m.sp{
+  //       &::before{
+  //         @include before;
+  //         content: "次へ";
+  //         right: 3.5rem;
+  //         top: 12%;
+  //       }
+  //     }
+  //     @include m.pc{
+  //       display: none;
+  //     }
+  //   }
+  // }
 
-  &__link {
-    .page-numbers{
-      @include m.sp{
-        display: none;
-      }
-      background-color: var.$white;
-      &.c-link--pagination{ 
-        width: 3.5rem;
-        height: 3.5rem;
-        a{
-          text-align: center;
-          width: 100%;
-          height: 3.5rem;
-          line-height: 3.5rem;
-        }
-      }
-      &:hover,&.is-active{
-        background-color:var.$text-color;
-        a{
-          color: var.$white;
-        }
-      }
-    }
+  // &__link {
+  //   .page-numbers{
+  //     @include m.sp{
+  //       display: none;
+  //     }
+  //     background-color: var.$white;
+  //     &.c-link--pagination{ 
+  //       width: 3.5rem;
+  //       height: 3.5rem;
+  //       a{
+  //         text-align: center;
+  //         width: 100%;
+  //         height: 3.5rem;
+  //         line-height: 3.5rem;
+  //       }
+  //     }
+  //     &:hover,&.is-active{
+  //       background-color:var.$text-color;
+  //       a{
+  //         color: var.$white;
+  //       }
+  //     }
+  //   }
     
-  }
+  // }
 }
 
 // .p-pagination > * + * {
@@ -91,6 +91,11 @@
     border: none;
     width: auto;
   }
+  .pages , .page , .current{
+    @include m.sp{
+      display: none;
+    }
+  }
   span , a{
     display: inline-block;
     background-color: var.$white;
@@ -102,37 +107,52 @@
   }
   .previouspostslink{
     @include m.sp{
-      &::after{
-        @include after;
-        content: "前へ";
-        left: 3rem;
-        top: 12%;
-      }
+      position: absolute;
+      left: 0;
+      top: 12%;
+        &::after{
+          content: "前へ";
+          display: inline-block;
+          margin-left: 1rem;
+        }
+      
+      
     }
   }
   .nextpostslink{
     @include m.sp{
+      position: absolute;
+      right: 0;
+      top: 12%;
       &::before{
-        @include before;
         content: "次へ";
-        right: 3.5rem;
-        top: 12%;
+        display: inline-block;
+        margin-right: 1rem;
+        
       }
+     
+      
     }
-    // @include m.pc{
-    //   display: none;
-    // }
+   
   }
   .current{
     background-color:var.$text-color;
     color: var.$white;
   }
-  .page{
-    
-      border: solid 0.1rem var.$sidebar-text;
-  
+  .current , .page , .nextpostslink{
+    @include m.tab{
+      margin-left: 1.5rem;
+    }
+    @include m.pc{
+      margin-left: 1.5rem;
+    }
   }
-
-
+  .page{
+    border: solid 0.1rem var.$sidebar-text;
+    &:hover{
+      background-color:var.$text-color;
+      color: var.$white;
+    }
+  }
 }
-  
+

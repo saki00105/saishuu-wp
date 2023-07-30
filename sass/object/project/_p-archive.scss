@@ -2,6 +2,7 @@
 @use "../../foundation/mixin" as m;
 
 .p-archive__text{
+    
     &.c-text--p{
         @include m.sp{
             margin-top: 2.5rem;

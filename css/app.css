@@ -82,7 +82,6 @@ button:hover {
 
 .l-footer {
   background-image: url("../../img/レイヤー 1.jpg");
-  background-color: #9D8670;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -448,7 +447,7 @@ button:hover {
     width: 35%;
   }
 }
-.p-header::before {
+.p-header__icon {
   display: block;
   position: absolute;
   z-index: 10;
@@ -460,17 +459,17 @@ button:hover {
   top: 1.2rem;
 }
 @media screen and (max-width: 768px) {
-  .p-header::before {
+  .p-header__icon {
     left: 10%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-header::before {
+  .p-header__icon {
     left: 18.5%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-header::before {
+  .p-header__icon {
     left: 1.5rem;
   }
 }
@@ -1158,67 +1157,15 @@ button:hover {
     margin-top: 8%;
   }
 }
-@media screen and (max-width: 768px) {
-  .p-pagination__text {
-    display: none;
-  }
-}
-.p-pagination__icon {
-  width: 3rem;
-}
-@media screen and (max-width: 768px) {
-  .p-pagination__icon--previous::after {
-    display: block;
-    position: absolute;
-    z-index: 10;
-    content: "前へ";
-    left: 3rem;
-    top: 12%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .p-pagination__icon--next::before {
-    display: block;
-    position: absolute;
-    z-index: 10;
-    content: "次へ";
-    right: 3.5rem;
-    top: 12%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .p-pagination__icon--next {
-    display: none;
-  }
-}
-.p-pagination__link .page-numbers {
-  background-color: #FFFFFF;
-}
-@media screen and (max-width: 768px) {
-  .p-pagination__link .page-numbers {
-    display: none;
-  }
-}
-.p-pagination__link .page-numbers.c-link--pagination {
-  width: 3.5rem;
-  height: 3.5rem;
-}
-.p-pagination__link .page-numbers.c-link--pagination a {
-  text-align: center;
-  width: 100%;
-  height: 3.5rem;
-  line-height: 3.5rem;
-}
-.p-pagination__link .page-numbers:hover, .p-pagination__link .page-numbers.is-active {
-  background-color: #3C2A10;
-}
-.p-pagination__link .page-numbers:hover a, .p-pagination__link .page-numbers.is-active a {
-  color: #FFFFFF;
-}
 
 .wp-pagenavi .pages, .wp-pagenavi .nextpostslink, .wp-pagenavi .previouspostslink {
   border: none;
   width: auto;
+}
+@media screen and (max-width: 768px) {
+  .wp-pagenavi .pages, .wp-pagenavi .page, .wp-pagenavi .current {
+    display: none;
+  }
 }
 .wp-pagenavi span, .wp-pagenavi a {
   display: inline-block;
@@ -1228,31 +1175,49 @@ button:hover {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .wp-pagenavi .previouspostslink::after {
-    display: block;
+  .wp-pagenavi .previouspostslink {
     position: absolute;
-    z-index: 10;
-    content: "前へ";
-    left: 3rem;
+    left: 0;
     top: 12%;
+  }
+  .wp-pagenavi .previouspostslink::after {
+    content: "前へ";
+    display: inline-block;
+    margin-left: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .wp-pagenavi .nextpostslink::before {
-    display: block;
+  .wp-pagenavi .nextpostslink {
     position: absolute;
-    z-index: 10;
-    content: "次へ";
-    right: 3.5rem;
+    right: 0;
     top: 12%;
+  }
+  .wp-pagenavi .nextpostslink::before {
+    content: "次へ";
+    display: inline-block;
+    margin-right: 1rem;
   }
 }
 .wp-pagenavi .current {
   background-color: #3C2A10;
   color: #FFFFFF;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .wp-pagenavi .current, .wp-pagenavi .page, .wp-pagenavi .nextpostslink {
+    margin-left: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wp-pagenavi .current, .wp-pagenavi .page, .wp-pagenavi .nextpostslink {
+    margin-left: 1.5rem;
+  }
+}
 .wp-pagenavi .page {
   border: solid 0.1rem #707070;
+}
+.wp-pagenavi .page:hover {
+  background-color: #3C2A10;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 768px) {
@@ -1534,30 +1499,25 @@ button:hover {
   width: auto;
   position: relative;
   background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .p-visual--archive {
     height: 28rem;
-    background-image: url(../../../img/page-title_arcive.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position-x: 1%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-visual--archive {
     height: 28rem;
-    background-image: url(../../../img/page-title_arcive.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-visual--archive {
     height: 22rem;
-    background-image: url(../../../img/archive-pc.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url(/img/page-title_arcive.jpg), lightgray 50%/cover no-repeat;
   }
 }
 .p-visual--archive.c-color_bg--black-top {
@@ -1569,20 +1529,23 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .p-visual--archive-title {
-    top: 10rem;
-    left: 4rem;
+    top: -28rem;
+    height: 28rem;
+    padding: 8rem 0 0 4rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-visual--archive-title {
-    top: 10rem;
-    left: 8.6rem;
+    top: -28rem;
+    height: 28rem;
+    padding: 10rem 0 0 8.6rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-visual--archive-title {
-    top: 8.3rem;
-    left: 8.6rem;
+    top: -22rem;
+    height: 22rem;
+    padding: 8rem 0 0 8.6rem;
   }
 }
 .p-visual--archive-title span {
@@ -1593,19 +1556,19 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .p-visual--archive-title span {
-    top: 6rem;
+    top: 16rem;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .p-visual--archive-title span {
-    left: 20rem;
-    top: 4rem;
+    left: 28rem;
+    top: 14rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .p-visual--archive-title span {
-    left: 20rem;
-    top: 4rem;
+    left: 28rem;
+    top: 12rem;
   }
 }
 .p-visual--single {
