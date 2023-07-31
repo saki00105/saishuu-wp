@@ -85,6 +85,7 @@ button:hover {
   background-size: cover;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   .l-footer {
@@ -976,24 +977,33 @@ button:hover {
     padding: 2% 0 1% 0;
   }
 }
-
-.menu-footer-container {
-  font-size: 1.4rem;
-}
 @media screen and (max-width: 768px) {
-  .menu-footer-container {
-    margin-top: 18%;
+  .p-footer .c-ff-M {
+    margin-top: 10%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .menu-footer-container {
+  .p-footer .c-ff-M {
     margin-top: 5%;
   }
+}
+@media screen and (min-width: 1024px) {
+  .p-footer .c-ff-M {
+    margin-top: 2%;
+  }
+}
+
+.menu-footer-container {
+  font-size: 1.25rem;
 }
 @media screen and (min-width: 1024px) {
   .menu-footer-container {
     margin-top: 2%;
   }
+}
+.menu-footer-container > .menu {
+  white-space: nowrap;
+  justify-content: center;
 }
 
 #menu-footer {
@@ -1018,7 +1028,7 @@ button:hover {
   }
 }
 #menu-footer .menu-item + .menu-item {
-  margin-left: 3%;
+  margin-left: 13%;
 }
 #menu-footer .menu-item + .menu-item a::after {
   display: block;
@@ -1038,7 +1048,13 @@ button:hover {
 }
 
 .p-footer__layer {
-  background-image: url(../../../img/レイヤー\ 1.jpg);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -5;
 }
 
 .p-map {

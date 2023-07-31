@@ -10,9 +10,9 @@
         
         <div class="l-inner--archive">
         
-            <h2 class="c-text--h2"><?php single_cat_title(); ?></h2>
+            <h2 class="c-text--h2"></h2>
             <article class="p-archive__text c-text--p">
-                <?php echo category_description(); ?>
+                <?php the_content();?>
             </article>
 
             
