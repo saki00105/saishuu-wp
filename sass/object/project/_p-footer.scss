@@ -11,20 +11,30 @@
         padding: 4% 0 2%;
     }
     @include m.pc{
-        // margin: 2% 0 1% 0;
         padding: 2% 0 1% 0;
+    }
+    .c-ff-M{
+        @include m.sp{
+            margin-top: 10%;
+        }
+        @include m.tab{
+            margin-top: 5%;
+        }
+        @include m.pc{
+            margin-top: 2%;
+        }
     }
 }
 .menu-footer-container{
-    font-size: 1.4rem;
-    @include m.sp{
-        margin-top: 18%;
-    }
-    @include m.tab{
-        margin-top: 5%;
-    }
+    font-size: 1.25rem;
+   
     @include m.pc{
         margin-top: 2%;
+    }
+    >.menu{
+        white-space: nowrap;
+        justify-content: center;
+       
     }
    
 }
@@ -47,7 +57,7 @@
         
 
         + .menu-item{
-            margin-left: 3%;
+            margin-left: 13%;
             a{
                 &::after{
                     @include after;
@@ -70,5 +80,12 @@
 }
 
 .p-footer__layer{
-    background-image: url(../../../img/レイヤー\ 1.jpg);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -5;
+
+    // background-image: url(../../../img/レイヤー\ 1.jpg);
 }
