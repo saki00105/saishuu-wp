@@ -38,9 +38,7 @@
                                                
                                             } 
                                             else{
-                                                echo '<div class="p-card__archive-text c-text--p">';
-                                                echo wp_trim_words(get_the_content(), 50, '' );
-                                                echo '</div>';
+                                                the_content( '',FALSE,'');
                                             }
                                         ?>
                                         

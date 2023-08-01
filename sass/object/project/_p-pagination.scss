@@ -6,7 +6,7 @@
   font-size: 1.6rem; 
   position: relative;
   @include m.sp{
-    margin-top: 20%;
+    margin-top: 15%;
     justify-content: space-between;
   }
   @include m.tab{
@@ -16,76 +16,7 @@
     margin-top: 8%;
   }
   
-
-  // &__text{
-  //   @include m.sp{
-  //     display: none;
-  //   }
-  // }
-
-  // &__icon{
-  //   width: 3rem;
-  //   &--previous{
-  //     @include m.sp{
-  //       &::after{
-  //         @include after;
-  //         content: "前へ";
-  //         left: 3rem;
-  //         top: 12%;
-  //       }
-  //     }
-  //   }
-  //   &--next{
-  //     @include m.sp{
-  //       &::before{
-  //         @include before;
-  //         content: "次へ";
-  //         right: 3.5rem;
-  //         top: 12%;
-  //       }
-  //     }
-  //     @include m.pc{
-  //       display: none;
-  //     }
-  //   }
-  // }
-
-  // &__link {
-  //   .page-numbers{
-  //     @include m.sp{
-  //       display: none;
-  //     }
-  //     background-color: var.$white;
-  //     &.c-link--pagination{ 
-  //       width: 3.5rem;
-  //       height: 3.5rem;
-  //       a{
-  //         text-align: center;
-  //         width: 100%;
-  //         height: 3.5rem;
-  //         line-height: 3.5rem;
-  //       }
-  //     }
-  //     &:hover,&.is-active{
-  //       background-color:var.$text-color;
-  //       a{
-  //         color: var.$white;
-  //       }
-  //     }
-  //   }
-    
-  // }
 }
-
-// .p-pagination > * + * {
-//   @include m.tab{
-//     margin-left: 1.5rem;
-//   }
-//   @include m.pc{
-//     margin-left: 1.5rem;
-//   }
-// }
-
 .wp-pagenavi{
   .pages , .nextpostslink , .previouspostslink{
     border: none;

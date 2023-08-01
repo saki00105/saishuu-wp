@@ -8,6 +8,16 @@ add_theme_support('post-thumbnails');
 //固定ページの抜粋文
 add_post_type_support( 'page', 'excerpt' );
 
+//jqueryの読み込み
+function custom_print_scripts() {
+if (!is_admin()) {
+  wp_deregister_script('jquery');
+
+  wp_enqueue_script('jquery-js', 'https://code.jquery.com/jquery-3.6.4.min.js' );
+  }
+}
+add_action('wp_print_scripts', 'custom_print_scripts');
+
 
 //スタイルシート
 function wpbeg_script() {
@@ -51,25 +61,6 @@ function thumb_url( $size ) {
   return $url;
 }
 
-
-
-/*アーカイブページによって表示テキストを出し分ける*/
-// add_filter( 'get_the_archive_title', function ( $title ) {
-//  if( is_category('Menu') ) {
-//   $title = 'Menu:';
-//  } elseif( is_category() or is_tag() ) {
-//   $title = '【' . single_cat_title( '', false ) . '】に関する記事の一覧';
-//  }
-//  return $title;
-// });
-
-
-// add_filter( 'get_the_archive_title', function ( $title ) {
-//   if( is_category() ) {
-//     $title = single_cat_title( '', false );
-//   }
-//   return $title;
-// });
 
 // archiveタイトル 
 add_filter( 'get_the_archive_title', function( $title ) {
