@@ -12,7 +12,7 @@
         
             <h2 class="c-text--h2"></h2>
             <article class="p-archive__text c-text--p">
-                <?php the_content();?>
+                <?php the_content( '',FALSE,'');?>
             </article>
 
             
@@ -38,9 +38,7 @@
                                                
                                             } 
                                             else{
-                                                echo '<div class="p-card__archive-text c-text--p">';
-                                                echo wp_trim_words(get_the_content(), 50, '' );
-                                                echo '</div>';
+                                                the_content( '',FALSE,'');
                                             }
                                         ?>
                                         

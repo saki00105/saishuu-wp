@@ -1,0 +1,15 @@
+@use "../../foundation/variable" as var;
+@use "../../foundation/mixin" as m;
+
+.p-404__content{
+    margin-top: 25%;
+
+    .c-text--h3 ,.c-text--p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    @extend .p-card__archive-button
+}

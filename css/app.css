@@ -191,7 +191,7 @@ button:hover {
     z-index: 50;
     font-size: clamp(2rem, -2.2rem + 5.469vw, 3.4rem);
     position: absolute;
-    top: 1.5%;
+    top: 3rem;
     right: 3%;
   }
 }
@@ -556,7 +556,7 @@ button:hover {
 }
 .p-sidebar__box {
   position: absolute;
-  top: -16rem;
+  top: 5rem;
   right: 2rem;
   height: 5rem;
   width: 5rem;
@@ -786,25 +786,25 @@ button:hover {
     padding-right: 10%;
   }
 }
-.p-card__archive-content .p-card__archive-button.c-button--archive {
+.p-card__archive-content .p-card__archive-button.c-button--archive, .p-card__archive-content .c-button--archive.p-404__content {
   font-size: 1.6rem;
 }
 @media screen and (max-width: 768px) {
-  .p-card__archive-content .p-card__archive-button.c-button--archive {
+  .p-card__archive-content .p-card__archive-button.c-button--archive, .p-card__archive-content .c-button--archive.p-404__content {
     margin: 10% 23% 0;
     padding: 3%;
     width: 55%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-card__archive-content .p-card__archive-button.c-button--archive {
+  .p-card__archive-content .p-card__archive-button.c-button--archive, .p-card__archive-content .c-button--archive.p-404__content {
     margin: 10% 23% 0;
     padding: 3%;
     width: 55%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-card__archive-content .p-card__archive-button.c-button--archive {
+  .p-card__archive-content .p-card__archive-button.c-button--archive, .p-card__archive-content .c-button--archive.p-404__content {
     margin: 10% 25% 0;
     padding: 5%;
     width: 55%;
@@ -1159,7 +1159,7 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .p-pagination {
-    margin-top: 20%;
+    margin-top: 15%;
     justify-content: space-between;
   }
 }
@@ -1359,56 +1359,62 @@ button:hover {
   padding: 0 !important;
 }
 
-.p-single__flex-wraps {
+#p-single__flex-wraps {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
-  .p-single__flex-wraps {
+  #p-single__flex-wraps {
     margin-top: 10%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-single__flex-wraps {
+  #p-single__flex-wraps {
     margin-top: 20%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-single__flex-wraps {
+  #p-single__flex-wraps {
     margin-top: 10%;
   }
 }
-.p-single__flex-wrap {
+
+#p-single__flex-wraps #p-single__flex-wrap, #p-single__flex-wraps #p-single__flex-wrap-9, #p-single__flex-wraps #p-single__flex-wrap-8, #p-single__flex-wraps #p-single__flex-wrap-7, #p-single__flex-wraps #p-single__flex-wrap-6, #p-single__flex-wraps #p-single__flex-wrap-5, #p-single__flex-wraps #p-single__flex-wrap-4, #p-single__flex-wraps #p-single__flex-wrap-3, #p-single__flex-wraps #p-single__flex-wrap-2, #p-single__flex-wraps #p-single__flex-wrap-1 {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
 }
 @media screen and (max-width: 768px) {
-  .p-single__flex-wrap {
+  #p-single__flex-wraps #p-single__flex-wrap, #p-single__flex-wraps #p-single__flex-wrap-9, #p-single__flex-wraps #p-single__flex-wrap-8, #p-single__flex-wraps #p-single__flex-wrap-7, #p-single__flex-wraps #p-single__flex-wrap-6, #p-single__flex-wraps #p-single__flex-wrap-5, #p-single__flex-wraps #p-single__flex-wrap-4, #p-single__flex-wraps #p-single__flex-wrap-3, #p-single__flex-wraps #p-single__flex-wrap-2, #p-single__flex-wraps #p-single__flex-wrap-1 {
+    width: 100%;
     flex-flow: column;
     margin: 1%;
   }
-  .p-single__flex-wrap:nth-of-type(n+2) {
+  #p-single__flex-wraps #p-single__flex-wrap:nth-of-type(n+2), #p-single__flex-wraps #p-single__flex-wrap-9:nth-of-type(n+2), #p-single__flex-wraps #p-single__flex-wrap-8:nth-of-type(n+2), #p-single__flex-wraps #p-single__flex-wrap-7:nth-of-type(n+2), #p-single__flex-wraps #p-single__flex-wrap-6:nth-of-type(n+2), #p-single__flex-wraps #p-single__flex-wrap-5:nth-of-type(n+2), #p-single__flex-wraps #p-single__flex-wrap-4:nth-of-type(n+2), #p-single__flex-wraps #p-single__flex-wrap-3:nth-of-type(n+2), #p-single__flex-wraps #p-single__flex-wrap-2:nth-of-type(n+2), #p-single__flex-wraps #p-single__flex-wrap-1:nth-of-type(n+2) {
     margin-top: 4.5%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-single__flex-wrap {
-    margin: 2%;
+  #p-single__flex-wraps #p-single__flex-wrap, #p-single__flex-wraps #p-single__flex-wrap-9, #p-single__flex-wraps #p-single__flex-wrap-8, #p-single__flex-wraps #p-single__flex-wrap-7, #p-single__flex-wraps #p-single__flex-wrap-6, #p-single__flex-wraps #p-single__flex-wrap-5, #p-single__flex-wraps #p-single__flex-wrap-4, #p-single__flex-wraps #p-single__flex-wrap-3, #p-single__flex-wraps #p-single__flex-wrap-2, #p-single__flex-wraps #p-single__flex-wrap-1 {
+    width: 49%;
+    max-width: 49%;
+    padding: 0 1%;
   }
-  .p-single__flex-wrap:nth-of-type(n+3) {
+  #p-single__flex-wraps #p-single__flex-wrap:nth-of-type(n+3), #p-single__flex-wraps #p-single__flex-wrap-9:nth-of-type(n+3), #p-single__flex-wraps #p-single__flex-wrap-8:nth-of-type(n+3), #p-single__flex-wraps #p-single__flex-wrap-7:nth-of-type(n+3), #p-single__flex-wraps #p-single__flex-wrap-6:nth-of-type(n+3), #p-single__flex-wraps #p-single__flex-wrap-5:nth-of-type(n+3), #p-single__flex-wraps #p-single__flex-wrap-4:nth-of-type(n+3), #p-single__flex-wraps #p-single__flex-wrap-3:nth-of-type(n+3), #p-single__flex-wraps #p-single__flex-wrap-2:nth-of-type(n+3), #p-single__flex-wraps #p-single__flex-wrap-1:nth-of-type(n+3) {
     margin-top: 2%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-single__flex-wrap {
+  #p-single__flex-wraps #p-single__flex-wrap, #p-single__flex-wraps #p-single__flex-wrap-9, #p-single__flex-wraps #p-single__flex-wrap-8, #p-single__flex-wraps #p-single__flex-wrap-7, #p-single__flex-wraps #p-single__flex-wrap-6, #p-single__flex-wraps #p-single__flex-wrap-5, #p-single__flex-wraps #p-single__flex-wrap-4, #p-single__flex-wraps #p-single__flex-wrap-3, #p-single__flex-wraps #p-single__flex-wrap-2, #p-single__flex-wraps #p-single__flex-wrap-1 {
+    width: 32%;
     padding: 0.5%;
   }
-  .p-single__flex-wrap:nth-of-type(n+4) {
+  #p-single__flex-wraps #p-single__flex-wrap:nth-of-type(n+4), #p-single__flex-wraps #p-single__flex-wrap-9:nth-of-type(n+4), #p-single__flex-wraps #p-single__flex-wrap-8:nth-of-type(n+4), #p-single__flex-wraps #p-single__flex-wrap-7:nth-of-type(n+4), #p-single__flex-wraps #p-single__flex-wrap-6:nth-of-type(n+4), #p-single__flex-wraps #p-single__flex-wrap-5:nth-of-type(n+4), #p-single__flex-wraps #p-single__flex-wrap-4:nth-of-type(n+4), #p-single__flex-wraps #p-single__flex-wrap-3:nth-of-type(n+4), #p-single__flex-wraps #p-single__flex-wrap-2:nth-of-type(n+4), #p-single__flex-wraps #p-single__flex-wrap-1:nth-of-type(n+4) {
     margin-top: 1.5%;
   }
 }
-
 @media screen and (max-width: 768px) {
   .p-single__button {
     margin-top: 18%;
@@ -1803,6 +1809,15 @@ button:hover {
     padding: 2%;
     width: 70%;
   }
+}
+
+.p-404__content {
+  margin-top: 25%;
+}
+.p-404__content .c-text--h3, .p-404__content .c-text--p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
