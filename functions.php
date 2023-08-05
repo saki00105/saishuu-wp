@@ -7,16 +7,42 @@ add_filter( 'use_default_gallery_style', '__return_false' );
 add_theme_support('post-thumbnails');
 //固定ページの抜粋文
 add_post_type_support( 'page', 'excerpt' );
+//フィードの設定
+add_theme_support( 'automatic-feed-links' );
+
+
+//テーマの翻訳
+function wpbeg_theme_setup(){
+  load_theme_textdomain( 'wpbeg', get_template_directory() . '/languages' );
+  }
+add_action( 'after_setup_theme', 'wpbeg_theme_setup' );
+
 
 //jqueryの読み込み
-function custom_print_scripts() {
-if (!is_admin()) {
-  wp_deregister_script('jquery');
+// function custom_print_scripts() {
+// if (!is_admin()) {
+//   wp_deregister_script('jquery');
 
-  wp_enqueue_script('jquery-js', 'https://code.jquery.com/jquery-3.6.4.min.js' );
-  }
+//   // wp_enqueue_script('jquery-js', 'https://code.jquery.com/jquery-3.6.4.min.js' );
+//   // }
+
+//   wp_enqueue_script('jquery-js', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js' );
+//   }
+  
+// }
+// add_action('wp_print_scripts', 'custom_print_scripts');
+
+
+// function enqueue_jquery() {
+//   wp_enqueue_script('jquery');
+// }
+// add_action('wp_enqueue_scripts', 'enqueue_jquery');
+
+function init_scripts()
+{
+  wp_enqueue_script("jquery");
 }
-add_action('wp_print_scripts', 'custom_print_scripts');
+add_action('wp_enqueue_scripts', 'init_scripts');
 
 
 //スタイルシート
