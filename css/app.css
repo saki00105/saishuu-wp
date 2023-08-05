@@ -1814,10 +1814,22 @@ button:hover {
 .p-404__content {
   margin-top: 25%;
 }
-.p-404__content .c-text--h3, .p-404__content .c-text--p {
+.p-404__content .c-text--h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.p-404__content .c-text--p {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+.p-404__content .c-text--p a {
+  width: 100%;
+  height: auto;
+  padding: 5%;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
