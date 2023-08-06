@@ -38,9 +38,7 @@
             top:23.4rem ;
             left:8.6rem ;  
         }
-
     }  
-
     &--archive{
         width: auto;
         position: relative;  
@@ -61,7 +59,6 @@
         @include m.pc{
             height: 22rem;
             background: url(/img/page-title_arcive.jpg), lightgray 50% / cover no-repeat;
-
             // @include bg-img(url(../../../img/archive-pc.jpg));
         }
         &.c-color_bg--black-top{
@@ -90,7 +87,6 @@
         }
         span{
             @include after;
-            // content: "チーズバーガー";
             font-size: 1.6rem;
             @include m.sp{
                 top: 16rem;
@@ -103,11 +99,8 @@
                 left: 28rem;
                 top: 12rem;
             }   
-
         }
-        
     }
-
     &--single{
         width: auto;
         position: relative;  
@@ -139,13 +132,10 @@
             @include bg-img(url(../../../img/black-steel-lamp-post-1070945.png));
         }
         @include m.pc{
-            // background-position-y: 1%;
             height: 46rem;
             @include bg-img(url(../../../img/black-steel-lamp-post-1070945.png));
         }
-
     }
-
     &--single_page-title{
         position: absolute;
         @include m.sp{
@@ -160,6 +150,5 @@
             top:18rem ;
             left:8rem ;  
         }
-    }
-    
+    } 
 }

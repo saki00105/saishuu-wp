@@ -16,13 +16,11 @@
         margin-top: 3%;
         display: flex;
         justify-content: center;
+        border-radius: 1rem;
         a{
             width: 100%;
             height: auto;
             padding: 5%;
         }
-
     }
-    
-    @extend .p-card__archive-button
 }

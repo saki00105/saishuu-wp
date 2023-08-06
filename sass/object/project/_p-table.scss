@@ -13,23 +13,18 @@
     @include m.pc{
         margin-top: 5%;
     }
-    // &__small{
-        tr td:first-of-type {
+    tr td:first-of-type {
         @include m.sp{
-            // width: 40%;
             padding: 7%;
         }
         @include m.tab{
-            // width: 27%;
             padding: 3%;
         }
         @include m.pc{
-            // width: 30%;
             padding: 2%;
         }
     }
-    // &__wide{
-        .has-text-align-left{
+    .has-text-align-left{
         @include m.sp{
             padding: 7%;
             width: 60%;

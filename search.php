@@ -15,7 +15,6 @@
                 <?php the_content( '',FALSE,'');?>
             </article>
 
-            
             <ul class="p-card__archive">
                 <?php 
                     if (have_posts(  )):
@@ -35,7 +34,6 @@
                                                 echo '<div class="p-card__archive-text c-text--p">';
                                                 the_excerpt();
                                                 echo '</div>';
-                                               
                                             } 
                                             else{
                                                 the_content( '',FALSE,'');
@@ -46,6 +44,7 @@
                                     </figcaption>
                                 </figure>
                             </li>
+                            <?php wp_link_pages(); ?>
                         <?php endwhile;?>
                     <?php else:?>
                         <p>記事はありません</p>
@@ -59,9 +58,6 @@
             </ul>
         </div>
     </main>
-
-
-
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
 
