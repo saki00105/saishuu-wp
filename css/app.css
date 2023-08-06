@@ -786,25 +786,25 @@ button:hover {
     padding-right: 10%;
   }
 }
-.p-card__archive-content .p-card__archive-button.c-button--archive, .p-card__archive-content .c-button--archive.p-404__content {
+.p-card__archive-content .p-card__archive-button.c-button--archive {
   font-size: 1.6rem;
 }
 @media screen and (max-width: 768px) {
-  .p-card__archive-content .p-card__archive-button.c-button--archive, .p-card__archive-content .c-button--archive.p-404__content {
+  .p-card__archive-content .p-card__archive-button.c-button--archive {
     margin: 10% 23% 0;
     padding: 3%;
     width: 55%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .p-card__archive-content .p-card__archive-button.c-button--archive, .p-card__archive-content .c-button--archive.p-404__content {
+  .p-card__archive-content .p-card__archive-button.c-button--archive {
     margin: 10% 23% 0;
     padding: 3%;
     width: 55%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-card__archive-content .p-card__archive-button.c-button--archive, .p-card__archive-content .c-button--archive.p-404__content {
+  .p-card__archive-content .p-card__archive-button.c-button--archive {
     margin: 10% 25% 0;
     padding: 5%;
     width: 55%;
@@ -1059,9 +1059,6 @@ button:hover {
 
 .p-map {
   display: block;
-  background-image: url(../../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-color: #646464;
   background-blend-mode: soft-light;
 }
@@ -1825,6 +1822,7 @@ button:hover {
   margin-top: 3%;
   display: flex;
   justify-content: center;
+  border-radius: 1rem;
 }
 .p-404__content .c-text--p a {
   width: 100%;

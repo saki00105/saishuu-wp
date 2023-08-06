@@ -3,7 +3,6 @@
 
 // .p-single__text > * + * {
 .p-single__text {
-// .wp-block-heading{
     @include m.sp{
         margin-top: 6%;
     }
@@ -16,7 +15,6 @@
 }
 
 .c-color_bg--blockquote{
-// .wp-block-quote{
     @include m.sp{
         margin-top: 7%;
         padding: 7% 5%;
@@ -29,7 +27,6 @@
         margin-top: 5%;
         padding: 4%;
     }
-    // &-source{
     cite{
         @include m.tab{
             margin-top: 5%;
@@ -41,7 +38,6 @@
 }
 
 .p-single{
-// .wp-block-image{
     &__full-image{
         width: 100%;
         height: 50%;
@@ -59,18 +55,6 @@
     &__half-image{
         object-fit: cover;
         object-position: bottom;
-        // @include m.sp{
-        //     width: 45%;
-        //     height: 50%;
-        // }
-        // @include m.tab{
-        //     width: 45%;
-        //     height: 50%;
-        // }
-        // @include m.pc{
-        //     width: 45%;
-        //     max-height: 36rem;
-        // }
         &--center{
             margin: 0 auto;
             object-fit: cover;
@@ -94,7 +78,6 @@
 
 }
 .wp-block-media-text{
-    // display: flex;
     gap: 3%;
     @include m.sp{
         margin-top: 8%;
@@ -109,70 +92,51 @@
         height: 100%;
         padding: 0 !important;
     }
-    // p{
-    //     width: 55%;
-    // }
-    // &:nth-child(even){
-    //     flex-direction: row-reverse;
-    // }
 }
-        
-       
-    // }
-// .wp-block-gallery {
-//     &.wp-block-galler{
-//         &.has-nested-images{
-//             &.wp-block-gallery{
-//                 &.wp-block-gallery-5{
-                    #p-single{
-                        
-                        &__flex-wraps{
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: space-between;
-                            @include m.sp{
-                                margin-top: 10%;
-                            }
-                            @include m.tab{
-                                margin-top: 20%;
-                            }
-                            @include m.pc{
-                                margin-top: 10%;
-                            }
-                        }
-                    }
+#p-single{
+    &__flex-wraps{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include m.sp{
+            margin-top: 10%;
+        }
+        @include m.tab{
+            margin-top: 20%;
+        }
+        @include m.pc{
+            margin-top: 10%;
+        }
+    }
+}
 
-
-// .wp-block-image{
 #p-single__flex-wraps{
-#p-single__flex-wrap{
-    object-fit: cover;
-    object-position: bottom;
-    @include m.sp{
-        width: 100%;
-        flex-flow: column;
-        margin: 1% ;
-            &:nth-of-type(n+2){
-            margin-top: 4.5%;
+    #p-single__flex-wrap{
+        object-fit: cover;
+        object-position: bottom;
+        @include m.sp{
+            width: 100%;
+            flex-flow: column;
+            margin: 1% ;
+                &:nth-of-type(n+2){
+                margin-top: 4.5%;
+            }
         }
-    }
-    @include m.tab{
-        width: 49%;
-        max-width: 49%;
-        // margin:2% ;
-        padding: 0 1%;
-        &:nth-of-type(n+3){
-            margin-top: 2%;
+        @include m.tab{
+            width: 49%;
+            max-width: 49%;
+            padding: 0 1%;
+            &:nth-of-type(n+3){
+                margin-top: 2%;
+            }
         }
-    }
-    @include m.pc{
-        width: 32%;
-        padding: 0.5%;
-        &:nth-of-type(n+4){
-            margin-top: 1.5%;
+        @include m.pc{
+            width: 32%;
+            padding: 0.5%;
+            &:nth-of-type(n+4){
+                margin-top: 1.5%;
+            }
         }
-    }
-
         &-1{
             @extend #p-single__flex-wrap
         }
@@ -200,36 +164,20 @@
         &-9{
             @extend #p-single__flex-wrap
         }
+    }
 }
-}
-
-
-
-
-        
-
-
-// .wp-block-gallery{        
-        
-    
-//     .wp-block-image{    
-        
-// }
 
 .p-single__button{
     @include m.sp{
         margin-top: 18%;
-        // width: 100%;
         height: 8rem;
     }
     @include m.tab{
         margin-top: 7%;
-        // width: 60%;
         height: 10rem;
     }
     @include m.pc{
         margin-top: 5%;
-        // width: 30%;
         height: 10rem;
     }   
 }
@@ -237,9 +185,7 @@
 .wp-block-button{    
     color: var.$text-color;
     border-radius: 2rem;
-   
     &__link{
-         // all: unset;
         display: flex;
         margin: 0 auto;
         height: 100%;
@@ -250,8 +196,6 @@
         // }
     }
 }
-
-
 .p-single__bold{
     @include m.sp{
         margin-top: 8%;

@@ -7,11 +7,9 @@
     
     <a class="p-sidebar__box" href="/"></a>
 
-
     <?php wp_nav_menu( array(
         'theme_location' => 'sidebar-menu',
         ) );
-    ?>
-    
+    ?>    
 </div>
 

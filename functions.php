@@ -11,38 +11,15 @@ add_post_type_support( 'page', 'excerpt' );
 add_theme_support( 'automatic-feed-links' );
 
 
-//テーマの翻訳
-function wpbeg_theme_setup(){
-  load_theme_textdomain( 'wpbeg', get_template_directory() . '/languages' );
-  }
-add_action( 'after_setup_theme', 'wpbeg_theme_setup' );
-
-
 //jqueryの読み込み
-// function custom_print_scripts() {
-// if (!is_admin()) {
-//   wp_deregister_script('jquery');
+function custom_print_scripts() {
+  // テーマ内のjQueryスクリプトを登録・読み込み
+  wp_enqueue_script('jquery-min', get_theme_file_uri('/js/jquery.min.js'), array(), '3.6.4', true);
 
-//   // wp_enqueue_script('jquery-js', 'https://code.jquery.com/jquery-3.6.4.min.js' );
-//   // }
-
-//   wp_enqueue_script('jquery-js', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js' );
-//   }
-  
-// }
-// add_action('wp_print_scripts', 'custom_print_scripts');
-
-
-// function enqueue_jquery() {
-//   wp_enqueue_script('jquery');
-// }
-// add_action('wp_enqueue_scripts', 'enqueue_jquery');
-
-function init_scripts()
-{
-  wp_enqueue_script("jquery");
-}
-add_action('wp_enqueue_scripts', 'init_scripts');
+  // その他のカスタムスクリプトの登録・読み込み
+  wp_enqueue_script('js', get_theme_file_uri('/js/main.js'), array('jquery'), '1.0.0', true);
+  }
+add_action('wp_print_scripts', 'custom_print_scripts');
 
 
 //スタイルシート
@@ -54,11 +31,11 @@ function wpbeg_script() {
     wp_enqueue_style( 'style', get_theme_file_uri( '/css/style.css' ) , array(), '1.0.0');
     wp_enqueue_style( 'wp-style', get_theme_file_uri( '/style.css' ) , array(), '1.0.0');
 
-    wp_enqueue_script( 'js', get_theme_file_uri( ).'/js/main.js', array(), '', true );
+    // wp_enqueue_script( 'js', get_theme_file_uri( ).'/js/main.js', array(), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
 
-//エディタスタイル
+//エディタスタイルの追加
 function wpbeg_theme_add_editor_styles() {
   wp_enqueue_style( 'editor-style', get_theme_file_uri( '/css/editor-style.css' ) , array(), '1.0.0');
 }
@@ -66,12 +43,12 @@ add_action( 'admin_init', 'wpbeg_theme_add_editor_styles' );
 
 //カスタムメニュー
 function theme_setup(){
-    register_nav_menus( 
-        array(
-          'sidebar-menu' => 'サイドバーメニュー',
-          'footer-menu' => 'フッターメニュー',
-        )
-        );
+  register_nav_menus( 
+    array(
+      'sidebar-menu' => 'サイドバーメニュー',
+      'footer-menu' => 'フッターメニュー',
+    )
+  );
 }
 add_action( 'after_setup_theme', 'theme_setup');
 

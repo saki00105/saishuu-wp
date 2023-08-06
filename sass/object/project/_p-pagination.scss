@@ -33,21 +33,17 @@
     width: 3.5rem;
     height: 3.5rem;
     text-align: center;
-    
-
   }
   .previouspostslink{
     @include m.sp{
       position: absolute;
       left: 0;
       top: 12%;
-        &::after{
-          content: "前へ";
-          display: inline-block;
-          margin-left: 1rem;
-        }
-      
-      
+      &::after{
+        content: "前へ";
+        display: inline-block;
+        margin-left: 1rem;
+      }
     }
   }
   .nextpostslink{
@@ -58,13 +54,9 @@
       &::before{
         content: "次へ";
         display: inline-block;
-        margin-right: 1rem;
-        
-      }
-     
-      
+        margin-right: 1rem; 
+      } 
     }
-   
   }
   .current{
     background-color:var.$text-color;

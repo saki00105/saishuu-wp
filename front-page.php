@@ -5,8 +5,6 @@ Template Name: TOPページ
 ?>
 
 <?php get_header(); ?>
-
-
     <main class="l-main">
         <?php
             if( has_post_thumbnail() ) {
@@ -19,12 +17,7 @@ Template Name: TOPページ
         </div>
 
         <article class="">
-
-            <div class="">
-                <?php the_content( ); ?>
-            </div>
-
-
+            <?php the_content( ); ?>
         </article>
     </main>
 

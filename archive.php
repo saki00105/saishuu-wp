@@ -35,17 +35,16 @@
                                                 echo '<div class="p-card__archive-text c-text--p">';
                                                 the_excerpt();
                                                 echo '</div>';
-                                               
                                             } 
                                             else{
                                                 the_content( '',FALSE,'');
                                             }
                                         ?>
-                                        
                                         <a  class="p-card__archive-button c-button--archive c-fw-700" href="<?php the_permalink( ); ?>">詳しく見る</a>
                                     </figcaption>
                                 </figure>
                             </li>
+                            <?php wp_link_pages(); ?>
                         <?php endwhile;
                     else:?>
                         <p>記事はありません</p>
