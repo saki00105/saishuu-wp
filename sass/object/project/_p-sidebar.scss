@@ -18,11 +18,11 @@
     }
     &__box{
         position: absolute;
+        // position: relative;
         top: 5rem;
         right: 2rem;
         height: 5rem;
         width: 5rem;
-
         @include m.sp{
             &::before{
                 @include before;

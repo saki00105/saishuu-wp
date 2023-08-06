@@ -5,7 +5,7 @@
         <a href="/">Menu</a>
     </p>
     
-    <a class="p-sidebar__box" href="/"></a>
+    <button class="p-sidebar__box"></button>
 
     <?php wp_nav_menu( array(
         'theme_location' => 'sidebar-menu',
