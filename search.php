@@ -12,7 +12,13 @@
         
             <h2 class="c-text--h2"></h2>
             <article class="p-archive__text c-text--p">
-                <?php the_content( '',FALSE,'');?>
+                <?php 
+                    if (has_excerpt()){
+                        the_excerpt();
+                    }else{
+                        the_content('',FALSE,'' );
+                    }
+                ?>
             </article>
 
             <ul class="p-card__archive">

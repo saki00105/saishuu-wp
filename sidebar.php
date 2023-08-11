@@ -2,7 +2,7 @@
 
 <div class="l-sidebar">
     <p class="p-sidebar__menu c-fw-700">
-        <a href="/">Menu</a>
+        <a href="<?php echo esc_url( home_url('/') );?>">Menu</a>
     </p>
     
     <button class="p-sidebar__box"></button>
