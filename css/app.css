@@ -728,6 +728,7 @@ button:hover {
   -o-object-fit: cover;
      object-fit: cover;
   height: auto;
+  align-items: stretch;
 }
 .p-card__archive-content {
   background-color: #3C2B1C;
