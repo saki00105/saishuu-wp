@@ -1193,6 +1193,7 @@ button:hover {
     position: absolute;
     left: 0;
     top: 12%;
+    z-index: -5;
   }
   .wp-pagenavi .previouspostslink::after {
     content: "前へ";
@@ -1205,6 +1206,7 @@ button:hover {
     position: absolute;
     right: 0;
     top: 12%;
+    z-index: -5;
   }
   .wp-pagenavi .nextpostslink::before {
     content: "次へ";
@@ -1654,7 +1656,7 @@ button:hover {
 }
 @media screen and (max-width: 768px) {
   .p-visual--single_page-title {
-    top: 5rem;
+    top: 7.5rem;
     left: 2rem;
   }
 }
