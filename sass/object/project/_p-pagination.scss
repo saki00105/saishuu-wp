@@ -39,6 +39,7 @@
       position: absolute;
       left: 0;
       top: 12%;
+      z-index: -5;
       &::after{
         content: "前へ";
         display: inline-block;
@@ -51,6 +52,7 @@
       position: absolute;
       right: 0;
       top: 12%;
+      z-index: -5;
       &::before{
         content: "次へ";
         display: inline-block;
