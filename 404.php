@@ -8,7 +8,9 @@
     <main class="l-main">
         <div class="p-404__content">
             <p class="c-text--h3">アクセスしたページは見つかりませんでした。</p><br>
-            <p class="c-text--p c-button--archive c-button--form c-fw-700"><a href="<?php esc_url( home_url( '/' ) ) ; ?>">トップページへ</a></p>
+            <p class="c-text--p c-button--archive c-button--form c-fw-700">
+                <a href="<?php esc_url( home_url( '/' ) ) ; ?>">トップページへ</a>
+            </p>
         </div>
     </main>
 <?php get_sidebar(); ?>
