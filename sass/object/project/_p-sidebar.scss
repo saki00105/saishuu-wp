@@ -23,6 +23,7 @@
         right: 2rem;
         height: 5rem;
         width: 5rem;
+        cursor: pointer;
         @include m.sp{
             &::before{
                 @include before;
