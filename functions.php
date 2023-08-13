@@ -66,3 +66,22 @@ function thumb_url( $size ) {
 add_filter( 'get_the_archive_title', function( $title ) {
   return single_cat_title('', false) ;
 });
+
+
+//検索の固定ページ除外
+// function my_posy_search($search) {
+//   if(is_search()) {
+//     $search .= " AND post_type = 'post'";
+//   }
+//   return $search;
+// }
+// add_filter('posts_search', 'my_posy_search');
+
+function my_post_search($search) {
+  if (is_search()) {
+      global $wpdb;
+      $search .= " AND {$wpdb->posts}.post_type = 'post'";
+  }
+  return $search;
+}
+add_filter('posts_search', 'my_post_search');

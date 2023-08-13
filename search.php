@@ -4,7 +4,9 @@
         <div class="p-visual--archive c-color_bg--black-top">
             <img class="p-visual--archive " src="<?php echo get_stylesheet_directory_uri(); ?>/img/page-title_arcive.jpg" alt="archiveトップのハンバーガーの写真">
             <h1 class=" p-visual--archive-title c-text--h1 c-color--white c-fw-700 c-color_bg--black-top">Seach:
+
                 <span><?php the_search_query(); ?></span>
+
             </h1>
         </div>
         
